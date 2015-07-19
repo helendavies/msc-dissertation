@@ -1,3 +1,12 @@
 Abstract-Standalone.pdf
 Dissertation.pdf
 *.aux
+Cache/
+*.auxlock
+*.bbl
+*.blg
+*.lof
+*.lot
+*.out
+*.synctex.gz
+*.toc
