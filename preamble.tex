@@ -1,0 +1,398 @@
+% PhD Dissertation of Ian Davies, University of Cambridge Computer Laboratory
+%===================================================================================================
+
+\documentclass[11pt,a4paper,twoside,openright]{report}
+
+% Set up margins so that textblock has a w/h ratio of 1.62, close to the golden ratio.
+\usepackage[
+  inner=3.5cm, top=3cm,     % inner/top margin is 1/9 page width
+  outer=3.5cm, bottom=4cm,  % outer/bottom margin is twice that
+  marginparsep=11pt, marginpar=3cm % defines text in outer margin 
+]{geometry}
+
+% For correct font, download URW Classico (uop.zip)
+% Extract into %HOME%\AppData\Roaming\MiKTeX\2.9
+% initexmf --edit-config-file updmap
+% add "Map uop.map", save, exit
+% initexmf -u
+% initexmf --mkmaps
+
+% Make LaTeX usable: UTF8 in, T1 fonts out.
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Use URW Palladio (Palatino) plus maths for main font.
+\usepackage[osf]{mathpazo}
+%\usepackage{tgpagella}
+%\usepackage{mathpazo,tgpagella}
+%\usepackage{tgpagella,qpxmath}
+%\renewcommand\rmdefault{pplj} % qpl (Pagella), pplj (URW Palladio in mathpazo with old-style figures)
+
+
+
+% Use URW Classico (Optima) for sans-serif.
+\renewcommand\sfdefault{uop}
+
+% Use Bera Mono (Bitstream Vera Mono) for teletype font.
+\usepackage[scaled]{beramono}
+
+% Flush paragraphs with vertical spacing
+\usepackage{parskip}
+
+% Avoid orphans and widows, and don't stretch vertically to fill page.
+\clubpenalty=1000
+\widowpenalty=1000
+\displaywidowpenalty=1000
+\raggedbottom
+
+% Ragged text with hyphenation (disabled in default LaTeX \raggedright etc.).
+\usepackage{ragged2e}
+
+% Footnote formatting.
+\usepackage[ragged,bottom,hang]{footmisc}
+\setlength{\footnotemargin}{0.7em}
+\addtolength{\footnotesep}{0.25em}
+
+% British language defaults.
+\usepackage[greek,UKenglish]{babel}
+
+% Only a single space after full stops.
+\frenchspacing
+
+% Fix underscores.
+\usepackage{underscore}
+
+% Improved handling of compound words.
+\usepackage[shortcuts]{extdash}
+
+% Better spaces.
+\usepackage{xspace}
+
+% Use proper font glyphs if possible.
+\usepackage{textcomp}
+
+% Relative font sizes.
+\usepackage{relsize}
+
+% The URW Classico (Palatino) �copyright� symbol is superscript. This fixes it.
+\renewcommand{\copyright}{\raisebox{-0.4em}[0.6em][0pt]{\larger[2]{�}}\hspace{0.3pt}}
+
+% Typographically correct formatting of units.
+\usepackage{units}
+
+% Everybody likes a bit of colour.
+\usepackage[rgb]{xcolor}
+%\colorlet{spotdark}{red!70!black}
+%\colorlet{spotlight}{red!76!black!61}
+\colorlet{spotdark}{blue!70!black}
+\colorlet{spotlight}{blue!50}
+\colorlet{linkcolor}{spotdark}% black!50!green
+\colorlet{citecolor}{spotdark}% black!30!red
+\colorlet{urlcolor}{spotdark}% black!30!blue
+\colorlet{header}{spotdark}
+\colorlet{footer}{spotdark}
+\colorlet{marginnotes}{spotlight}
+\colorlet{newstuff}{orange}
+
+% Use bold sans-serif headings.
+\usepackage[bf,sf,compact,explicit]{titlesec}
+
+% Format chapter headings. Kick ass.
+% Note: The following stores the chapter number (aka label) and typesets it together
+% with the chapter title instead of separately, as this simplifies things slightly.
+\newcommand*\chapterlabel{}
+\titleformat{\chapter}[display]{\gdef\chapterlabel{}}{\gdef\chapterlabel{\thechapter}}{0pt} % remember label
+{\tikzexternaldisable\begin{tikzpicture}
+  \node[inner sep=0pt,minimum height=3cm] (title) at (0,0)
+    {\parbox{\textwidth}{\centering\fontsize{32}{30}\rmfamily\scshape #1}};
+  \ifthenelse{\equal{\chapterlabel}{}}{}{\node[inner sep=0pt] (label) at ($(title.east)+(11pt+1.5cm,0)$)
+    {\fontsize{120}{120}\rmfamily\color{spotdark}\textbf{\chapterlabel}};} % chapter label in right margin
+\end{tikzpicture}\hspace*{-3cm}}[\vspace{0ex}]
+\titlespacing*{\chapter}{0pt}{0.7cm}{0.9cm}
+
+% Format section headings so their number is shifted into the left margin.
+\titleformat{\section}{\Large\bfseries\sffamily}
+            {\vbox{\llap{\selectfont{\thesection.}\hskip 11pt}}#1}{0pt}{}
+\titleformat{\subsection}{\large\bfseries\sffamily}
+            {\vbox{\llap{\selectfont{\thesubsection.}\hskip 11pt}}#1}{0pt}{}
+
+% Page break before sections.
+%\let\stdsection\section
+%\renewcommand\section{\clearpage\stdsection}
+%\newcommand{\sectionbreak}{\clearpage} % titlesec way of doing things
+
+% Reduce vertical spacing before paragraph headings.
+\titlespacing*{\paragraph}{0pt}{0.25em}{1em} % space left, above (0.25em or 0pt?), right
+
+% Use micro-typographic refinements.
+\usepackage[final,expansion=false]{microtype}
+
+% Tweak itemisation using en-dash.
+\usepackage{enumitem}
+\setitemize{label=--,labelindent=0.5em,leftmargin=*,labelsep=0.5em}
+%\setitemize is deprecated in more recent versions, but version 2.8 doesn't support this:
+%\setlist[itemize]{label=--,labelindent=0.5em,leftmargin=*,labelsep=0.5em}
+
+% Caption styling.
+\usepackage[hang,bf,font={sf,footnotesize}]{caption}
+
+% Tweak placement conditions of floats.
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.85}
+\renewcommand{\textfraction}{0.15}
+\renewcommand{\floatpagefraction}{0.7}
+
+% Import graphics even if 'draft' option is applid.
+\usepackage[pdftex,final]{graphicx} \pdfcompresslevel=9
+
+% Allow including eps files in pdflatex.
+\usepackage[update,prepend,suffix=.generated,outdir=./Cache/]{epstopdf}
+
+% Remove vertical spacing between figures/tables of different chapters in the list of figures/tables.
+% This is added by report.cls in \@chapter. Patching this needs to be done before hyperref can fiddle with it.
+% (From http://tex.stackexchange.com/questions/784/how-to-change-the-line-spacing-in-my-list-of-figures/7700#7700)
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@chapter}{%
+  \addtocontents{lof}{\protect\addvspace{10\p@}}%
+  \addtocontents{lot}{\protect\addvspace{10\p@}}%
+}{}{}{\message{Failed to patch \string\@chapter}}
+\makeatother
+
+% For formatting the table of contents etc.
+\usepackage[titles]{tocloft}
+
+
+
+% Set up hyperlinks and PDF metadata.
+\usepackage[
+  colorlinks,                  % coloured links
+  final,                       % coloured links even if 'draft' option is applied to document
+  linkcolor  = linkcolor,      % colour of internal links
+  citecolor  = citecolor,      % colour of links to bibliography
+  urlcolor   = urlcolor,       % colour of external links
+  breaklinks = true,           % allow links to be broken across lines
+  unicode    = true,           % Unicode encoded PDF strings
+  bookmarksnumbered = true,    % include chapter/section numbers in bookmarks
+%  bookmarks  = false,          % comment out when building standalone summary
+]{hyperref}
+
+% Set PDF metadata and display mode.
+\hypersetup{
+  pdfauthor     = {Ian Davies},
+  pdftitle      = {Workload Measurement in Command and Control},
+  pdfpagelayout = TwoPageRight, % show double pages as on paper
+  pdfpagemode   = UseNone, % hide bookmarks
+}
+
+% Using natbib for better bibliography.
+\usepackage[square,colon]{natbib}
+
+% For referring to bibliographic items in text.
+\usepackage{bibentry}
+\nobibliography*
+
+% Add links to DOIs.
+\usepackage{doi}\renewcommand{\doitext}{doi: } % more robust?
+%\newcommand*{\doi}[1]{doi: \href{http://dx.doi.org/\detokenize{#1}}{\detokenize{#1}}}
+
+% For calculating lengths.
+\usepackage{calc}
+
+% Different treatment of draft/final modes.
+\usepackage{ifdraft}
+
+% Date and time commands.
+\usepackage{datetime}
+
+% Fancy headers.
+\usepackage{fancyhdr}
+\ifdraft{
+  % In draft mode, override the 'plain' page style to show footer with subversion info.
+  \fancypagestyle{plain}{
+    \fancyhf{} % clear all header and footer fields
+    \fancyfoot[C]{\thepage}
+  }
+  \pagestyle{plain}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0.5pt}
+}
+{
+  % Fix warnings about header not being high enough.
+  \addtolength{\headheight}{1.6pt}
+  \addtolength{\headsep}{-1.6pt}
+  \addtolength{\footskip}{1cm}
+
+  % No header/footer on empty pages created by \cleardoublepage.
+  \let\oldcleardoublepage\cleardoublepage
+  \renewcommand{\cleardoublepage}{\clearpage{\pagestyle{empty}\oldcleardoublepage}}
+  
+  % In final mode, show page numbers in outer footer (in plain and fancy styles),
+  % and chapter/section titles in headers (fancy only).
+  \fancyhf{} % clear all header and footer fields
+  \fancyheadoffset[LE,RO]{2cm}
+  \fancyfootoffset[LE,RO]{2cm}
+%  \fancyhead[LE]{\textcolor{highlight}{\sffamily\nouppercase{\leftmark}}}
+  \fancyhead[LE]{\textcolor{header}{\scshape\nouppercase{\leftmark}}}
+  \fancyhead[RO]{\textcolor{header}{\scshape\nouppercase{\rightmark}}}
+  \fancyfoot[LE,RO]{\textcolor{footer}{\thepage}}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+  \fancypagestyle{plain}{
+    \fancyhf{} % clear all header and footer fields
+    \fancyfootoffset[LE,RO]{2cm}
+    \fancyfoot[LE,RO]{\textcolor{footer}{\thepage}}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+  }
+
+  % Default page style.
+  \pagestyle{fancy}
+  
+  % Remove the word "Chapter" from the chapter mark.
+  \renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
+
+  % Reduce spacing between section number and name.
+  \renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
+}
+
+% In draft mode, include half-resolution figures.
+\ifdraft
+  {\newcommand{\ImageSize}{HalfSize}}
+  {\newcommand{\ImageSize}{FullSize}}
+
+% Use TikZ and pgfplots for nice figures and plots.
+\usepackage{tikz}
+\usetikzlibrary{arrows,backgrounds,calc,decorations.text,patterns,shadows,shapes,external,intersections,spy,decorations.markings,fit,positioning,pgfplots.groupplots} % decorations.pathreplacing
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.3}
+%\pgfmathsetseed{26081985}
+
+% Use sans-serif font for TikZ figures
+\makeatletter\tikzset{add font/.code={\expandafter\def\expandafter\tikz@textfont\expandafter{\tikz@textfont#1}}}\makeatother
+\tikzset{every node/.style={add font=\sffamily}}
+%\tikzset{/tikz/font=\sffamily} % too aggressive?
+
+% Default TikZ style.
+\tikzset{every picture/.style={tight background,>=stealth}}
+
+
+% Include externalised figures even in 'draft' mode.
+%\ifdraft{\pgfkeys{/pgf/images/include external/.code={\includegraphics{#1}}}}
+
+
+% Leszek's code for annotating images in resolution independent way.
+\tikzset{annotate/.style={
+  execute at begin scope={
+    \pgfkeys{src/.store in=\src,src/.value required}
+    \pgfkeys{pxwidth/.store in=\pxwidth,pxwidth/.value required}
+    \pgfkeys{#1}
+    \pgftransformshift{\pgfpointanchor{\src}{north west}}
+    \pgfsetyvec{\pgfpointscale{1/\pxwidth}{\pgfpointdiff{\pgfpointanchor{\src}{north west}}{\pgfpointanchor{\src}{south west}}}}
+    \pgfsetxvec{\pgfpointscale{1/\pxwidth}{\pgfpointdiff{\pgfpointanchor{\src}{north west}}{\pgfpointanchor{\src}{north east}}}}
+}}}
+
+% For nicer tables.
+\usepackage{booktabs} % for \toprule etc.
+\usepackage{colortbl} % for coloured lines in tables
+\usepackage{multirow}
+\usepackage{rotating} % for rotated text
+\usepackage[english]{rccol} % for aligning numbers on the decimal point in columns
+
+% For pseudocode.
+%\usepackage{algorithm}
+\usepackage{algorithmic}
+
+\usepackage{subcaption}
+
+% Simplify references.
+\usepackage[capitalise]{cleveref}
+\crefname{equation}{equation}{equations}
+\crefname{figure}{figure}{figures}
+
+% Hack by Leszek to make entire reference a link.
+\foreach \var in {algorithm,chapter,equation,figure,footnote,listing,section,table}{
+	\edef\@makelc{\noexpand\crefformat{\var}{####2\expandafter\noexpand\csname cref@\var @name\endcsname~####1####3}}\@makelc
+	\edef\@makeuc{\noexpand\Crefformat{\var}{####2\expandafter\noexpand\csname Cref@\var @name\endcsname~####1####3}}\@makeuc
+}
+
+% Boxes for detailing published papers at the beginning of chapters.
+\newcommand{\researchbox}[1]{
+  {\centering%
+  \tikzset{external/export next=false}% don't externalise, as citations don't seem to work
+  \begin{tikzpicture}
+    \node[font=\itshape\small,inner ysep=0.5em,inner xsep=1em,outer sep=0pt,fill=spotlight!15] (text) {\parbox[h]{0.7\textwidth}{#1}};
+    \draw[line width=5pt, line cap=butt, spotdark] (text.north west) -- (text.south west);
+  \end{tikzpicture}%
+\par\vspace{1em}}}
+
+% Show section comments in the margin (only in draft).
+\setlength{\marginparpush}{18.8pt} % main text \parskip + margin \baselineskip = 6.8pt + 12pt = 18.8pt
+\newcommand{\comment}[1]{{\leavevmode\marginpar
+  [\small\itshape\color{marginnotes}\vspace{-7.25pt}\RaggedLeft#1]
+  {\small\itshape\color{marginnotes}\vspace{-7.25pt}\RaggedRight#1}}\ignorespaces%
+}
+
+% Fancy block quote with large quotation marks (based on Alan Munn's code at
+% http://tex.stackexchange.com/questions/16964/block-quote-with-big-quotation-marks).
+\newenvironment{fancyquote}%
+{\vspace{\parskip}\begin{quote}{\tikzset{external/export=false}% more space before quote, start quote, ext. TikZ doesn't work here
+\tikz[remember picture,overlay,xshift=-1.5em,yshift=-1em]\node[black!20] {\rmfamily\fontsize{60}{60}\selectfont``};\kern0pt}\ignorespaces} % �
+{\ignorespaces{\tikzset{external/export=false}% don't externalise TikZ figure (it breaks)
+\tikz[remember picture,overlay,xshift=1.5em,yshift=-1em]\node[black!20] {\rmfamily\fontsize{60}{60}\selectfont''};} % �
+\end{quote}\vspace{\parskip}}% put a little more space after quote
+
+% Nice signing of quotes, as per Latex Hack #6 (Lingnau 2007).
+\newcommand*{\signed}[1]{\hspace*{1em plus 1fill}\nolinebreak[3]\hspace*{\fill}\mbox{\emph{#1}}\ignorespaces}
+
+%% Custom text highlighting commands.
+\newcommand{\todo}[1]{{\addtocounter{todo}{1}\color{red}\textbf{TODO:} #1 \comment{\color{red}\Huge*}}}
+\newcommand{\new}[1]{{\color{green!50!black} #1 \comment{\color{green!50!black}\Huge*}}}
+\newcommand{\toref}[1]{{\addtocounter{torefs}{1}\color{purple}\textbf{REF} #1 \comment{\color{purple}\Huge*}}}
+\newcommand{\fig}[1]{{\addtocounter{figremain}{1}\color{blue}\textbf{FIGURE:} #1 \comment{\color{blue}\Huge*}}}
+\newcommand{\tolabel}[1]{{\addtocounter{labelremain}{1}\color{green!50!black}\textbf{} #1 \comment{\color{green!50!black}\Huge*}}}
+
+%
+\newcounter{todo}
+\newcounter{torefs}
+\newcounter{figremain}
+\newcounter{labelremain}
+
+% Custom maths.
+\usepackage{amsmath}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\atantwo}{atan2}
+\DeclareMathOperator*{\clamp}{clamp}
+
+% Shortcuts.
+\newcommand{\footurl}[2]{\href{#1}{#2}\footnote{\url{#1}}}
+
+% Beautiful box plots!
+\input{boxPlot}
+
+% Allow breaking to even page
+\usepackage{ifthen}
+ 
+\newcommand{\newevenside}{
+        \ifthenelse{\isodd{\thepage}}{\newpage}{
+        \newpage
+        \phantom{placeholder} % doesn't appear on page
+        \thispagestyle{empty} % if want no header/footer
+        \newpage
+        }
+}
+
+% Force title case for all references.
+\renewcommand{\cref}{\Cref}
+
+\usepackage{tabularx}
+\usepackage{tabu}
+\usepackage[section]{placeins}
+
+
+\usepackage{pdfpages}
+

@@ -1,0 +1,52 @@
+%%% & Dissertation
+% PhD Dissertation of Ian Davies, University of Cambridge Computer Laboratory
+%===================================================================================================
+\include{preamble}
+
+% Probably need to expand pdflatex memory to compile big figures:
+% initexmf --edit-config-file=pdflatex
+% Add:
+%"main_memory=90000000"
+%"save_size=80000"
+%"pool_size=40000000"
+% initexmf --dump=pdflatex
+
+% Externalise graphics for faster LaTeX compilation.
+\tikzexternalize[prefix=Cache/Tikz/]
+
+% Force complete rebuild of TikZ figures.
+%/\tikzset{external/force remake}
+
+\begin{document}
+
+\include{Extras/TitlePage}
+\include{Extras/Declaration}
+\include{Extras/Abstract}
+\include{Extras/Acknowledgements}
+\include{Extras/Contents}
+\include{Chapter1/Chapter1}
+\include{Chapter2/Chapter2}
+\include{Chapter3/Chapter3}
+\include{Chapter4/Chapter4}
+\include{Chapter5/Chapter5}
+\include{Chapter6/Chapter6}
+\include{Chapter7/Chapter7}
+
+% Texify fails to run bibtex if \bibliography is in an included file. So hard code bibliography here.
+%\include{Extras/Bibliography}
+
+% Show bibliography in table of contents.
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Bibliography}
+
+%\nocite{*}
+\bibliographystyle{plainnat}
+
+\bibliography{Bibtex/main}
+
+%\include{Extras/Appendices}
+
+%\include{Extras/Metrics}
+
+\end{document}

@@ -1,0 +1,47 @@
+% !TEX root = ../Dissertation.tex
+%===================================================================================================
+
+\chapter{Chapter 4 Title}
+
+\Cref{fig:matlabGsrMetric} is an example of including code. It's not very nice, it was added quite last-minute. But it works.
+
+\begin{figure}[h]
+	\centering
+	
+\begin{minipage}{0.8\textwidth}\smaller\begin{verbatim}
+%%%%%%%%%%%%%%%%%%
+%% ArousalMetric.m
+%%%%%%%%%%%%%%%%%%
+
+% Find peaks and troughs in raw signal
+[pks, pLocs] = findpeaks(filtered_signal);
+[trs, tLocs] = findpeaks(-filtered_signal);
+trs = -trs;
+
+% Trim peaks from the start and troughs from the end of the data
+while(pLocs(1) < tLocs(1))
+    pLocs(1) = [];
+    pks(1) = [];
+end
+
+while(tLocs(end) > pLocs(end))
+    tLocs(end) = [];
+    trs(end) = [];
+end
+
+% Calculate arousal metric
+peakHeights = pks - trs;
+peakWidths = raw_signal_times_secs(pLocs) - raw_signal_times_secs(tLocs);
+peakRiseRate = peakHeights ./ peakWidths';
+peakValues = peakHeights .* peakRiseRate;
+
+peakEffect = zeros(numel(filtered_signal),1);
+
+peakEffect(pLocs) = peakValues;
+
+arousal_metric = RunningFn(@sum,peakEffect,5000);
+\end{verbatim}
+	\end{minipage}
+	\caption{MATLAB code for computing continuous arousal metric from filtered SC signal.}
+	\label{fig:matlabGsrMetric}
+\end{figure}

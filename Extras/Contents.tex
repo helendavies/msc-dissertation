@@ -1,0 +1,41 @@
+% !TEX root = ../Dissertation.tex
+%===================================================================================================
+
+% You shouldn't need to change this file.
+
+% Make all links black in ToC etc.
+\hypersetup{linkcolor=black}
+
+
+% Add periods after chapter/section/figure/table numbers.
+\renewcommand{\cftchapaftersnum}{.}
+\renewcommand{\cftsecaftersnum}{.}
+\renewcommand{\cftfigaftersnum}{.}
+\renewcommand{\cfttabaftersnum}{.}
+
+% Add extra vertical spacing to spread out entries.
+\setlength{\cftbeforechapskip}{2.5em}
+\setlength{\cftbeforesecskip}{0.25em}
+\setlength{\cftbeforefigskip}{0.25em}
+\setlength{\cftbeforetabskip}{0.25em}
+
+% Using grey densely dotted separators.
+\renewcommand{\cftdot}{\textcolor{spotlight}.}
+\def\cftdotsep{1}
+
+
+%\clearforchapter
+\setcounter{tocdepth}{2}
+\tableofcontents
+
+%\clearforchapter
+\renewcommand{\listfigurename}{Figures}
+\listoffigures
+
+%\clearforchapter
+\renewcommand{\listtablename}{Tables}
+\listoftables
+
+
+% Return to standard link colour.
+\hypersetup{linkcolor=linkcolor}

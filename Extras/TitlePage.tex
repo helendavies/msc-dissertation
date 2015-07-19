@@ -1,0 +1,47 @@
+% !TEX root = ../Dissertation.tex
+
+{
+\pagestyle{empty}
+\newgeometry{centering,margin=2cm}
+
+\centering
+\null\vfill
+
+% Add some letter spacing to the title.
+\SetTracking[]{encoding=*}{7}
+
+% Title
+\fontsize{36.5}{34}\scshape\textls{My PhD Dissertation}
+%\\
+%\fontsize{24}{24}\scshape\textcolor{spotdark}{\textls{acquisition, processing and evaluation}}
+\\[2cm]%
+
+% Name
+\fontsize{24}{30}\normalfont
+My Name\\[0.5cm]%
+
+% Date (automatic)
+\fontsize{20}{30}\normalfont
+\monthname\space\number\year
+
+\vfill
+
+% University shield
+\includegraphics[width=3.2cm]{Figures/Shield}\\[0.6cm]
+
+% Institutions
+\fontsize{16}{20}\normalfont
+University of Cambridge\\
+Computer Laboratory\\[10pt]
+My College
+
+\vfill
+
+% Remark
+\fontsize{13}{16}\itshape
+This dissertation is submitted for the degree of Doctor of Philosophy.
+
+\vfill\null
+
+\restoregeometry
+}

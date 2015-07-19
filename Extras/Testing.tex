@@ -1,0 +1,58 @@
+% $Id: Testing.tex 323 2012-01-20 17:40:48Z cr333 $
+% !TEX root = ../Dissertation.tex
+%===================================================================================================
+
+% Per-chapter Subversion footer.
+\svnInfo $Id: Testing.tex 323 2012-01-20 17:40:48Z cr333 $
+
+\chapter*{Testing}
+\label{ch:testing}
+
+\newcommand{\fonttest}{ABCDEFÄÖÜ \& abcdefäöüß fi fl 1234567890?!+-_}
+
+\comment{Testing the difference font families.}
+Normal text. \fonttest\\
+\textit{Italic text. \fonttest}\\
+\textbf{Bold text. \fonttest}\\
+\textbf{\textit{Bold italic text. \fonttest}}\\
+\textsc{Small-caps text. \fonttest}\\
+\textsl{Slanted text. \fonttest}
+
+\textrm{Roman text. \fonttest}\\
+\textsf{Sans-serif text. \fonttest}\\
+\texttt{Teletype text. \fonttest}
+
+\textmd{Medium text. \fonttest}\\
+\emph{Emphasised text. \fonttest}
+
+
+\comment{Testing some maths.}
+\textit{g} $g$ \textit{x} $x$
+
+\begin{equation}
+g_k = \sum_{x=0}^n {i_x}
+\end{equation}
+
+\begin{equation}\displaystyle
+c(d) = \frac{\displaystyle
+  \sum_{\left(x,y\right) \in W}{\left(L(x,y) - \mu_L\right) \left(R(x-d,y) - \mu_R\right)}
+}{
+  \sqrt{\displaystyle\sum_{\left(x,y\right) \in W}{\left(L(x,y) - \mu_L\right)^2}}
+  \sqrt{\displaystyle\sum_{\left(x,y\right) \in W}{\left(R(x-d,y) - \mu_R\right)^2}}
+},
+\end{equation}
+
+\section{This is a heading}
+
+And here is some text.
+
+%\subsection*{Ligatures + Numerals}
+%\fontspec[Ligatures={Common, Historical}]{Linux Libertine O Italic}
+%\fontsize{12pt}{18pt}\selectfont Questo è strano assai!
+%\fontspec[Numbers={OldStyle}]{Linux Libertine O}Old style: 1234567\\
+%\fontspec[Numbers={Lining}]{Linux Libertine O}Lining: 1234567
+
+\comment{And testing links.}
+Internal link to page~\ref{ch:testing}.
+Citation \citep{Richa2008}.
+\href{http://www.cl.cam.ac.uk/~cr333/}{Web link}.

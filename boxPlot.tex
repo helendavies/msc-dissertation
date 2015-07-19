@@ -1,0 +1,191 @@
+\usepackage{pgfplotstable}
+
+% Takes macro,math
+\newcommand{\pgfmathsetmacroverbatim}[2]{\pgfmathparse{#2}\pgfmathprintnumberto[verbatim]{\pgfmathresult}{#1}}
+
+% Takes table,row,col,macro
+\newcommand{\getelementto}[4]{
+	\pgfplotstablegetelem{#2}{#3}\of#1
+	\edef#4{\pgfplotsretval}
+	%\pgfmathsetmacro{#4}{\pgfplotsretval}
+}
+
+% Takes table,macro(LQ),macro(MEDIAN),macro(UQ)
+\newcommand{\quartilesto}[4]{
+	\pgfplotstablesort{\sortedTable}{#1}
+	
+}
+
+%Takes filename,col,macro
+\newcommand{\pgfplotstablereadcol}[3]{
+	\pgfplotstableread[col sep=comma]{#1}{\tempTable}
+	\pgfplotstableread[row sep=\\,col sep=comma,header=has colnames]{ #2\\}#3
+	\pgfplotstablevertcat{#3}{\tempTable}
+}
+
+% Takes filename,inputcolindex,x,name,outputTable. Adds "outliers" column to table.
+\newcommand{\appendboxplotvals}[6]{
+
+	\pgfplotstablereadcol{#1}{#2}{#5}
+
+	\pgfplotstablesort{#5}{#5}
+	% Get number of rows
+	
+	\pgfplotstablegetrowsof{#5}
+	\pgfmathsetmacroverbatim{\maxrowindex}{\pgfplotsretval - 1}
+	
+	% Get median
+	
+	\pgfmathsetmacroverbatim{\medianIndexTop}{round((\maxrowindex / 2)+0.1)}
+	\getelementto{#5}{\medianIndexTop}{#2}{\medianTop}
+	\pgfmathsetmacroverbatim{\medianIndexBottom}{round((\maxrowindex / 2)-0.1)}
+	\getelementto{#5}{\medianIndexBottom}{#2}{\medianBottom}
+	\pgfmathsetmacro{\median}{(\medianTop + \medianBottom) / 2}
+	
+	% Get LQ
+	
+	\pgfmathsetmacroverbatim{\LQindexTop}{round(((\medianIndexBottom - 1) / 2)+0.1)}
+	\getelementto{#5}{\LQindexTop}{#2}{\LQtop}
+	\pgfmathsetmacroverbatim{\LQindexBottom}{round(((\medianIndexBottom - 1) / 2)-0.1)}
+	\getelementto{#5}{\LQindexBottom}{#2}{\LQbottom}
+	\pgfmathsetmacro{\lq}{(\LQtop + \LQbottom) / 2}
+	
+	% Get UQ
+	
+	\pgfmathsetmacroverbatim{\UQindexTop}{\LQindexTop + \medianIndexTop + 1}
+	\getelementto{#5}{\UQindexTop}{#2}{\UQtop}
+	\pgfmathsetmacroverbatim{\UQindexBottom}{\LQindexBottom + \medianIndexTop + 1}
+	\getelementto{#5}{\UQindexBottom}{#2}{\UQbottom}
+	\pgfmathsetmacro{\uq}{(\UQtop + \UQbottom) / 2}
+
+	\pgfmathsetmacro{\iqr}{\uq - \lq}
+	
+	\pgfmathsetmacro{\topWhiskerLimit}{\uq + (1.5 * \iqr)}
+	\pgfmathsetmacro{\bottomWhiskerLimit}{\lq - (1.5 * \iqr)}
+
+	\pgfplotstablecreatecol[
+		create col/assign/.code={
+			\getthisrow{#2}{\entry}
+			\pgfmathsetmacroverbatim{\entry}{ifthenelse(and(\entry > \bottomWhiskerLimit, \entry < \topWhiskerLimit),nan,\entry)}
+			\ifnum\pdfstrcmp{\entry}{\hbox{NaN}}=0
+				\def\entry{nan}
+			\fi
+			\pgfkeyslet{/pgfplots/table/create col/next content}{\entry}
+			}
+		] {outliers} #5
+	
+	\pgfplotstablecreatecol[
+		create col/assign/.code={
+			\getthisrow{#2}{\entry}
+			\def\entry{#3}
+			\pgfkeyslet{/pgfplots/table/create col/next content}{\entry}
+			},
+		] {outliersx} #5
+
+
+	\getelementto{#5}{0}{outliers}{\firstOutlier}
+	\getelementto{#5}{\maxrowindex}{outliers}{\lastOutlier}
+	\getelementto{#5}{0}{#2}{\minValue}
+	\getelementto{#5}{\maxrowindex}{#2}{\maxValue}
+
+	%\pgfmathsetmacro{\bottomWhisker}{ifthenelse(\firstOutlier < \median, \bottomWhiskerLimit, \minValue)}
+	
+	\ifnum\pdfstrcmp{\firstOutlier}{nan}=0
+		\edef\bottomWhisker{\minValue}
+	\else
+		\edef\bottomWhisker{\bottomWhiskerLimit}
+	\fi
+	
+	\ifnum\pdfstrcmp{\lastOutlier}{nan}=0
+		\edef\topWhisker{\maxValue}
+	\else
+		\edef\topWhisker{\topWhiskerLimit}
+	\fi
+
+%	#2, #3, \bottomWhisker, \lq, \median, \uq, \topWhisker
+	\edef\row{[row sep=crcr,col sep=comma]{
+			x,name,bw,lq,median,uq,tw\noexpand\\
+			#3,#4,\bottomWhisker,\lq,\median,\uq,\topWhisker \noexpand\\
+			} \noexpand\tempTable
+		}
+	\expandafter\pgfplotstableread\row
+	\pgfplotstablevertcat{#6}{\tempTable}
+}
+
+\pgfplotsset{
+    box plot/.style={
+        /pgfplots/.cd,
+        blue!50!black,
+        only marks,
+        mark=-,
+        mark size=\pgfkeysvalueof{/pgfplots/box plot width},
+        /pgfplots/error bars/y dir=plus,
+        /pgfplots/error bars/y explicit,
+    },
+    box plot box/.style={
+        /pgfplots/box plot,
+        /pgfplots/error bars/draw error bar/.code 2 args={%
+            \draw[fill=blue!10!white]  ##1 -- ++(\pgfkeysvalueof{/pgfplots/box plot width},0pt) |- ##2 -- ++(-\pgfkeysvalueof{/pgfplots/box plot width},0pt) |- ##1 -- cycle;
+        },
+        mark=\empty,
+        /pgfplots/table/.cd,
+        y=lq,
+        y error expr={\thisrow{uq} - \thisrow{lq}},
+        /pgfplots/.cd,
+    },
+    box plot median/.style={
+        /pgfplots/box plot,
+        /pgfplots/table/y=median,
+    },
+    box plot top whisker/.style={
+        /pgfplots/box plot,
+        /pgfplots/error bars/draw error bar/.code 2 args={%
+            \pgfkeysgetvalue{/pgfplots/error bars/error mark}%
+            {\pgfplotserrorbarsmark}%
+            \pgfkeysgetvalue{/pgfplots/error bars/error mark options}%
+            {\pgfplotserrorbarsmarkopts}%
+            \path ##1 -- ##2;
+        },
+        /pgfplots/table/.cd,
+        y=tw,
+        y error expr={\thisrow{uq}-\thisrow{tw}},
+        /pgfplots/.cd,
+    },
+    box plot bottom whisker/.style={
+        /pgfplots/box plot,
+        /pgfplots/error bars/draw error bar/.code 2 args={%
+            \pgfkeysgetvalue{/pgfplots/error bars/error mark}%
+            {\pgfplotserrorbarsmark}%
+            \pgfkeysgetvalue{/pgfplots/error bars/error mark options}%
+            {\pgfplotserrorbarsmarkopts}%
+            \path ##1 -- ##2;
+        },
+        /pgfplots/table/.cd,
+        y=bw,
+        y error expr={\thisrow{lq}-\thisrow{bw}},
+        /pgfplots/.cd,
+    },
+    box plot width/.initial=1em,
+    box plot outliers/.style={
+    	unbounded coords=discard,
+    	filter discard warning=false,
+    	only marks,
+    	mark=*,
+    	mark size=1pt,
+    	blue!70!black!80!white,
+	/pgfplots/table/y=outliers,	
+	/pgfplots/table/x=outliersx,
+    },
+    box plot axis/.style={
+    	xtick style={/pgfplots/major tick length=0pt,},
+    	xticklabel style={font=\sffamily},
+	enlarge x limits={abs=0.8},
+    },
+}
+
+\newcommand{\addboxplotboxes}[1]{
+	\addplot[box plot median] table #1;
+	\addplot[box plot box] table #1;
+	\addplot[box plot top whisker] table #1;
+	\addplot[box plot bottom whisker] table #1;
+}
