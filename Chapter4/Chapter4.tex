@@ -1,47 +1,56 @@
 % !TEX root = ../Dissertation.tex
 %===================================================================================================
 
-\chapter{Chapter 4 Title}
+\chapter{Data Collection}
 
-\Cref{fig:matlabGsrMetric} is an example of including code. It's not very nice, it was added quite last-minute. But it works.
 
-\begin{figure}[h]
-	\centering
-	
-\begin{minipage}{0.8\textwidth}\smaller\begin{verbatim}
-%%%%%%%%%%%%%%%%%%
-%% ArousalMetric.m
-%%%%%%%%%%%%%%%%%%
 
-% Find peaks and troughs in raw signal
-[pks, pLocs] = findpeaks(filtered_signal);
-[trs, tLocs] = findpeaks(-filtered_signal);
-trs = -trs;
 
-% Trim peaks from the start and troughs from the end of the data
-while(pLocs(1) < tLocs(1))
-    pLocs(1) = [];
-    pks(1) = [];
-end
+\section{B cells are developing in the NOD thymus}
 
-while(tLocs(end) > pLocs(end))
-    tLocs(end) = [];
-    trs(end) = [];
-end
+\todo{here, write about the potential for B cells developing in the thymus and the methods used to investigate it. Could say that the methods involved carrying out magnetic cell sorting and this required a lot of optimisation to get best efficiency/yield}
 
-% Calculate arousal metric
-peakHeights = pks - trs;
-peakWidths = raw_signal_times_secs(pLocs) - raw_signal_times_secs(tLocs);
-peakRiseRate = peakHeights ./ peakWidths';
-peakValues = peakHeights .* peakRiseRate;
+\subsection{Magnetic associated cell sorting optimisation}
+\todo{include results for efficiency/yield for both Miltenyi and Qiagen}
 
-peakEffect = zeros(numel(filtered_signal),1);
+\subsection{Early B cell progenitors are present in the NOD thymus}
+\todo{analyse results comparing NOD/KO/B6 data to see if the presence of BLPs is normal in NOD}
 
-peakEffect(pLocs) = peakValues;
+\subsection{Pro and Pre B cells are present in the NOD thymus}
 
-arousal_metric = RunningFn(@sum,peakEffect,5000);
-\end{verbatim}
-	\end{minipage}
-	\caption{MATLAB code for computing continuous arousal metric from filtered SC signal.}
-	\label{fig:matlabGsrMetric}
-\end{figure}
+\subsection{CD19+ RAG+ B cells are seen in the NOD thymus}
+
+\subsection{B cell development is dependent on the presence of a mature B cell}
+\subsubsection{Transfer experiment - Transfer of NOD thymic cells to B cell KO NOD mice}
+
+\subsection{T cell development looks normal/abnormal in NOD mouse compared to control}
+\todo{analyse data to see whether it is normal or abnormal. This is a good control to give an indication of the overall condition of the thymus, preferably over time to see how it changes as mouse ages with normal physiological atrophy of the thymus}
+
+\subsection{Conclusion}
+
+
+
+
+\section{There is potentially a population of cells expressing both T and B cell receptors in the NOD thymus}
+
+\subsection{Elevated level of CD8 on CD19+ cells in the thymus}
+
+\subsection{IgM+TcRb+ cell presence}
+\todo{include isotype control data}
+
+\subsection{RAG+IgM+TcRb+ cell presence in the NOD thymus}
+
+\subsection{Conclusion}
+
+
+
+
+\section{Potential contribution of thymic B cells to T1D}
+
+\subsection{Pilot study to track movement/homing of thymic B cells on transfer into recipient mice}
+\todo{where B cells traffic to could give indication of their role in T1D. Also, use of GFP as  a marker. However, numbers were very small so analysis difficult. Needs to be done again in the future. Comment on whether it may be possible and what would need to change to make it work}
+
+\subsection{Autoantibody production}
+
+\subsection{Conclusion}
+

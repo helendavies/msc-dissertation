@@ -4,124 +4,49 @@
 \chapter{Background}
 
 
-\section{Section Title}
+\section{Type 1 Diabetes}
 \label{sec:sectionLabel}
 
-\todo{Write this section.}
 
-\subsection{Subsection Title}
-You can \toref{mark things as needing a reference}.
+\subsection{Facts and Figure}
+\subsection{T1D in Man}
+\subsection{T1D in Mouse}
+\subsubsection{The nonobese diabetic mouse}
 
-\Citet{Vigouroux1879} was the first to observe that...
+\section{The Immune System}
+\subsection{The adaptive immune system}
+\subsubsection{Role of the adaptive immune system}
+\subsubsection{Cells of the adaptive immune system}
+\subsubsection{Role of the adaptive immune system in type 1 diabetes}
+\subsection{The innate immune system}
+\subsubsection{Role of the innate immune system}
+\subsubsection{Cells of the innate immune system}
+\subsubsection{Innate immune system involvement in type 1 diabetes}
 
-See \Cref{fig:edaExample} for a sample figure drawn from a data file.
+\section{Normal lymphocyte development}
+\subsection{B cell development}
+\subsubsection{Site of development - the bone marrow niche}
+\todo{normal B cell development occurs in the bone marrow in a specific niche.}
+\subsubsection{Stages of development}
+\todo{Include all stages of development from HSC through BLP, Pre-pro, pro, pre and immature B cell. Introduce markers such as Ly6D, kit, sca-1 etc.}
+\subsubsection{Genes and transcription factors driving B cell development}
+\todo{include transcription factors here.}
+\subsubsection{Tolerance}
+\todo{central and peripheral tolerance and how these act to help prevent autoimmunity}
+\subsection{T cell development}
+\subsubsection{Site of development - the thymic niche}
+\todo{the thymic microenvironment and how it is geared up for T cell development.}
+\subsubsection{Genes and transcription factors driving T cell development}
+\todo{Transcription factors}
+\subsubsection{Tolerance}
 
-
-\fig{You need a figure here}.
-
-
-%\tikzset{external/remake next} % uncomment this line to force the graphic to be regenerated, even if it's cached from last time.
-\begin{figure}
-	\centering
-	\tikzsetnextfilename{edaExample}
-	\begin{tikzpicture}[trim axis left,x=1pt,y=1pt]
-
-
-	\begin{axis}[width=\textwidth,
-			   height=0.5\textwidth,
-                           ylabel=Skin Conductance,
-                           xlabel=Time (minutes),
-                           ytick=\empty,
-                           axis x line=bottom, 
-                           axis y line=left,
-                           enlarge x limits=0.05,
-			   enlarge y limits=0.05]
-	\addplot[color=red, line width=1,line join=round,cap=round] file {Data/edaExample.csv};
-	\end{axis}
-
-	\end{tikzpicture}
-
-	\caption{Typical skin conductance data}
-	\label{fig:edaExample}
-\end{figure}
-
-\Cref{fig:ecg} is a more elaborate plot.
-
-You can \new{mark something as new to draw Peter's attention to it}
-
-%\fig{Sample ECG}
-\begin{figure}[h]
-	\centering
-	%\includegraphics[width = \textwidth]{Figures/ecg.png}
-	%\tikzset{external/remake next}
-	\tikzsetnextfilename{ecg}
-	\begin{tikzpicture}[trim axis left]
-		\begin{axis}[width=0.9\textwidth,
-			           height=0.5\textwidth,
-		                   xlabel=Time (seconds),
-		                   ylabel=Measured voltage,
-		                   ytick=\empty,
-		                   xtick={0,...,5},
-		                   xmax=5,
-		                   xmin=0,
-		                   axis x line=bottom,
-		                   axis y line=left,
-		                   enlarge x limits=0.05,
-		                   enlarge y limits=0.05,
-		                   ]
-			\addplot[color=blue,
-			             line width=1pt,
-			             line join=round,
-			             cap=round] file {Data/ecg.csv};
-
-			\coordinate (ArrowStart) at (axis cs:1.2,0.23);
-			\coordinate (ArrowEnd) at (axis cs:0.73,0.18);	
-			\coordinate (ArrowEndd) at (axis cs:1.4,0.18);	
-			
-		\end{axis}
-
-		\path[draw=black, line width=1pt,->] 
-			(ArrowStart) node[anchor=south] {`R' peaks} -- (ArrowEnd);
-		\path[draw=black, line width=1pt,->] 
-			(ArrowStart) -- (ArrowEndd); 
-			
-
-	
-	\end{tikzpicture}
-
-	\caption{A typical electrocardiogram, recorded over about 5 seconds.}
-	\label{fig:ecg}
-\end{figure}
-
-\Cref{tab:eyeMeasurement} is a good example of a nice table.
-
-\renewcommand{\arraystretch}{4.5}
-\begin{table}
-	\centering
-	\small
-	\begin{tabu} to \textwidth {  >{\centering}X[1.5,m] || >{\centering}X[m] >{\centering}X[m] >{\centering}X[m] >{\centering\arraybackslash}X[m] }
-	%\hline
-	\textbf{Method} & \textbf{Hardware} & \textbf{Intrusiveness} & \textbf{Accuracy} & \textbf{Frame rate} \\
-	\hline
-	Direct observation & Webcam & Low & $\approx 1$\textdegree & $30$ Hz \\
-	Photoelectric viewing & Projected light; photosensors & Low & $3'$ over $30$\textdegree & $1000$ Hz \\
-	Reflection & Webcam; light source & Low & $0.5$ -- $1$\textdegree & $30$ Hz \\
-	EOG & Multi-channel voltmeter & High & Disputed & $1000$ Hz \\
-	Electromagnetic & Metal coils attached to eye & Extreme & $5''$ & $1000$ Hz \\
-	\hline
-	\end{tabu}
-	\caption{Summary of eye movement measurement techniques}
-	\label{tab:eyeMeasurement}
-\end{table}
-
-
-\subsubsection*{A non-numbered subsubsection}
-
-With some content.
-
-\section{Conclusion}
-
-Conclusion to my background chapter...
+\section{Abnormal B cell presence in the NOD mouse thymus}
+\subsection{Thymic B cells}
+\todo{thymic B cells are increased in the NOD conpared to nondiabetic controls}
+\subsubsection{Potential impact of thymic B cells}
+\todo{include the fact they are found in other autoimmune diseases too such as MG etc}
+\subsubsection{Potential role of thymic B cells in T1D}
+\todo{previous data on autoantibody production and antibody presentation by B cells in T1D}
 
 
 
