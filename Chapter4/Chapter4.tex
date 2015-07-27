@@ -19,8 +19,6 @@ The process of investigation proceeded as follows:
 
 Each will be discussed in the relevant sections below.
 
-\todo{here, write about the potential for B cells developing in the thymus and the methods used to investigate it. Could say that the methods involved carrying out magnetic cell sorting and this required a lot of optimisation to get best efficiency/yield}
-
 \subsection{Magnetic-assisted cell sorting optimisation}
 
 Due to the small size of progenitor populations in comparison to mature cell populations in the thymus, it was first necessary to deplete the thymus of the majority of mature cells before looking for progenitors.
@@ -40,18 +38,23 @@ This efficiency was improved to \todo{add efficiency of 2 rounds} when two round
 	\begin{subfigure}{\textwidth}
 	\includegraphics[width=0.3\textwidth]{Figures/2rounddepletion.png}
 	\caption{Two rounds of depletion using Miltenyi lineage depletion beads and columns}
+	\label{subfig:2miltenyi}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}{\textwidth}
 	\includegraphics[width=0.3\textwidth] {Figures/Qiagenbeads.png}
-	\caption{Qiagen beads}
+	\caption{Qiagen Beads}
+	\label{subfig:Qiagen}
 	\end{subfigure}
+	
+\caption{Figure showing the different methods of depletion. Qiagen beads in \cref{subfig:Qiagen} shows that 89\% percent of cells are CD4-CD8-}
 \end{figure}
 However, while this method gave a very pure sample with very few mature cells remaining, the yield was not very good.
 
 Since the point of the depletion was just to reduce the quantity of mature cells so that the progenitor populations could be seen by flow cytometry, it was more important for the experiment that there was a lot of cells to interrogate rather than them being very pure.
 Therefore, Qiagen beads were tried and as shown, \fig{figure of Qiagen depletion}, while the purity was not as good as the Miltenyi beads \todo{efficiency of Qiagen beads}, the yield was much improved.
 This was a better balance for the experiment, therefore, Qiagen beads were used.
+\todo{insert a table showing the efficiencies of each depletion method}
 
 \subsection{Early B cell progenitors are present in the NOD thymus}
 \todo{analyse results comparing NOD/KO/B6 data to see if the presence of BLPs is normal in NOD}
@@ -59,57 +62,121 @@ Once the method of lineage depletion was decided on, it was then possible to mov
 BLP presence was of particular interest as differences in populations between strains of mice could suggest whether the increase in B cells in the NOD thymus was as a result of processes before or after this point.
 BLPs are thought to be the first cell committed to the B cell lineage therefore if the populations of these cells are different, it could suggest abnormalities in factors driving B cell commitment.
 
+\fig{Gating system: LCs, SCs, sca int, kit int, IL-7Ra+Flt3+, Ly6D (+ in BLPs/pre-pro, - in ALPs)}
+\fig{?\% of BLPs, ALPs and MPPs in each strain}
+\fig{?Ratios of BLP:ALP in BM and thymus}
+
 
 \subsection{Pro and Pre B cells are present in the NOD thymus}
 
+\fig{Pro and Pre cells present in the NOD thymus. Show a plot of IgM vs CD43 and label which quadrants are pro and pre.}
+\fig{\%s of pro and pre in different ages and strains}
+\fig{ratios of pro:pre in thymus vs BM. any difference in different strains?}
+
+
 \subsection{CD19+ RAG+ B cells are seen in the NOD thymus}
+
+\fig{Gating patterns: LCs, SCs, CD19+, RAG high low neg etc}
+\fig{\% of RAG high low neg at different ages}
 
 
 \subsection{B cell development is dependent on the presence of a mature B cell}
-\subsubsection{Transfer experiment - Transfer of NOD thymic cells to B cell KO NOD mice}
+
+\fig{Difference in \% or numbers of pro B cells in NOD vs KO. Try gating out IgM+ cells in NOD and then looking at CD19\%. That way \%s should only be affected by differences in pro and pre B cell populations.}
+\todo{suggest a transfer experiment/chimera formation to test whether transfer of mature B cells into a KO mouse increases the population of pro B cells in the KO thymus}
+
 
 \subsection{T cell development looks normal/abnormal in NOD mouse compared to control}
+\fig{CD4 v CD8, CD44 v CD25}
+\fig{\%s of CD4, CD8, DN, DP in each strain. How does NOD WT compare to NOD KO? How does B6 compare to FVB? How does NOD compare to controls?}
 \todo{analyse data to see whether it is normal or abnormal. This is a good control to give an indication of the overall condition of the thymus, preferably over time to see how it changes as mouse ages with normal physiological atrophy of the thymus}
+
+\subsection{The NOD thymus contains B cell development transcription factors}
+
+\fig{regular PCR looking for transcription factors (VPreB, Pax5, EBF, E2A, CXCL12)}
+
+\todo{qPCR of Pax5, Notch, EBF etc}
+\fig{qPCR results}
 
 \subsection{Conclusion}
 
 
 
 
-\section{There is potentially a population of cells expressing both T and B cell receptors in the NOD thymus}
+\section{Some RAG+ cells in the thymus express B and T cell markers}
+During analysis of data from previous experiments, it was noted that a large proportion of RAG+CD19+ cells in the NOD thymus, were also CD4+CD8+.
+This was of interest and was therefore investigated further.
 
-\subsection{A large proportion of RAG+CD19+ cells in 4 and 7 week old NOD thymus also express CD4 and CD8}
-An incidental finding whilst analysing data from the NOD-RAG-GFP mice looking for CD19+RAG+ cells in the thymus, showed that a large proportion of these cells were also expressing CD4 and CD8. \fig{add figure here showing gating LCs, SCs, RAG+, CD19+, CD4 v CD8}. 
-This finding was seen in NOD mice at both 4 and 7 weeks of age.
-The gating pattern is shown in \cref{fig:RAGposDP}
+\subsection{A large proportion of RAG+CD19+ cells in the NOD thymus express CD4 and CD8}
+
+\cref{fig:RAGCD19CD4CD8pos}
+
+Whilst looking for RAG+CD19+ developing B cells in the NOD thymus, analysis of these cells showed that they were also expressing CD4 and CD8. 
+This suggests that there are cells developing in the thymus, shown by the expression of RAG, that are not yet lineage committed and are expressing markers of both T and B cells.
+It could suggest that there is a mechanism by which T cells are becoming B cells or vice versa.
+The gating pattern used to look for these cells in the thymus and bone marrow of NOD WT and NOD KO is shown in \cref{fig:RAGposDP}.
+However, it was not known if this is normal during B cell development, therefore the bone marrow was used as a comparison to see if these cells existed there too, where B cells develop normally.
+Interestingly, there were no RAG+CD19+CD4+CD8+ cells seen in the bone marrow at all. 
+The comparison between a representative 4 week old NOD thymus and bone marrow is shown in \cref{subfig:BMvsThyRAGCD19DP}.
+The presence of these RAG+CD19+CD4+CD8+ cells in the thymus was consistent and seen in 4 week and 7 week old NOD thymi with group sizes of 4 or 5 mice in each age group. 
+The lack of these cells in the bone marrow suggests that they may be thymus-specific.
+However, whether or not the presence of these cells has any relation to the increased population of thymic B cells seen in the NOD mouse remains to be determined.
+One way of investigating this is to use non diabetic, control B6 mice.
+
+
+These cells are present in NOD mice at both 4 and 7 weeks of age and it was therefore investigated whether or not there was a significant difference in the percentages of these cells between the two age groups. 
+The bone marrow is also included in the figure as a comparison.
+The results of this comparison are shown in \fig{add a graph showing how the ages affect the presence of RAG+CD19+DP cells in the thymus and bone marrow}
 \todo{add some data/graph/statistics to show significance, whether there is a difference between the ages etc}
+
 
 \begin{figure}	
 	\begin{subfigure}{\textwidth}
-		\includegraphics[width=0.3\textwidth] {Figures/RAGposthy1241014.png}
-		\hfill	
-		\includegraphics[width=0.3\textwidth] {Figures/RAGCD19posthy1}		
-		\hfill	
-		\includegraphics[width=0.3\textwidth] {Figures/RAGCD19CD4CD8posthy1}
-		\caption{Final testing}
+		\includegraphics[width=\textwidth] {Figures/CD19+RAG+DPgating.png}
+		\caption{Figure showing the gating pattern when looking for RAG+CD19+CD4+CD8+ cells in a NOD thymus.}
 		\label{fig:RAGposDP}
 	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+	\includegraphics[width=0.5\textwidth]{Figures/Thymus1RAGCD19DP.png}
+	\includegraphics[width=0.5\textwidth]{Figures/BM1RAGCD19DP.png}
+	\caption{Representative plots to show the difference in presence of CD19+RAG+CD4+CD8+ cells in the NOD thymus and bone marrow}
+	\label{subfig:BMvsThyRAGCD19DP}
+	\end{subfigure}
+\caption{This figure is about RAG+CD19+CD4+CD8+ cells in the NOD thymus of 4 and 7 week old NOD mice}
+\label{fig:RAGCD19CD4CD8pos}
 \end{figure}
 
 
 
-\subsection{Elevated level of CD8 on CD19+ cells in the thymus}
+\subsection{RAG+IgM+TcRb+ cell presence in the NOD thymus}
+It was then also investigated as to whether the developing cells expressing RAG, CD19, CD4 and CD8 could potentially progress to being RAG+CD19+IgM+TcR+ and therefore express mature T and B cell markers.
+Data for this is shown in figure \cref{fig:RAGIgMTcRpos}
+
+\begin{figure}
+	\begin{subfigure}{\textwidth}
+	\includegraphics[width=0.5\textwidth]{Figures/Thy3RAGIgMTcR.png}
+	\includegraphics[width=0.5\textwidth]{Figures/BMRAGIgMTcR.png}
+	\caption{Representative thymus and bone marrow analysis looking for RAG+IgM+TcR+ cells}
+	\label{subfig:BMvThyRAGIgMTcR}
+	\end{subfigure}
+\caption{This figure is about RAG+IgM+TcR+ cells in the NOD BM and thymus. 5 thymi and one bone marrow were analysed from 5 11week old NOD mice.}
+\label{fig:RAGIgMTcRpos}
+\end{figure}
 
 \subsection{IgM+TcRb+ cell presence}
-Following on from this finding, the whole thymus was then interrogated for cells which were expressing both T and B cell receptors, in this case TcRb and IgM. 
-This was done by carrying out flow cytometry on thymus samples from NOD mice of various ages.
-
-
+Following on from this, the aim was to see if these cells develop further and begin to express both a T and B cell receptor, in this case, TcRb and IgM.
+To do this, flow cytometry was carried out on thymic samples from NOD, NOD KO and B6 mice using antibodies specific to TcRb and IgM.
+This time, the spleen was also investigated alongside the thymus and bone marrow to provide another comparison and to widen the search for IgM+TcR+ cells.
+Mice of various different ages were investigated and the results are shown in \fig{figure showing TcR+IgM+ cells (or not!)} .
+Isotype controls were also carried out to help with determining whether cells were expressing TcR or IgM or not.
+The data from the isotype controls in shown in \fig{isotype controls}.
 \todo{include isotype control data}
 
-\subsection{RAG+IgM+TcRb+ cell presence in the NOD thymus}
 
 \subsection{Conclusion}
+Following on from the flow cytometric data acquired so far relating to the presence of IgM+TcR+ cells in the NOD thymus, it appears that these cells do not exist. 
+It may be that the RAG+CD19+CD4+CD8+ cells seen in the thymus are early cells developing in the thymus which are not yet totally committed to one lineage and are expressing markers of multiple lineages, hence the T and B cell markers.
+However, it would be beneficial to carry out investigation at the protein level, for example, Western Blotting, in order to see if more mature cells are expressing T and B cell receptors.
 
 
 
@@ -138,7 +205,12 @@ This tissue was therefore included to look at the status of the lymph node to co
 Whereas the PLN should be inflamed in T1D, the lateral axillary lymph node should not and can therefore show that any inflammation in the PLN is localised and is not as a result of inflammation throughout the body.
 \end{itemize}
 
+\todo{Questions to ask of data: 1) Where do B cells go? 2)Do the B cells survive? 3) Is GFP a good tracker? 4) Do you get B cells in the CD19- recipients? 5) DO CD19+ cells increase in KOs after transfer? Can't tell as can't differentiate between donor and recipient) 6) Is there new GFP activation after transfer?}
+
 \subsection{Autoantibody production}
+\todo{analyse the FACS of the stroma to look at the purity of stromal cells that will have been put on the microscope slide}
+\fig{Representative FACS showing stromal purity}
+\fig{Pictures of histology showing serum treated and control PBS treated slides}
 
 \subsection{Conclusion}
 
