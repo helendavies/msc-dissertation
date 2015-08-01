@@ -28,8 +28,49 @@ Each will be discussed in the relevant sections below.
 
 \subsection{There are pro and pre B cells present in the NOD thymus}
 
+
+As mentioned previously, following commitment to the B cell lineage, B cells develop through different developmental stages.
+The first is the CD19+CD43+IgM- pro B cell stage.
+Following this, IgM heavy chain rearrangement begins and the developing B cells produce an IgM heavy chain. 
+They can then progress to the CD19+CD43-IgM- pre B cell stage.
+Finally, in the bone marrow, B cells produce a fully functioning B cell receptor (IgM) and are then a CD19+CD43-IgM+ immature B cell.
+These immature B cells then move to the spleen to finish their development and become mature B cells.
+
+
+\subsection{Developing B cells in the thymus express RAG}
+
 Interestingly, of the CD19+ cells present in the NOD and B6 mice, although the majority are mature IgM+ B cells, there are also populations of developing B cells at the pro and pre B cell stages.
-This gives the impression that B cells are developing within the thymus rather than solely migrating there in the mature state. \fig{Add figure showing pro and pre B cells}
+This gives the impression that B cells are developing within the thymus rather than migrating there and warrants further investigation. \fig{Add figure showing pro and pre B cells}
+
+To try and identify whether or not pro and pre B cells are developing within the thymus rather than migrating there, the expression of RAG in these developing B cells was investigated.
+To do this, a NOD-RAG-GFP reporter mouse was used as this mouse produces GFP when RAG is being expressed.
+GFP shows up on flow cytometry therefore it is a useful tool for investigating B cell development.
+RAG expression is crucial during B cell development as it allows the rearrangement of the IgM heavy chain and thus allows the progression from pro to pre B cell stage.
+
+Thymi and bone marrow from NOD-RAG-GFP mice of 4, 7 and 11 weeks of age were used for flow cytometry to look for the present of RAG+CD19+ cells.
+Positive RAG expression in CD19+IgM- cells would indicate active development.
+As shown in \fig{add figure showing RAG high, low, neg in CD19+ cells in thymus}
+
+The intensity of the RAG signal is important for determining the liklihood of active development.
+Since GFP is transcribed at the same time as RAG, it initially has a very high intensity.
+However, because GFP is a protein it takes a while to degrade and has a half life of ~54hrs.
+This means that only the CD19+RAGhigh population can be taken as actively expressing RAG and therefore GFP.
+GFPlow cells will have deactivated RAG and therefore the GFP signal will be decaying.
+Setting the gates for RAG\textsuperscript{high} and RAG\textsuperscript{low} populations was done by looking at the RAG levels in developing B cells in the bone marrow.
+
+As shown by the \fig{figure of RAG high, low etc} and graph \fig{graph showing RAG high low neg over different ages}, the frequencies of CD19+RAG\textsuperscript{high} \todo{look at how frequencies of CD19+RAG+ cells change with age}. This suggests that... \todo{explanation?}
+
+
+
+
+
+\fig{Pro and Pre cells present in the NOD thymus. Show a plot of IgM vs CD43 and label which quadrants are pro and pre.}
+\fig{\%s of pro and pre in different ages and strains}
+\fig{ratios of pro:pre in thymus vs BM. any difference in different strains?}
+
+
+
+\subsection{B cell development is dependent on the presence of a mature B cell}
 
 Following on from this finding, B cell KO NOD mice thymi were also investigated.
 In these mice, as stated in \toref{wherever I talked about KO mice}, these mice are unable to rearrange their IgM heavy chain and therefore cannot progress beyond the pro B cell stage. 
@@ -42,8 +83,53 @@ This gives the impression that a mature B cell is important for allowing the enh
 Moreover, the need for a mature B cell is more important to increase thymic pro B cells than whatever mechanism is present in the NOD mouse strain that increases the intrathymic pro B cell presence.
 The investigation was carried out in a blind trial so that the strains of mice were not known during analysis in order to avoid bias in the results.
 
+\fig{Difference in pro B cells in WT, KO and B6.}
+\todo{suggest a transfer experiment/chimera formation to test whether transfer of mature B cells into a KO mouse increases the population of pro B cells in the KO thymus}
 
 
+
+\subsection{Early B cell progenitors are present in the NOD thymus}
+
+\subsubsection{Introduction to progenitor work}
+
+Given the discrepency between the NOD mouse and the B6 control mouse in terms of B cell numbers in the thymus, it was decided that investigation into the presence of B cell progenitors in the thymus would be beneficial.
+As mentioned in , the progenitor populations giving rise to T and B cells is controversial and there does not appear to be a proven pathway for the development of either.
+This leaves a number of questions relating to how these populations can be investigated.
+However, literature to date suggests developmental pathways for each and it is this information which has driven the investigation into thymic B cell progenitors.
+
+Of particular interest in this project, information relating to the earliest B cell committed progenitor was sought.
+There is much research pertaining to B cell development in the bone marrow and the factors driving the development but it remains a highly complex area.
+The matter was complicated further in this project due to the fact B cell development was being investigated in the thymus rather than the bone marrow.
+This means that research into this area was based on previous research in the bone marrow and how well B cell development in the bone marrow is mirrored by potential development in the thymus remains unknown.
+
+ However, assuming that B cell development in the thymus was to follow the same pathway as that seen in the bone marrow, the pattern of development should follow the course shown below.
+
+ 
+\todo{Diagram of B cell development. Show HSCs through MPPs to ALPs/BLPs etc}
+
+
+ It is not totally clear as to what phenotype the earliest B cell committed progenitor has. 
+ However, there is evidence that expression of Ly6D correlates with almost total B cell restriction \toref{Inlay}.
+ With this is mind, it was possible to use flow cytometry with an appropriate mix of antibodies to investigate the presence of Ly6D+ progenitors in both the thymus and bone marrow of NOD mouse.
+However, Ly6D alone is not sufficient to indicate B cell restriction. 
+It is also seen that developing T cells express Ly6D and therefore other markers are required to show which progenitors are likely to B cell restricted rather than T cell restricted.
+The markers used alongside Ly6D therefore were Sca-1, c-kit, IL-7Ra and Flt3. 
+The reasons for using each of these antibodies are outlined below.
+\begin{itemize}
+\item Sca-1 - 
+\item c-kit - This is expressed at greater levels on T cells compared to B cells therefore in gating of data looking for B cell progenitors, care was taken to not include c-kit high cells as these are likely to B of T cell lineage \toref{Find a reference for this} 
+\item IL-7Ra - 
+\item Flt3 - The expression of Flt3 on progenitors denotes the retention of B and T cell lineage potential. Therefore, when looking for progenitors that have the potenital to become either a T or B cell, the expression of Flt3 shows that it is not yet committed to the T cell lineage.
+\toref{Karsunky2008}
+\item Ly6D - \toref{Inlay, Mansson, Zhang2013}
+\end{itemize}
+
+
+
+
+The thymus is the site of T cell development and education.
+The progenitors for T cells, however, are not totally understood. 
+There is belief that T cells originate from CLPs which have migrated from the bone marrow to the thymus where they receive the correct signals which cause them to differentiate into T cells
 \subsection{Magnetic-assisted cell sorting optimisation}
 
 Due to the small size of progenitor populations in comparison to mature cell populations in the thymus, it was first necessary to deplete the thymus of the majority of mature cells before looking for progenitors.
@@ -79,49 +165,7 @@ However, while this method gave a very pure sample with very few mature cells re
 Since the point of the depletion was just to reduce the quantity of mature cells so that the progenitor populations could be seen by flow cytometry, it was more important for the experiment that there was a lot of cells to interrogate rather than them being very pure.
 Therefore, Qiagen beads were tried and as shown, \fig{figure of Qiagen depletion}, while the purity was not as good as the Miltenyi beads \todo{efficiency of Qiagen beads}, the yield was much improved.
 This was a better balance for the experiment, therefore, Qiagen beads were used.
-%\todo{insert a table showing the efficiencies of each depletion method}
-
-\subsection{Early B cell progenitors are present in the NOD thymus}
-
-\subsubsection{Introduction to progenitor work}
-
-Given the discrepency between the NOD mouse and the B6 control mouse in terms of B cell numbers in the thymus, it was decided that investigation into the presence of B cell progenitors in the thymus would be beneficial.
-As mentioned in , the progenitor populations giving rise to T and B cells is controversial and there does not appear to be a proven pathway for the development of either.
-This leaves a number of questions relating to how these populations can be investigated.
-However, literature to date suggests developmental pathways for each and it is this information which has driven the investigation into thymic B cell progenitors.
-
-Of particular interest in this project, information relating to the earliest B cell committed progenitor was sought.
-There is much research pertaining to B cell development in the bone marrow and the factors driving the development but it remains a highly complex area.
-The matter was complicated further in this project due to the fact B cell development was being investigated in the thymus rather than the bone marrow.
-This means that research into this area was based on previous research in the bone marrow and how well B cell development in the bone marrow is mirrored by potential development in the thymus remains unknown.
-
- However, assuming that B cell development in the thymus was to follow the same pathway as that seen in the bone marrow, the pattern of development should follow the course shown below.
- 
-\todo{Diagram of B cell development. Show HSCs through MPPs to ALPs/BLPs etc}
-
-
- It is not totally clear as to what phenotype the earliest B cell committed progenitor has. 
- However, there is evidence that expression of Ly6D correlates with almost total B cell restriction \toref{Inlay}.
- With this is mind, it was possible to use flow cytometry with an appropriate mix of antibodies to investigate the presence of Ly6D+ progenitors in both the thymus and bone marrow of NOD mouse.
-However, Ly6D alone is not sufficient to indicate B cell restriction. 
-It is also seen that developing T cells express Ly6D and therefore other markers are required to show which progenitors are likely to B cell restricted rather than T cell restricted.
-The markers used alongside Ly6D therefore were Sca-1, c-kit, IL-7Ra and Flt3. 
-The reasons for using each of these antibodies are outlined below.
-\begin{itemize}
-\item Sca-1 - 
-\item c-kit - This is expressed at greater levels on T cells compared to B cells therefore in gating of data looking for B cell progenitors, care was taken to not include c-kit high cells as these are likely to B of T cell lineage \toref{Find a reference for this} 
-\item IL-7Ra - 
-\item Flt3 - The expression of Flt3 on progenitors denotes the retention of B and T cell lineage potential. Therefore, when looking for progenitors that have the potenital to become either a T or B cell, the expression of Flt3 shows that it is not yet committed to the T cell lineage.
-\toref{Karsunky2008}
-\item Ly6D - \toref{Inlay, Mansson, Zhang2013}
-\end{itemize}
-
-
-
-
-The thymus is the site of T cell development and education.
-The progenitors for T cells, however, are not totally understood. 
-There is belief that T cells originate from CLPs which have migrated from the bone marrow to the thymus where they receive the correct signals which cause them to differentiate into T cells
+\todo{insert a table showing the efficiencies of each depletion method}
 
 \todo{analyse results comparing NOD/KO/B6 data to see if the presence of BLPs is normal in NOD}
 Once the method of lineage depletion was decided on, it was then possible to move forward to investigating the early progenitor populations in NOD, NOD KO and B6 thymi.
@@ -133,31 +177,24 @@ BLPs are thought to be the first cell committed to the B cell lineage therefore 
 \fig{?Ratios of BLP:ALP in BM and thymus}
 
 
-\subsection{Pro and Pre B cells are present in the NOD thymus}
-
-\fig{Pro and Pre cells present in the NOD thymus. Show a plot of IgM vs CD43 and label which quadrants are pro and pre.}
-\fig{\%s of pro and pre in different ages and strains}
-\fig{ratios of pro:pre in thymus vs BM. any difference in different strains?}
-
-
-\subsection{CD19+ RAG+ B cells are seen in the NOD thymus}
-
-\fig{Gating patterns: LCs, SCs, CD19+, RAG high low neg etc}
-\fig{\% of RAG high low neg at different ages}
-
-
-\subsection{B cell development is dependent on the presence of a mature B cell}
-
-\fig{Difference in \% or numbers of pro B cells in NOD vs KO. Try gating out IgM+ cells in NOD and then looking at CD19\%. That way \%s should only be affected by differences in pro and pre B cell populations.}
-\todo{suggest a transfer experiment/chimera formation to test whether transfer of mature B cells into a KO mouse increases the population of pro B cells in the KO thymus}
-
-
 \subsection{T cell development looks normal/abnormal in NOD mouse compared to control}
 \fig{CD4 v CD8, CD44 v CD25}
 \fig{\%s of CD4, CD8, DN, DP in each strain. How does NOD WT compare to NOD KO? How does B6 compare to FVB? How does NOD compare to controls?}
 \todo{analyse data to see whether it is normal or abnormal. This is a good control to give an indication of the overall condition of the thymus, preferably over time to see how it changes as mouse ages with normal physiological atrophy of the thymus}
 
 \subsection{The NOD thymus contains B cell development transcription factors}
+
+If B cells are developing within the thymus, this begs the question as to whether the NOD thymus is providing an environment more conducive to B cell development compared to nondiabetic controls. 
+To invesitgate this, primers were designed that were specific for B cell development factors such as E2A, EBF, Pax5, VPreB and CXCL12.
+\todo{look in Hagman2006, Welinder2011, Mansson2008, Cobaleda2007, Radtke2013, Riley2013, Tokoyoda2004 for TF info}.
+
+To date, only regular PCR has been carried out to compare whether or not B cell development transcription factors are present in the NOD bone marrow and thymus.
+Since normal B cell development occurs in the bone marrow, these transcription factors would be expected there and indeed they were seen there, as shown in \fig{TF gels}. 
+Interestingly, all the genes, besides CXCL12, were also present in the NOD thymus too.
+This indicates that the thymic environment may also be allowing B cell development.
+The lack of CXCL12 in the thymus is not a surprising result as it is a cytokine responsible for holding developing B cells in the bone marrow niche and therefore, may be more bone marrow specific rather than B cell specific.
+
+
 
 \fig{regular PCR looking for transcription factors (VPreB, Pax5, EBF, E2A, CXCL12)}
 
@@ -166,8 +203,18 @@ BLPs are thought to be the first cell committed to the B cell lineage therefore 
 
 \subsection{Conclusion}
 
+Data to date has so far given evidence that B cells are developing intrathymically in the NOD mouse.
+This is shown by pro and pre B cells being present suggesting that developing B cells are present in the thymus.
+Further to this, some of these cells show evidence of active RAG expression, indicating that they are actively developing within the thymus rather than having migrated there following premature release from the bone marrow.
 
+There is also evidence to suggest that B lineage committed early progenitors, such as BLPs, are present within the NOD thymus. 
+This also gives the impression that B cells are developing from progenitors within the thymus as these are believed to be the progenitors that pro B cells are derived from.
+\todo{Add conclusion on differences in frequencies of BLPs in NOD/B6/KO etc to see if any difference}
 
+Finally, it appears that the NOD thymus may be providing factors that are allowing, if not driving, B cell development.
+However, it remains to be seen whether this is a normal finding in nondiabetic controls also.
+It would also be useful to carry out quantitative PCR of B cell development factors to see the relative levels between the thymus and bone marrow and across strains of mice.
+This could suggest whether or not it may be a thymic abnormality in the NOD mouse which is providing a particularly good environment for B cell development compared to other strains of mice.
 
 \section{Some RAG+ cells in the thymus express B and T cell markers}
 During analysis of data from previous experiments, it was noted that a large proportion of RAG+CD19+ cells in the NOD thymus, were also CD4+CD8+.
