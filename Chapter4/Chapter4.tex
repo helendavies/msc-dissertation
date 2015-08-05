@@ -36,11 +36,13 @@ They can then progress to the CD19+CD43-IgM- pre B cell stage.
 Finally, in the bone marrow, B cells produce a fully functioning B cell receptor (IgM) and are then a CD19+CD43-IgM+ immature B cell.
 These immature B cells then move to the spleen to finish their development and become mature B cells.
 
+Interestingly, of the CD19+ cells present in the NOD and B6 mice, although the majority are mature IgM+ B cells, there are also populations of developing B cells at the pro and pre B cell stages.
+This gives the impression that B cells are developing within the thymus rather than migrating there and warrants further investigation. \fig{Add figure showing pro and pre B cells}
+
+
 
 \subsection{Developing B cells in the thymus express RAG}
 
-Interestingly, of the CD19+ cells present in the NOD and B6 mice, although the majority are mature IgM+ B cells, there are also populations of developing B cells at the pro and pre B cell stages.
-This gives the impression that B cells are developing within the thymus rather than migrating there and warrants further investigation. \fig{Add figure showing pro and pre B cells}
 
 To try and identify whether or not pro and pre B cells are developing within the thymus rather than migrating there, the expression of RAG in these developing B cells was investigated.
 To do this, a NOD-RAG-GFP reporter mouse was used as this mouse produces GFP when RAG is being expressed.
@@ -218,15 +220,32 @@ This could suggest whether or not it may be a thymic abnormality in the NOD mous
 
 \section{Some RAG+ cells in the thymus express B and T cell markers}
 During analysis of data from previous experiments, it was noted that a large proportion of RAG+CD19+ cells in the NOD thymus, were also CD4+CD8+.
-This was of interest and was therefore investigated further.
+This was of interest and was therefore investigated further as it indicated there is a possibility for cells with markers of both T and B cells.
 
 \subsection{A large proportion of RAG+CD19+ cells in the NOD thymus express CD4 and CD8}
 
 \cref{fig:RAGCD19CD4CD8pos}
 
-Whilst looking for RAG+CD19+ developing B cells in the NOD thymus, analysis of these cells showed that they were also expressing CD4 and CD8. 
-This suggests that there are cells developing in the thymus, shown by the expression of RAG, that are not yet lineage committed and are expressing markers of both T and B cells.
-It could suggest that there is a mechanism by which T cells are becoming B cells or vice versa.
+RAG acitvation occurs both in developing T and B cells.
+It's activation allows the rearrangement of either the T cell receptor (TcR) in T cells or the B cell receptor (IgM).
+Flow cytometry of NOD-RAG-GFP reporter mice thymi therefore reveals the RAG activation status indirectly via the production of GFP.
+How recently the RAG was activated in a cell can be indicated by the intensity of the GFP signal as GFP degrades over time.
+This means that active transcription of RAG/GFP will have a very bright signal, whereas cells which have deactivated RAG will have diminishing levels of GFP and therefore the signal will be less bright.
+
+Interestingly, whilst interrogating NOD thymi for the presence of CD19+RAG+ cells, it was noted that of these cells, a large percentage of them were also CD4+CD8+.
+This was an interesting finding as it suggests there may be a point where cells are not yet fully lineage committed and are expressing markers of both T (CD4, CD8) and B (CD19) cells.
+These cells all have a high GFP signal and therefore are actively transcribing the protein, indicating that RAG is also active.
+This suggests that these cells are expressing markers of both T and B cells as well as rearranging a receptor.
+
+Unfortunately, due to lack of control mice of the correct age, it is not possible to say whether or not this is a normal pysiological process seen in nondiabetic control mice as well as NOD mice or whether it is unique to the NOD.
+However, due to normal B cell development occurring in the bone marrow, the thymus and bone marrow were compared for presence of RAG+CD19+CD4+CD8+ cells.
+As shown in \fig{figure of BM lack of RAGCD19CD4CD8 pos cells}, none of these cells were seen in the bone marrow. 
+This gives the impression that they are not a normal part of B cell development.
+
+This finding could suggest an alternative mechanism by which B cells are increased in the NOD thymus, and that is that a cell is beginning to commit to the T cell lineage, then at some point receiving a signal which is causing it to begin to switch lineages and start expressing B cell markers.
+This potential redifferentiation could explain the existence of both B and T cell markers on the cells. 
+However, further research would be required to explore this further. \todo{think of expt}.
+
 The gating pattern used to look for these cells in the thymus and bone marrow of NOD WT and NOD KO is shown in \cref{fig:RAGposDP}.
 However, it was not known if this is normal during B cell development, therefore the bone marrow was used as a comparison to see if these cells existed there too, where B cells develop normally.
 Interestingly, there were no RAG+CD19+CD4+CD8+ cells seen in the bone marrow at all. 
@@ -262,6 +281,7 @@ The results of this comparison are shown in \fig{add a graph showing how the age
 
 
 \subsection{RAG+IgM+TcRb+ cell presence in the NOD thymus}
+
 It was then also investigated as to whether the developing cells expressing RAG, CD19, CD4 and CD8 could potentially progress to being RAG+CD19+IgM+TcR+ and therefore express mature T and B cell markers.
 Data for this is shown in figure \cref{fig:RAGIgMTcRpos}
 
@@ -277,9 +297,10 @@ Data for this is shown in figure \cref{fig:RAGIgMTcRpos}
 \end{figure}
 
 \subsection{IgM+TcRb+ cell presence}
-Following on from this, the aim was to see if these cells develop further and begin to express both a T and B cell receptor, in this case, TcRb and IgM.
+
+Whether or not there are mature cells present in other tissues in the body that are expressing TcR and IgM was then explored.
 To do this, flow cytometry was carried out on thymic samples from NOD, NOD KO and B6 mice using antibodies specific to TcRb and IgM.
-This time, the spleen was also investigated alongside the thymus and bone marrow to provide another comparison and to widen the search for IgM+TcR+ cells.
+This time, the spleen was also investigated alongside the thymus and bone marrow to provide another comparison and to widen the search for IgM+TcR+ cells irrelevant of RAG expression.
 Mice of various different ages were investigated and the results are shown in \fig{figure showing TcR+IgM+ cells (or not!)} .
 Isotype controls were also carried out to help with determining whether cells were expressing TcR or IgM or not.
 The data from the isotype controls in shown in \fig{isotype controls}.
@@ -297,19 +318,27 @@ However, it would be beneficial to carry out investigation at the protein level,
 \section{Potential contribution of thymic B cells to T1D}
 
 \subsection{Pilot study to track movement/homing of thymic B cells on transfer into recipient mice}
+
 \todo{where B cells traffic to could give indication of their role in T1D. Also, use of GFP as  a marker. However, numbers were very small so analysis difficult. Needs to be done again in the future. Comment on whether it may be possible and what would need to change to make it work. Also decide on which transfer experiment I am referring to.. NOD to KO or GFP to NOD...}
-In order to look at the potential impact that thymic B cells may be having on the pathogenesis of T1D, a pilot study looking at the migration of donor thymic B cells following intravenous injection into recipient mice was set up. 
-At time points of 7 and 11 days post injection, recipient mice were sacrificed and their thymus, spleen, bone marrow, pancreas, pancreatic lymph node and lateral axillary lymph node were all analysed by flow cytometry.
-The tissues to analyse were chosen for the following reasons:
+
+As little is known about the function of thymic B cells, a pilot study was set up with the aim of investigating the migration/homing abilities of thymic cells, including B cells when injected intravenously into recipient mice.
+The aims of the experiments were to see whether B cells and their progenitors derived from a donor NOD thymus had a preference for migrating back to the thymus following injection or whether they went elsewhere.
+By understanding the movements of thymic B cells and their preferential home tissues, it may give an indication as to what, if any, their contribution is to T1D pathogenesis.
+
+\fig{Showing the set up of expt} shows how the experiments were conducted. 
+Two donor thymi were taken and split into CD19+ and CD19- fractions using MACS.
+CD19+ fractions from both donor were then pooled and the same was done for the CD19- fractions.
+Four recipient mice were then injected with either CD19+ or CD19- thymic cells from the donors.
+After specified time points, the recipient mice were sacrificed and their tissues were analysed.
+The tissues taken for analysis were as follows:
 \begin{itemize}
-\item Thymus - The thymus is the tissue where the donor cells were taken therefore it was included in analysis to see if the donor cells would migrate back to the thymus in the recipient cells.
-This would give the impression that thymic B cells have specific properties which allow them to traffic back to the thymus.
-For example, they may have specific cytokine sensitivity which results in being able to home back to the thymus following transfer.
+\item Thymus - The origin of the donor cells. It was analysed in the recipient to see if the donor cells would migrate to the recipient thymus giving the impression that thymic B cells have specific properties which allow them to traffic back to the thymus.
+For example, they may have specific cytokine sensitivity which results in being able to home back to the thymus, even following intravenous transfer.
 \item Spleen - The spleen was included for analysis as this is the normal site of B cell maturation.
 Therefore it was of interest to see if thymic derived donor cells would move here like conventional B cells do to finish development.
-\item Bone marrow - The bone marrow is the normal site of B cell development and therefore was included to see if the developing donor B cells would preferentially to here to develop in the same way as conventional B cells
+\item Bone marrow - The bone marrow is the normal site of B cell development and therefore was included to see if the developing donor B cells would preferentially migrate here to develop in the same way as conventional B cells
 \item Pancreas - The pancreas contains the Islets of Langerhans which are destroyed in T1D through T and B cell mediated attack.
-Pancreatic tissue was therefore analysed to see if thymic B cells migrate to here preferentially upon transfer into recipient mice.
+It is the site of infiltration therefore it was included in analysis to see if thymic B cells were part of the infiltration process.
 If so, it may indicate that thymic B cells could have a direct role in the pathogenesis of the disease.
 \item Pancreatic lymph node - The PLN is where antigen-presenting cells move to from the pancreas in order to activate T cells.
 In T1D, APCs move from the pancreatic islets to the PLN carrying islet antigens and therefore the PLN is in an inflammatory state.
@@ -318,7 +347,190 @@ This tissue was therefore included to look at the status of the lymph node to co
 Whereas the PLN should be inflamed in T1D, the lateral axillary lymph node should not and can therefore show that any inflammation in the PLN is localised and is not as a result of inflammation throughout the body.
 \end{itemize}
 
+
+
 \todo{Questions to ask of data: 1) Where do B cells go? 2)Do the B cells survive? 3) Is GFP a good tracker? 4) Do you get B cells in the CD19- recipients? 5) DO CD19+ cells increase in KOs after transfer? Can't tell as can't differentiate between donor and recipient) 6) Is there new GFP activation after transfer?}
+
+\subsubsection{NOD-RAG-GFP donor thymic cells, NOD WT recipients}
+
+The aim of this experiment was to see where development of B cells occurs in the recipient cells and to see whether or not the presence/absence of CD19+ cells has on the ability of early CD19- progenitor B cells to develop.
+It was also an opportunity to see whether GFP is a useful tool for tracking transferred cells or whether the half life is not long enough to track transferred cells for a useful amount of time in the recipient.
+
+\paragraph{Are there any GFP+ cells seen in the recipients?}
+
+Analysis of the recipient mice at both 4 and 7 days post transfer revealed that there are GFP+ cells seen in the recipient mice at both time points.
+In particular, GFP+ cells at both time points seem to migrate to the bone marrow, spleen and control lymph node. 
+Some cells migrate to the thymus but only in the CD19- recipients and the population seen there is of very low frequency.
+
+Analysis was mainly concerned with GFP+CD19+IgM+ cell presence.
+These cells were looked for in each of the recipient tissues mentioned above.
+However, only some tissues seemed to differ significantly from the control and these were the spleen, thymus and bone marrow.
+All the other tissues appeared to be very similar to the control NOD mouse included for analysis.
+
+Bone Marrow
+
+4 days:
+In this tissue, the presence of CD19+ cells is increased in the CD19+ recipient and the CD19- recipient in comparison to the NOD WT control.
+This increase is further accentuated in the CD19+ recipient.
+This could suggest that transferred CD19+ cells are moving to the bone marrow.
+Contaminating CD19+ cells in the CD19- fraction could account for the small increase in CD19+ population in the CD19- recipient.
+However, in terms of GFP presence, it seems that the levels of GFP in the B cells is negligable compared to the control WT NOD mouse.
+This suggests that the trasferred cells that may be increasing the CD19+ populations in the bone marrow are mature prior to entering the recipient bone marrow, shown by the lack of GFP.
+
+There are also no more CD19+RAG+ cells in the recipient mice compared to the control mice suggesting that there are no actively developing transferred B cells in the bone marrow.
+This could indicate that either B cells are not able to develop following transfer or that they are not doing so in the bone marrow 4 days post transfer.
+
+7 days:
+After 7 days, CD19+ cells are increased in both recipients. 
+Unlike at 4 days, the increase is similar in both recipients.
+GFP is also increased compared to the NOD control.
+
+Spleen
+
+4 days:
+In this tissue, a similar picture is seen compared to the bone marrow. 
+Again, CD19+ cells are increased in both the recipients compared to the NOD control but the GFP is only slightly increased, if at all.
+
+7 days:
+Again at 7 days, the frequency of CD19+RAG+ cells is increased, though the frequency of RAG+ cells in this population is not increased compared to the control.
+
+
+Thymus
+
+4 days:
+In this tissue the frequency of CD19+ cells is increased in the CD19- recipient and decreased in the CD19+ recipient.
+There is more GFP in both recipients than the NOD but the most is in the CD19+ recipient.
+
+7 days:
+Very similar picture to the 4 day time point.
+However, the frequency of B cells is similar in both recipients and both similar/lower than the frequency in the control.
+The levels of GFP are increased though in both recipients.
+
+
+The pancreas, control and pancreatic LNs showed no difference to the control NOD mouse suggesting that they were affected very little by the transferred cells. 
+The only difference was an increase in B cells in the control lymph node at the 7 day time point, but no increase in GFP+ cells.
+
+
+
+Bone marrow 
+
+
+CD19+ recipients had GFP+ cells at both 4 (0.128\%) and 7 (0.345\%) day time points. There were more at the 7 day time points. Both only had RAG low cells, no RAG high populations.
+At 4 days, 60\% were CD19+ and of these, ~60\% were IgM+.
+At 7 days, 85\% were CD19+ and of these, ~7\% were IgM+
+The lack of any RAG high cells suggests that no transferred B cell progenitors are preferentially moving to the BM to develop.
+
+Cd19- recipients appeared to have GFP+ cells at both the 4 (0.149\%) and 7 (0.274\%) day time points. If anything, there is a bigger frequency of GFP+ cells at 7 days PT.
+However, at 4 days there are 2 populations, one that is RAG high which consists of CD19- cells, and a larger one that is RAG low, of which ~60\% are CD19+, of which ~50\% are IgM+.
+At 7 days there were no RAG high cells, just a population of RAG low cells of which ~77\% were CD19+ and of these, only 29\% were IgM+.
+This gives the impression that very little RAG activity is occurring following transfer as there are no RAG high cells after 7 days.
+This suggests that any B cell progenitors that were transferred into the recipients have not started rearranging their BcR there.
+Any RAGlow CD19+ cells have already rearranged their receptors prior to this time point which accounts for the low RAG level.
+
+Both recipients had GFP, more at 7 days.
+GFP low cells - 4d both ~60\% CD19+ and then ~50-60\% IgM+. 
+		 		7dCD19+ 85\% CD19+, 7\% IgM+.
+		 		7dCD19- ~77\% Cd19+, 29\% IgM+
+		 		7 day CD19- recipient also had RAG high population but were CD19-.
+		 		
+At both time points, both recipients looked similar in terms of RAG+ frequency. 
+At 4 days, both recipients looked very similar with similar frequencies of CD19+ and IgM+ cells too. 
+At 7 days, the frequency of RAG+CD19+ cells are similar but the frequency of IgM+ cells is much reduced at the 7 day time point in the CD19+ recipients.
+
+
+Spleen
+
+In CD19+ recipients there are GFP+ cells at both 4 (0.113) and 7 (0.292) days. The RAG intensity is medium. 
+At 4 days, at the higher levels of RAG, there are no CD19+ cells.
+In the RAG low population, about 45\% is CD19+ and of these, ~66\% are IgM+.
+AT 7 days, about 74\% are CD19+ and of these, ~85\% are IgM+.
+IgM+ RAG low cells are likely to be those cells that have rearranged prior to transfer...
+
+CD19- recipients. 
+Substantial GFP at 4 (0.739) and 7 (0.690) day time points. 
+RAG is medium/low intensity
+At 4 days, of GFP+ only ~10\% are CD19+, of these 66\% are IgM+
+At 7 days, of GFP+, ~10\% are CD19+, of these 67\% are IgM+
+
+Lower frequencies of GFP+CD19+ cells in CD19- recipients.
+In CD19+ recipients, CD19+ cells are at a bigger frequency at 7 days compared to 4 days.
+Similar frequencies of IgM+ cells amongst CD19+ cells in all except 7day CD19+ recipients
+
+
+Thymus 
+
+CD19+ recipient: No GFP+CD19+ cells in CD19+ recipient at 4 or 7 days days PT (no difference to WT control).
+Robust population of GFP+ cells seen but these are T cells.
+
+CD19+ recipient has no GFP+ cells at 4 days.
+At 7 days there is a population of RAG high cells (0.248\%) of which only ~7\% are CD19+. 
+The rest are DP T cells.
+
+CD19- recipient: None seen. Very few GFP+ cells at all.
+
+CD19- recipients have some (0.051-0.081\%) GFP+ cells - very few.
+At 4 days, all are CD19-
+At 7 days ~50\% are CD19+, all IgM-.
+However, when do whole thymus CD19 vs SS, it appears there are 3 populations. One larger CD19-, a CD19 low and CD19+.
+
+
+PLN
+
+CD19+ recipient: No GFP+ cells at all
+
+CD19- recipient: No GFP+ cells are in WT, 4 days or RAG control. 
+Some GFP+ cells (0.525\%) at 7 days. More than RAG control which suggests any cells there are transferred. All are CD19-.
+
+axLN
+
+CD19+ recipient: GFP at 4 (0.077) and 7 (0.067) days
+At 4 days all are CD19-
+At 7 days ~50\% are CD19+. However so few cells...
+
+CD19- recipients have GFP at 4 (0.77) and 7 (0.530) days. 
+Intensity high at 4 days.
+4 days all are CD19-
+7 days all are CD19-
+
+Pancreas
+
+CD19+ recipient: Some GFP+CD19+ cells at 4 days but none at 7 days. 
+Low GFP expression.
+Think they are all CD4+ T cells.
+
+CD19+ recipients. GFP at 4 days 0.408\%. Very few, if any 0.054\% at 7 days.
+4 days 54\% are Cd19+ are then 70\% are IgM+
+7 days too few cells.
+
+CD19- recipient: Possibly some GFP+CD19+ cells in 4 day but not 7day PT. Very few.
+Very small amount of GFP at each time point.
+At 4 days, ~50\% are CD19+ (but on 31 counts)
+At 7 days, too few cells
+
+
+However, due to the very small scale of the experiment, the results need to be viewed with caution.
+Further repeats on a larger scale would need to be carried out to increase the validity of the results.
+\paragraph{Where do GFP+ cells traffic to?}
+\paragraph{What phenotype do GFP+ cells have? Is it the same between the timepoints?}
+\paragraph{Are there any GFP+TcR+IgM+ cells?}
+\paragraph{Are there any GFP+CD19+ cells in the CD19- recipient?}
+
+
+\subsubsection{NOD WT donor thymic cells, NOD KO recipients}
+
+The aim of this experiment was to see if transferred B cells would be able to survive in the recipient KO mice.
+\citet{Serreze1998} has carried out a similar experiment in the past whereby NOD B cells were transferred into KO recipient mice.
+This experiment showed that the transferred B cells disappeared in the recipients between 6 and 15 days post transfer.
+It was suggested that the B cells were killed of by CTLs which had not developed tolerance to B cells having never been exposed to them.
+However, there is a major difference between previous experiments and mine, and that is that I used thymic B cells rather than splenic B cells.
+Since thymic B cells are not well understood, it was therefore thought that their ability to survive following transfer may be different to that of splenic B cells.
+\paragraph{Are there any B cells in the recipients?}
+\paragraph{Where are the B cells?}
+\paragraph{In the CD19- recipients, are there any pro B/B cells?}
+\paragraph{In the CD19+ recipients, are there any B cells?}
+\paragraph{Are there any IgM+TcR+ cells?}
+\paragraph{Are the numbers of pro B cells different between CD19+ and CD19- and control?}
+
 
 \subsection{Autoantibody production}
 \todo{analyse the FACS of the stroma to look at the purity of stromal cells that will have been put on the microscope slide}
