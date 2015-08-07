@@ -172,14 +172,43 @@ This could suggest two things.
 Firstly, B cells are developing from CD19- progenitors which were injected.
 Or, secondly, it may be that these B cells were contaminating B cells which were injected in the first place.
 
-\fig{B cells in spleen and thymus of CD19+ and CD19- recipients on 11.6.15 and contrast with lack in spleen and thymus on 15.6.15. Include frequencies to show difference between recipients}
+\begin{figure}
+	\begin{subfigure}{\textwidth}
+	\includegraphics[width=0.5\textwidth]{Figures/CD19posrecipspleen.png}
+	\includegraphics[width=0.5\textwidth]{Figures/CD19negrecipspleen.png}
+	\caption{Spleen of recipient mice showing frequency of CD19+IgM+ B cells at 7 and 11 days post transfer}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+	\includegraphics[width=0.5\textwidth]{Figures/CD19posrecipthy.png}
+	\includegraphics[width=0.5\textwidth]{Figures/CD19negrecipthy.png}
+	\caption{Bone marrow of recipients showing B cell presence/absence at 7 and 11 days post transfer}
+	\end{subfigure}
+\caption{Figure showing B cell presence/absence in Spleen and thymus over time}
+\end{figure}
+
+\todo{Proper figure legend. Comment on difference in frequencies in recipients}
 
 \subsubsection{Is there an effect on the number of pro B cells?}
 
 It was then wondered whether or not the recipient KO mice had an increase in pro B cells in the thymus due to the effect of transferred B cells.
-However, there was no difference in the frequency of pro B cells between the KO control and either recipient.
-This suggests that either the B cells required to increase the pro B cell population have to be endogenous to the mouse, or it may have to not be of thymic origin, or it may be that during transfer they lose the ability to help increase pro B cells, or it may be there weren't enough of them, or they may have been killed off before they could act... etc!
-\fig{Show difference in pro B cell frequencies between NOD control, KO control and recipients (LCs, SCs, CD43+, IgM-, CD19+)}
+However, it appears that there is no difference in the frequency of pro B cells between the KO control and either recipient (Data not shown).
+The results were also very varied and inconsistent therefore the group sizes would need to be increased significantly and the experiment repeated in order to obtain any meaningful results.
+
+Whilst the experiment was inconclusive, it was a good starting point in that the transfer itself worked well, all the recipients survived transfer and evidence of the transferred cells could be seen in the recipients at least 7 days post transplant.
+In order to improve the experiment in the future, it would be necessary to increase the group size.
+This would hopefully provide more robust data.
+It may also be necessary to move the time points for analysis forward, for example to 4 and 7 days post transfer as this could give a better picture of transferred B cell migration before they disappear.
+
+Following these improvements, if there still is truly no difference in pro B cell frequencies between NOD KO controls and recipients, it may suggest one of many possibilities as follows:
+\begin{itemize}
+\item The mature B cell(s) required to increase the pro B cell frequency must be endogenous to the host
+\item The mature B cell(s) must not be of thymic origin
+\item During transfer, the property required by a mature B cell to increase pro B cell frequency, is lost
+\item Transfer may not provide enough B cells to influence pro B cell presence in the thymus
+\item B cells may have been killed off in the recipient before they had a chance to influence the thymic pro B cell compartment
+\end{itemize}
+
+Clearly, more extensive research into this area is required to increase our understanding of the effects of a mature B cell on developing B cells in the thymus.
 
 \todo{Suggest possible ways of carrying on with this area - ie BM chimera etc due to transfer failure, see if can increase pro B cells in KO. ALso, KO B6 may be handy}
 
@@ -238,18 +267,18 @@ To start with, only one round of depletion was carried out which gave an efficie
 This efficiency was improved to \todo{add efficiency of 2 rounds} when two rounds of depletion were carried out \fig{2 round miltenyi lineage depletion. CD4-CD8-, CD19-CD11c-}. 
 \begin{figure}
 	\begin{subfigure}{\textwidth}
-	\includegraphics[width=\textwidth]{Figures/1rounddepletion.png}
+	\includegraphics[width=0.8\textwidth]{Figures/1rounddepletion.png}
 	\caption{One round of depletion using Miltenyi lineage depletion beads and columns}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}{\textwidth}
-	\includegraphics[width=0.3\textwidth]{Figures/2rounddepletion.png}
+	\begin{subfigure}{0.8\textwidth}
+	\includegraphics[width=\textwidth]{Figures/2rounddepletion.png}
 	\caption{Two rounds of depletion using Miltenyi lineage depletion beads and columns}
 	\label{subfig:2miltenyi}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}{\textwidth}
-	\includegraphics[width=0.3\textwidth] {Figures/Qiagenbeads.png}
+	\begin{subfigure}{0.8\textwidth}
+	\includegraphics[width=\textwidth] {Figures/Qiagenbeads.png}
 	\caption{Qiagen Beads}
 	\label{subfig:Qiagen}
 	\end{subfigure}
@@ -290,10 +319,35 @@ To invesitgate this, primers were designed that were specific for B cell develop
 \todo{look in Hagman2006, Welinder2011, Mansson2008, Cobaleda2007, Radtke2013, Riley2013, Tokoyoda2004 for TF info}.
 
 To date, only regular PCR has been carried out to compare whether or not B cell development transcription factors are present in the NOD bone marrow and thymus.
-Since normal B cell development occurs in the bone marrow, these transcription factors would be expected there and indeed they were seen there, as shown in \fig{TF gels}. 
+Since normal B cell development occurs in the bone marrow, these transcription factors would be expected there and indeed they were seen there, as shown in \cref{fig:gels}. 
 Interestingly, all the genes, besides CXCL12, were also present in the NOD thymus too.
 This indicates that the thymic environment may also be allowing B cell development.
 The lack of CXCL12 in the thymus is not a surprising result as it is a cytokine responsible for holding developing B cells in the bone marrow niche and therefore, may be more bone marrow specific rather than B cell specific.
+
+\begin{figure}
+	\begin{subfigure}{0.5\textwidth}
+	\includegraphics[width=0.5\textwidth]{Figures/E2A.pdf}
+	\caption{E2A}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+	\includegraphics[width=0.5\textwidth]{Figures/EBF.pdf}
+	\caption{EBF}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+	\includegraphics[width=0.5\textwidth]{Figures/sPax5.pdf}
+	\caption{Pax5}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+	\includegraphics[width=0.5\textwidth]{Figures/VPreB.pdf}
+	\caption{VPreB}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+	\includegraphics[width=0.5\textwidth]{Figures/CXCL12.pdf}
+	\caption{CXCL12}
+	\end{subfigure}
+\caption{Figure showing presence of all genes in bone marrow and thymus apart from CXCL12}
+\label{fig:gels}
+\end{figure}
 
 
 
@@ -363,17 +417,14 @@ The results of this comparison are shown in \fig{add a graph showing how the age
 
 \begin{figure}	
 	\begin{subfigure}{\textwidth}
-		\includegraphics[width=\textwidth] {Figures/CD19+RAG+DPgating.png}
-		\caption{Figure showing the gating pattern when looking for RAG+CD19+CD4+CD8+ cells in a NOD thymus.}
-		\label{fig:RAGposDP}
+	\includegraphics[width=\textwidth]{Figures/Thymus1RAGCD19DP.png}
+	\caption{Thymus}
 	\end{subfigure}
 	\begin{subfigure}{\textwidth}
-	\includegraphics[width=0.5\textwidth]{Figures/Thymus1RAGCD19DP.png}
-	\includegraphics[width=0.5\textwidth]{Figures/BM1RAGCD19DP.png}
-	\caption{Representative plots to show the difference in presence of CD19+RAG+CD4+CD8+ cells in the NOD thymus and bone marrow}
-	\label{subfig:BMvsThyRAGCD19DP}
+	\includegraphics[width=\textwidth]{Figures/BM1RAGCD19DP.png}
+	\caption{Bone marrow}
 	\end{subfigure}
-\caption{This figure is about RAG+CD19+CD4+CD8+ cells in the NOD thymus of 4 and 7 week old NOD mice}
+\caption{Representative plots to show the difference in presence of CD19+RAG+CD4+CD8+ cells in the NOD thymus and bone marrow}
 \label{fig:RAGCD19CD4CD8pos}
 \end{figure}
 
