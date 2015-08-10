@@ -62,6 +62,11 @@ Normally, this is done without activation of T cells and subsequent inflammation
 However, it may be possible that the turnover of cells may overwhelm macrophages and their ability to clear debris without causing inflammation.
 This could therefore release islet antigens and cause activation of T cells following antigen presentation.
 
+Another possibility is that a childhood illness affecting the pancreas may cause release of islet antigen in an inflammatory environment.
+This would therefore cause activation of autoreactive T cells and allow the initiation of beta cell destruction.
+However, this model for human disease would not fit with the disease seen in the NOD mouse as NOD mice have to be housed in a specific environment which prevents them contracting viruses.
+This means the mice would not have had the same illness to trigger the disease and yet T1D is observed anyway.
+
 \subsection{Infiltration and Insulitis}
 \subsection{Beta cell destruction}
 
@@ -78,7 +83,22 @@ The innate immune system is the very fast acting, non specific arm of the immune
 It is inspecific and will therefore attack any invading organisms in order to rid the body of potential threat.
 It also has no immunological memory, that is, it is incapable of knowing whether or not the body has encountered the organism before and therefore cannot launch an attacked tailored to the particular invasion.
 
-\todo{Include macrophages and DCs due to their importance in T1D}
+Cells of the innate immune system that are of importance to this project are macrophages and dendritic cells.
+These cells are able to phagocytose antigens and present them to T cells to activate them (See below \toref{T cell activation}).
+
+\subsubsection{Antigen Presentation}
+
+Antigen presentation is the process by which the innate immune system can signal to the adaptive immune system that an immune response is required.
+Professional APCs (macrophages, DCs and B cells (see \toref{section on B cells}) scavenge pathogens when they invade and phagocytose them.
+From here they breakdown the pathogen, then express their antigen in MHC Class II.
+This peptide/MHC complex can then be recognised by the T cell receptor on a T cell.
+This provides signal one of T cell activation.
+In inflammatory conditions, a costimulatory molecule is also expressed on the APC which provides signal two of T cell activation.
+T cells are then able to carry out their functions \toref{T cell section}.
+
+APCs are of importance in T1D as they are the cells which can present islet antigens to autoreactive T cells causing their activation.
+The activated T cells are then able to destroy their target cells, beta cells.
+
 
 \subsection{The adaptive immune system}
 
@@ -87,8 +107,33 @@ The high specificity of the adaptive arm means that pathogens are recognised by 
 The adaptive immune system also has immunological memory so it can remember what it has encountered before so that a quicker response can be mounted when the pathogen is encountered for a second time.
 
 \subsubsection{Cells of the adaptive immune system}
-\paragraph{B cells}
+The adaptive immune system plays a huge role in T1D.
+T and B cells are part of this system.
+
 \paragraph{T cells}
+T cells are very important cells of the adaptive immune system.
+As mentioned above, T cell activation requires the presentation of antigen by a professional APC.
+Following activation, T cells are able to carry out their functions.
+
+There are different types of T cell which have different functions as follows:
+\begin{itemize}
+\item CD4+ Helper T lymphocytes - CD4+ Helper T cells (CD4+ T cells) are cells which are able to help other immune cells carry out their own functions. 
+Helper T cells express CD4 which allows them to respond to MHC Class II expressed on the surface of APCs. 
+Activated CD4+ T cells are able to help with CD8+ cytotoxic T cell activation and B cell antibody production.
+\item CD8+ Cytotoxic T lymphocytes - CD8+ cytotoxic T cells (CTL) are produced through activation of CD8+ T cells.
+Once activated, CTLs are capable of killing off their target cells in a highly specific manner.
+\end{itemize}
+
+\paragraph{B cells}
+B cells have two physiological roles.
+Antigen presentation and Antibody production.
+Whilst B cells are APCs, their main function is antibody production.
+The production of antibodies relies on the help of CD4+ T helper cells as mentioned above.
+The mechanism of antibody production will be described in more detail in \toref{B cell receptor development section}.
+Antibodies are important for the neutralisation of toxins, opsonisation to help with phagocytosis of pathogens and destruction of bacteria and viruses.
+
+Both B and T cells play an important role in T1D pathology
+
 
 \todo{Say each cell has a role in T1D, discussed below in \toref{Involvement in T1D}}
 
@@ -96,7 +141,101 @@ The adaptive immune system also has immunological memory so it can remember what
 
 \section{B cells}
 \subsection{role}
-\subsection{Development - Progenitor to maturity}
+\subsection{Development - Stem cells to maturity}
+\label{subsec:Bcelldevelopment}
+\subsubsection{B cell commitment}
+
+Haematopoietic stem cells are the progenitors from which all blood cells derive.
+These cells are found in the bone marrow and, via the production of various progenitors, can produce cells of megakaryocytes, erythrocytes, lymphocytes, granulocytes, macrophages and natural killer cells.
+HSCs are characterised by their Lin\textsuperscript{-} Sca\textsuperscript{high} c-kit\textsuperscript{high} expression (So called LSK cells) and lack of surface Flt3\citep{Welinder2011}.
+
+Following the haematopoietic stem cell stage, multipotent progenitors form which have the capability of producing all types of blood cell.
+These cells are also LSK but also express Flt3\textsuperscript{low}\citep{Welinder2011}.
+Interestingly, MPPs can express genes of multiple lineages \citep{Hu1997} suggesting that this expression is due to priming for lineage committment, rather than commitment itself.
+It is thought that by expressing these genes, it maintains them in an accessible chromatin state, ready for commitment\citep{Welinder2011}.
+Evidence for this has been seen through changes in chromatin staus of lineage restricted genes during blood cell development\citep{Weishaupt2010}.
+
+Following MPP development, magakaryocytic and erythrocytic potential is much reduced and the so-called lymphoid primed multipotent progenitor (LMPP) arises.
+These cells are capable only of lymphocyte, macrophage, granulocyte and NK cell production\citep{Adolfsson2005}.
+LMPPs are characterised by being LSK but also Flt3\textsuperscript{high}.
+
+Next, Il-7Ra upregulates and Sca-1 and c-kit downregulate and to form common lymphoid progenitors (CLP).
+These cells are capable only of B and T lymphocyte development and NK cell development \citep{Kondo1997} and are Sca-1\textsuperscript{low} c-kit\textsuperscript{low} Flt3\textsuperscript{+} Il-7Ra\textsuperscript{+}.
+Flt3 is the receptor for Flt3 ligand (Flt3L) which is a growth promoter found in the bone marrow for CLPs.
+It works synergistically with IL-7 to promote lymphocyte proliferation and this occurs early in lymphopoiesis as Flt3 acts to increase IL-7Ra expression so cells are more responsive to IL-7 \citep{Holmes2006}.
+
+However, further research into CLPs has revealed significant heterogenity within the population.
+Many different groups have used different methods, markers and reporters in order to try and identify a subpopulation of CLPs which is restricted to the B cell lineage. 
+Some of these are outlined below
+\begin{itemize}
+\item \citet{Mansson2010} - Expression of lambda5 and Rag1 was used to divide the CLP compartment into cells that are able to produce T, B and NK cells, cells that are able to produce T and B cells, and those that are B cell restricted.
+Using lambda5 reporter mice crossed with Rag1 reporter mice, it was found that CLPs could be divided into three populations.
+L5-Rag1\textsuperscript{low} cells which produced T, B and NK cells, L5-Rag1\textsuperscript{high} which produced T and B cells with reduced NK cell potential, and L5\textsuperscript{+}Rag1\textsuperscript{high} cells which were B cell lineage restricted.
+The also found that the L5\textsuperscript{high}Rag1\textsuperscript{high} cells had increased expression of the surface marker Ly6D.
+\item \citet{Inlay2009} - Expression of Ly6D was used as a marker for determining B cell lineage commitment.
+For their investigations they split CLPs into Ly6D+ and Ly6D- fractions and then looked at their ability to produce T, B and NK cells.
+Interestingly, Ly6D- CLPs were able to produce all three types of progeny and were therefore termed all-lymphoid progenitors, ALPs.
+On the other hand, Ly6D+ CLPs were almost totally B cell committed.
+\item \citet{Zhang2013} - Expression of Ly6D and Rag1 were used as markers to follow B cell commitment and differentiation.
+The CLP compartment was split based on Flt3 expression, Rag1 expression and Ly6D expression.
+It was found that those cells expressing Ly6D and Rag1 were the most potent at producing B cells. 
+Most of these cells expressed Flt3.
+These B cell producing cells also had the highest levels of Rag1, EBF and pax5 transcripts indicating B cell lineage progression.
+\end{itemize}
+
+It therefore appears that within the CLP stage, there are subpopulations of cells which have leanings towards different lineages.
+It may be that the appearance of these different subpopulation may be due to the development of the CLPs, that is, the more committed progenitors (for example, BLPs) are at a later stage of CLP development than less committed progenitors (for example, ALPs).
+It appears that Rag1 and Ly6D are very important in determining B cell restricted progenitors and that it is reasonable to hypothesise that a committed B cell progenitor (BLP) could have the phenotype of Sca-1\textsuperscript{low} c-kit\textsuperscript{low} Flt3\textsuperscript{+} IL-7Ra\textsuperscript{+} Ly6D\textsuperscript{+} with evidence of previous Rag1 expression and robust levels of B cell development gene transcripts.
+
+Following the development of B cell comitted progenitors, these cells then go on to express B220 (expressed on B cells and some plasmacytoid DCs), followed by CD19.
+Originally it was thought that B cells were only committed to the B cell lineage once B220 and CD19 were being expressed, however, there is now much evidence to suggest that this committment step occurs prior to their expression.
+
+
+\subsubsection{Committed B cell development}
+
+Following commitment to the B cell lineage and the expression of CD19, B cells then progress through the following stages:
+\begin{itemize}
+\item Pro B cell - CD19+CD43+IgM-
+\item Pre B cell - CD19+CD43-IgM-
+\item Immature B cell - CD19+CD43-IgM+
+\end{itemize}
+
+Following the production of immature B cells in the bone marrow,they then leave the bone marrow and migrate to the spleen to mature.
+This is facilitated by the increase in IgM expression during development which allows immature B cells to become transitional B cells and migrate towards the centre of the bone marrow. 
+From here they are carried by the central sinus then venous circulation to the spleen \citep{Loder1999}.
+
+
+\subsubsection{B cell receptor development}
+\label{subsubsec:Bcellrecepdevelopment}
+
+In order for a B cell to progress from the pro B to the pre B stage, it is required to begin rearrangement of it's IgM heavy chain.
+This heavy chain can then be coupled to a surrogate light chain and form a pre B cell receptor (preBcR).
+
+The B cell receptor is the B cell's way of identifying pathogens in a very specific manner.
+This means that each B cell must have a different BcR in order to have repertoire capable of recognising different antigens.
+In order to produce such a highly diverse repertoire, there are a few mechanisms in place during B cell development which allow the production of a highly diverse BcR across B cells.
+
+The structure of a BcR consists of 2 heavy chains, which have a constant region and a variable region.
+Alongside these are two light chains, which also consist of a constand and variable region.
+The each light chain sits alongside the heavy chain with the two variable regions next to each other.
+Between them, the variable regions make up the antigen binding site.
+
+For both heavy and light chains, the variable region is made up of a V (variable), D (Diversity, heavy chain only) and J (joining) gene segments. 
+Genomically encoded are multiple copies of different V, D and J genes and during rearrangement, one of each of these genes are selected at random and joined to produce different combinations of receptors.
+This process is mediated by enzymes known as RAG recombinases which are encoded by the recombination activating genes (RAG).
+These enzymes recognise recombination signal sequences (RSS) found next to the coding regions of each V, D and J gene and bring the ends of the chosen genes near to each other to be joined.
+To join the segments, RAG proteins cleave at either end of the genes and leave hairpin loops of DNA.
+From here a nuclease nicks the loops leaving short sequences at the end of each gene to be joined.
+This allows the segments to join via short complementary sequences.
+Further diversity is also added via the use of an enzyme called terminal deoxynucleotidyltransferase (TdT) which adds random base pairs between each segment.
+The use of TdT allows the production of the ~10\textsuperscript{14} different immunoglobulins \citep{Motea2010}.
+
+B cells have membrane bound forms of their BcR which are capable of recognising free soluble antigen.
+However, following activation, B cells can differentiate into plasma cells and release antibodies which are the same as the membrane bound BcR.
+Upon differentiation, B cells also undergo affinity maturation and hypermutation which is where the B cells mutate their receptor slightly using T cell help in order to produce an antibody which is as specific as possible to the targetted pathogen.
+Antibodies can then be released into the blood stream to help with neutralisation and elimination of the invading pathogen.
+
+
 \subsection{Bone Marrow Niche}
 \subsection{Genes and Transcription Factors driving B cell development}
 \subsection{Tolerance}
