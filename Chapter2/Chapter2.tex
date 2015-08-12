@@ -111,16 +111,7 @@ These cells are able to phagocytose antigens and present them to T cells to acti
 
 \subsubsection{Antigen Presentation}
 
-Antigen presentation is the process by which the innate immune system can signal to the adaptive immune system that an immune response is required.
-Professional APCs (macrophages, DCs and B cells (see \toref{section on B cells}) scavenge pathogens when they invade and phagocytose them.
-From here they breakdown the pathogen, then express their antigen in MHC Class II.
-This peptide/MHC complex can then be recognised by the T cell receptor on a T cell.
-This provides signal one of T cell activation.
-In inflammatory conditions, a costimulatory molecule is also expressed on the APC which provides signal two of T cell activation.
-T cells are then able to carry out their functions \toref{T cell section}.
 
-APCs are of importance in T1D as they are the cells which can present islet antigens to autoreactive T cells causing their activation.
-The activated T cells are then able to destroy their target cells, beta cells.
 
 
 \subsection{The adaptive immune system}
@@ -139,13 +130,6 @@ As mentioned above, T cell activation requires the presentation of antigen by a 
 Following activation, T cells are able to carry out their functions.
 
 There are different types of T cell which have different functions as follows:
-\begin{itemize}
-\item CD4+ Helper T lymphocytes - CD4+ Helper T cells (CD4+ T cells) are cells which are able to help other immune cells carry out their own functions. 
-Helper T cells express CD4 which allows them to respond to MHC Class II expressed on the surface of APCs. 
-Activated CD4+ T cells are able to help with CD8+ cytotoxic T cell activation and B cell antibody production.
-\item CD8+ Cytotoxic T lymphocytes - CD8+ cytotoxic T cells (CTL) are produced through activation of CD8+ T cells.
-Once activated, CTLs are capable of killing off their target cells in a highly specific manner.
-\end{itemize}
 
 \paragraph{B cells}
 B cells have two physiological roles.
@@ -306,34 +290,72 @@ T-regulatory
 \subsection{Development}
 
 T cells develop in the thymus.
-However, the thymus does not contain any self-renewing cells therefore the process of T cell development relies on the constant seeding of the thymus by progenitors from the bone marrow.
+However, the thymus does not contain any self-renewing cells therefore the process of T cell development relies on the constant seeding of the thymus by progenitors from the bone marrow \citep{Zlotoff2011}.
 However, the cell that is responsible for this seeding and acts as a T cell progenitor is not known.
 There are many candidates and these have been identified by looking at the requirements of a cell to be able to settle in the thymus and develop into a T cell.
 
-As mentioned in \cref{subsec:Bcelldevelopment}, HSCs in the bone marrow that have self-renewing capacity, become MPPs, followed by LMPPs then CLPs.
-T cell progenitors also originate along this hierachy.
-Possible candidates include:
-\begin{itemize}
-\item CLPs, and downstream CLP-2. 
-CLP-2 cells express low/negative c-kit and are B220+.
-They also express pre-Ta and notch1 which makes them potential T cell precursors.
-\item LMPPs 
-\item ALPs
-\end{itemize}
+There are many candidate thymic settling progenitors (TSPs).
+It appears that TSPs must express Flt3 which rules out HSCs \citep{Zlotoff2011}, and also CCR9 or CCR7 or both \citep{Zlotoff2010}.
+CCR9 and CCR7 are chemokine receptors which are important for allowing thymic settling. 
+While the expression of only one type of chemokine receptor is sufficient, it is more efficient if both are expressed.
+This suggests that likely candidates for TSPs are CCR7+CCR9+ LMPPs and CLPs\citep{Zlotoff2011}.
 
-To become thymic settling progenitors (TSPs), candidate cells must have Flt3 expression and CCR7 or CCR9 expression.
-The CCR7 and CCR9 receptors are crucial for allowing the progenitors to enter the thymus and settle. 
-These chemokine receptors are found on LMPPs and CLPs but are most effective when both are present, therefore the most likely TSPs are CCR7+CCR9+ LMPPs and CLPs.
+%Investigations were carried out to see which of these two potential populations were likely to be the most important TSP.
+%One group found that CLPs were the population that allowed lymphocytes development in the thymus\citep{Serwold2009}, whilst the other showed that either LMPPs or CLPs were capable\citep{Saran2010}.
+%This suggests that actually, LMPPs and CLPs both might be important TSPs.
 
-Following production in the thymus, TSPs then migrate through the blood to the thymus where they cross the thymic endothelium into the thymus and settle.
+Following the thymic settling of precursors, T cells progress into the double negative phase.
+This means that developing T cells no not express either CD4 or CD8.
+The double negative phase consists of four stages, DN1-4 and during this time, particularly in DN, the T cell receptor begins rearrangement in a similar fashion to that seen during BcR rearrangement.
 
-The first stage of T cell development following thymic settling is the double negative stage where they are negative for both CD4 and CD8.
+After this, T cells progress to the double positive (DP) stage and express both CD4 and CD8.
+In this stage, T cells undergo their first round of education, known as positive selection.
+This is the process whereby all developing T cells are exposed to cortical epithelial cells expressing MHC class I and MHC Class II.
+If the T cell doesn't recognise either MHC Class, or binds with a very high affinity, they receive a death signal and are deleted by apoptosis.
+However, for those T cells that bind to one of the MHC Classes with the correct affinity, they receive a survival signal and continue with their development.
+This process is to eliminate all those T cells that wouldn't be able to recognise self MHC presenting peptide and all those which  may react dangerously to it.
+
+Assuming a T cell is positively selected, depending on which MHC Class it recognised, determines the type of T cell it will become.
+For example, if a T cell recognised MHC Class II, it develops into a CD4 single positive (CD4+) T cell or if it recognised MHC Class I, it becomes a CD8 single positive (CD8) T cell.
+
+Following positive selection, T cells then pass through negative selection which is mediated by medullary thymic epithelials cells (mTECs).
+This process is an important step in preventing autoreactivity as it is here that developing T cells are presented with self antigens.
+If T cells have a receptor capable of responding to the self antigens, they are deleted from the repertoire so that only non self-reactive T cells can develop and be released into the periphery.
+
+The education of T cells in the thymus is the first step of preventing autoimmunity by removing potentially autoreactive T cells from the T cell repertoire.
+Another step in helping to prevent autoimmunity is the differentiation of CD4+ T cells into regulatory T cells (Tregs).
+There are many types of Tregs which all act to suppress harmful immune responsed in the periphery.
 
 \todo{TcR development}
 
 Development - progenitors that move to the thymus from the bone marrow and become T cells
 DN, DP, SP.
 CD4+ then become CD4+ Tregs...
+\subsection{T cell functions and activation}
+
+\begin{itemize}
+\item CD4+ Helper T lymphocytes - CD4+ Helper T cells (CD4+ T cells) are cells which are able to help other immune cells carry out their own functions. 
+Helper T cells express CD4 which allows them to respond to MHC Class II expressed on the surface of APCs. 
+Activated CD4+ T cells are able to help with CD8+ cytotoxic T cell activation and B cell antibody production.
+\item CD8+ Cytotoxic T lymphocytes - CD8+ cytotoxic T cells (CTL) are produced through activation of CD8+ T cells.
+Once activated, CTLs are capable of killing off their target cells in a highly specific manner.
+\item Treg - suppression of harmful immune responses in the periphery
+\end{itemize}
+
+
+
+\subsubsection{Antigen Presentation and T cell Activation}
+
+Antigen presentation is the process by which the innate immune system can signal to the adaptive immune system that an immune response is required.
+Professional APCs (macrophages, DCs and B cells (see \toref{section on B cells}) scavenge pathogens when they invade and phagocytose them.
+From here they breakdown the pathogen, then express their antigen in MHC Class II.
+This peptide/MHC complex can then be recognised by the T cell receptor on a T cell.
+This provides signal one of T cell activation.
+In inflammatory conditions, a costimulatory molecule is also expressed on the APC which provides signal two of T cell activation.
+T cells are then able to carry out their functions \toref{T cell section}.
+
+APCs are of importance in T1D as they are the cells which can present islet antigens to autoreactive T cells causing their activation.
+The activated T cells are then able to destroy their target cells, beta cells.
 
 \subsection{The Thymus}
 \subsection{Genes and Transcription factors}
