@@ -9,13 +9,16 @@
 
 NOD, NOD.microMT \citep{Kitamura1991} and C57BL/6 (B6) mice were used.
 NOD.microMT mice have a mutation in their IgM heavy chain meaning that they cannot rearrange their heavy chain, cannot progress from the pro B to pre B cell stage and therefore do not have any mature B cells.
+
+NOD-RAG-GFP reporter mice were also used.
+These mice have been previously described by \toref{reference for NOD-RAG-GFP} and controls of FVB-RAG-GFP mice were used as these were the mice used to cross with the NOD background to get NOD-RAG-GFP.
+These mice express GFP under the control of the RAG promoter so that when RAG is expressed, so is GFP.
+GFP decays over time with a half life of ~54 hours \toref{Reference for the halflife}
+
 All mice were housed in specific pathogen free barrier conditions at York University Biological Services Facility. 
 All experimental procedures wewre conducted under U.K. Government Home Office guidelines.
 
 
-\subsection{Antibodies}
-
-\subsection{Flow cytometer}
 
 \section{Techniques}
 
@@ -25,7 +28,7 @@ All experimental procedures wewre conducted under U.K. Government Home Office gu
 
 Frozen cells defrosted quickly and transferred to 5mL 0.5\% BSA.
 Samples spun down for three minutes at 1200rpm, supernatant discarded and cells resuspended in 1mL 0.5\% BSA.
-Samples spun down again as before then resuspended in 2mL 0.5\% BSA and put in incubator at 37 degrees for 2 hours.
+Samples spun down again as before then resuspended in 2mL 0.5\% BSA and put in incubator at 37 \textdegree C for 2 hours.
 Samples then spun as before and resuspended as appropriate for subsequent procedure.
 
 \subsubsection{Preparation from fresh tissue}
@@ -44,7 +47,11 @@ Samples then stained using appropriate fluorescently labelled antibodies and inc
 Antibodies used at 1:300 dilution apart from CD4 and CD8 which were used at 1:800. 
 Samples washed in 3mL PBS and spun down for 3 minutes at 1200rpm, supernatant discarded then cells resuspended in 500 microL PBS to run on FACS machine.
 
-If biotin/streptavidin antibodies used then a second round of staining and washing used to stain with streptavidin.
+If biotin/streptavidin antibodies used then a second round of staining and washing used to stain with streptavidin at 1:800 dilution.
+
+Data was acquired on a Dako Cyan using Summit software and analysed usinf FlowJo software.
+
+Antibody clones and suppliers are shown in \fig{Table of antibody clones and suppliers}
 
 \subsection{Magnetic cell sorting}
 
@@ -65,7 +72,7 @@ Pasteur pipette used to remove and discard supernatant and beads resuspended in 
 Beads put back on magnet and beads allowed to adhere again before removing supernatant as before.
 A final wash in 500 microlitres PBS performed then beads finally resuspended in 500 microlitres PBS.
 
-Cells washed in 3mL PBS and then spun down for 10minutes at 1200rpm.
+Cells washed in 3mL PBS and then spun down for 10 minutes at 1200rpm.
 Cells then resuspended in the washed beads and incubated in fridge for 15 minutes.
 
 Samples then put on magnet and beads allowed to adhere.
@@ -80,7 +87,7 @@ A DNAse step was included to remove residual genomic DNA.
 The addition of a DNAse step improved the clarity of bands of products on gel electrophoresis following PCR.
 RNA quality was tested on the NanoDrop, with the aim of producing RNA with 260/280 and 260/230 values of near to or above 2.0 which indicates a good purity of RNA.
 
-RNA was stored at -20 degrees for short periods of time and at -80 degrees if stored for a prolonged period.
+RNA was stored at -20 \textdegree C for short periods of time and at -80 \textdegree C if stored for a prolonged period.
 
 
 \subsection{Reverse transcription of RNA to cDNA}
@@ -90,31 +97,79 @@ RNA taken and heated at 55 degrees for 10 minutes before being placed on ice.
 7 microlitres of first buffer (4 microlitres 5 x 1st strand buffer, 2 microlitres 10mM dNTPs, 1 microlitre OligodT 0.5 microM) was added to 10 microlitres of RNA in RNAse-free PCR strips.
 Amount of RNA normalised across samples using data from NanoDrop in order to try and keep quantities of cDNA constant across samples.
 RNA then made up to 10 microlitres with RNAse-free water.
-Samples then incubated at 65 degree for 5 minutes.
+Samples then incubated at 65 \textdegree C for 5 minutes.
 3 microlitres of second buffer (1 microlitre 0.1M DTT, 1 microL RNAse out, 1 microL Superscript II) added to each sample then samples incubated at 65 degree for 45-60 minutes to make cDNA.
-cDNA stored at -20 degrees until needed.
+cDNA stored at -20 \textdegree C until needed.
 
 \subsection{Primer design}
 
+Specific primers for PCR to look for B cell development genes were designed by finding gene sequences in the NCBI database then looking for suitable primers for these genes using Primer3.
+The primers were then put through a primer blast to check for specificiy and to find out any unintended targets.
+Designed primers were then tested to find their optimum annealing temperature by carrying out a temperature gradient PCR from 52-62 \textdegree C.
+This also checked that all primers were working and gave a band of appropriate size suggesting the presence of the intended product.
+
+Primers are as follows:
+\begin{itemize}
+\item E2A. Forward TTG ACC CTA GCC GGA CAT AC.
+Reverse TGC CAA CAC TGG TGT CTC TC.
+Expected product size: 150bp.
+Optimum annealing temperature: 61.8 \textdegree C.
+
+\item EBF.
+Forward CAG TTC TGC AAA GGG ACA CC.
+Reverse CAA TGT CGG CAG CTC TCT TC.
+Expected product size:226 bp.
+Optimum annealing temperature: 59.4 \textdegree C.
+
+\item Pax5. Forward AAC TTG CCC ATC AAG GTG TC.
+Reverse CTG ATC TCC CAG GCA AAC AT.
+Expected product size: 217bp.
+Optimum annealing temperature 61.3 \textdegree C.
+
+\item VPreB.
+Forward CGA TAT CCC ACC TCG CTT CT.
+Reverse CCG AGC AAA GCA AAC TCT GT.
+Expected product size: 238 bp.
+Optimum annealing temperature: 59.4 \textdegree C.
+
+\item CXCL12.
+Forward GCT CTG CAT CAG TGA CGG TA.
+Reverse TAA TTT CGG GTC AAT GCA CA.
+Expected product size: 184 bp.
+Optimum annealing temperature: 60.5 \textdegree C.
+\end{itemize}
+
 \subsection{Polymerase chain reaction}
+
+PCR was carried out to look for the genes of interest using the primers outlined above.
+PCR samples consisted of 1 $\mu$L cDNA, 1.125 $\mu$L forward primer, 1.125 $\mu$L reverse primer, 2.5 $\mu$L MgCl{2}, 2.5 $\mu$L MgCl{2} buffer, 15.5 $\mu$L dH{2}O, 0.125 $\mu$L Taq Polymerase.
+PCRs were carried out using a 52-62 \textdegree C temperature gradient.
 
 \subsection{Gel electrophoresis}
 
-\subsection{Tacman quantitative polymerase chain reaction}
-\todo{learn how to, and then do the experiment}
+Gele electrophoresis of PCR products were carried out using 3\% agarose gels made 1 x TAE buffer supplemented with 1 $\mu$L of 10 mg/mL ethidium bromide per 25 mL buffer.
+5 $\mu$L of 6x loading dye were added to each 25 $\mu$L PCR sample following PCR.
+Total volume of 30 $\mu$L was then transferred to wells in the gel held in a gel rig containing 1 x TAE buffer.
+
+Gel was run at a constant 70 V until bands had separated sufficiently.
+Gels were imaged using SynGene software.
 
 \subsection{Histology}
 
-\section{Data analysis and interpretation}
+For histology of cells to look for autoantibody presence in NOD serum, thymic samples were depleted using Miltenyi CD45 depletion kit then CD45- cells were spun down then resuspended in 50 $\mu$L PBS.
+Samples then transferred to multispot microscope slides, 50 $\mu$L / well and slides incubated in 37 \textdegree C incubator for ~15 minutes.
+Slides checked for an even covering of adhered cells and PBS removed with a paper towel and more PBS added with a pipette. 
+This washing was repeated multiple times to get a nice even covering of cells with no clumps.
+Finally PBS removed using a paper towel and slides fixed in 1 \% PFA and put in a moist box in the cold room overnight.
+Fixative washed off using washing process as before then samples stained with 1:300 dilution of anti-CD16 antibody and incubated in fridge for ~10 minutes to block Fc receptors.
+Fc block / PBS removed and 50 $\mu$L of NOD serum or control PBS put on samples.
+Slides then incubated in moist box in fridge for ~1 hour.
+Fluorescently labelled anti-mouse antibody (labelled with FITC) added to each sample then incubated in the fridge in a moist box for 45 minutes before washing as before and preserving with a drop of Prolong Gold.
+A cover slip then put on and sealed with nail varnish.
 
-\subsection{Flow cytometry}
+Slides then viewed on the microscope.
 
-\subsubsection{Data analysis}
-
-\subsection{Tacman stuff...}
-
-\subsection{Statistics}
 
 \subsection{Graph drawing}
 
-
+All graphs were drawn using GraphPad Prism and statistical analysis was performed using built-in functions within the software.
