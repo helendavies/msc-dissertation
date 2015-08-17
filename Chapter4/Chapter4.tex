@@ -66,7 +66,7 @@ Since GFP is transcribed at the same time as RAG, it initially has a very high i
 However, because GFP is a protein it takes a while to degrade and has a half life of ~54hrs.
 This means that only the CD19+RAGhigh population can be taken as actively expressing RAG and therefore GFP.
 GFPlow cells will have deactivated RAG and therefore the GFP signal will be decaying.
-Setting the gates for RAG\textsuperscript{high} and RAG\textsuperscript{low} populations was done by looking at the RAG levels in developing B cells in the bone marrow.
+Setting the gates for RAG\textsuperscript{high} and RAG\textsuperscript{low} populations was done by looking at the RAG levels in the total thymic tissue including B and T cells.
 
 
 \begin{figure}
@@ -185,9 +185,9 @@ Or, secondly, it may be that these B cells were contaminating B cells which were
 	\begin{subfigure}{\textwidth}
 	\includegraphics[width=0.5\textwidth]{Figures/CD19posrecipthy.png}
 	\includegraphics[width=0.5\textwidth]{Figures/CD19negrecipthy.png}
-	\caption{Bone marrow of recipients showing B cell presence/absence at 7 and 11 days post transfer}
+	\caption{Thymus of recipients showing B cell presence/absence at 7 and 11 days post transfer}
 	\end{subfigure}
-\caption{Figure showing B cell presence/absence in Spleen and thymus over time}
+\caption{Figure showing B cell presence/absence in spleen and thymus over time}
 \end{figure}
 
 \todo{Proper figure legend. Comment on difference in frequencies in recipients}
@@ -237,18 +237,18 @@ This would give insight into two areas.
 Firstly, do NOD mice have an increased frequency of B cell progenitors in their thymus compared to B6 mice which could potentially explain the increased number of B cells in the NOD thymus.
 And secondly, are BLPs affected in the same way as pro B cells by the presence or absence of a mature B cell shown by a decreased frequency of BLPs in the NOD KO compared to the NOD.
 
-To investigate this, flow cytometry was used which included a wide range of antibodies to assess BLP presence.
-The antibodies used are as follows:
-\begin{itemize}
-\item CD4/CD8 - These were used to gate out any residual mature T cells that had not been removed through MACS depletion
-\item Sca-1 - Downregulates from high on HSCs to low on CLPs
-\item c-kit - Downregulates from high on HSCs to low on CLPs
-\item Flt3 - Upregulates from negative on HSCs to high on CLPs then becomes negative again on B cells \citep{Holmes2006}
-\item IL-7Ra - Upregulates on LMPPs to being high on CLPs.
-\item Ly6D - Correlates with B cell lineage restriction \citep{Inlay2009}
-\end{itemize}
+%To investigate this, flow cytometry was used which included a wide range of antibodies to assess BLP presence.
+%The antibodies used are as follows:
+%\begin{itemize}
+%\item CD4/CD8 - These were used to gate out any residual mature T cells that had not been removed through MACS depletion
+%\item Sca-1 - Downregulates from high on HSCs to low on CLPs
+%\item c-kit - Downregulates from high on HSCs to low on CLPs
+%\item Flt3 - Upregulates from negative on HSCs to high on CLPs then becomes negative again on B cells \citep{Holmes2006}
+%\item IL-7Ra - Upregulates on LMPPs to being high on CLPs.
+%\item Ly6D - Correlates with B cell lineage restriction \citep{Inlay2009}
+%\end{itemize}
 
-Theoretically, this stain should allow analysis of all progenitor populations from HSCs through MPPs, LMPPs, CLPs, ALPs to BLPs.
+%Theoretically, this stain should allow analysis of all progenitor populations from HSCs through MPPs, LMPPs, CLPs, ALPs to BLPs.
 
 Mice used were 6-8 weeks old.
 This age was chosen as this is the point that B cells start to significantly increase compared to B6 controls.
@@ -262,20 +262,22 @@ Due to the small size of progenitor populations in comparison to mature cell pop
 For depletion, magnetic-activated cell sorting (MACS) was used.
 There are many different kits available and the decision on which to use for the experiments was taken after investigating the efficiency and yield from Miltenyi beads and columnms, and Qiagen anti-rat beads \todo{name of Qiagen beads}
 
-Firstly, Miltenyi columns and lineage depletion beads were tested to assess their efficiency. 
-\fig{Miltenyi 1 round. CD4-CD8-, CD19-CD11c-}.
-To start with, only one round of depletion was carried out which gave an efficiency of \todo{look at efficiencies}.
-This efficiency was improved to \todo{add efficiency of 2 rounds} when two rounds of depletion were carried out \fig{2 round miltenyi lineage depletion. CD4-CD8-, CD19-CD11c-}. 
+Firstly, Miltenyi columns and lineage depletion beads were tested to assess their efficiency.
+To start with, only one round of depletion was carried out which gave an efficiency of \todo{look at efficiencies}, see \cref{subfig:1rounddep}.
+This efficiency was improved to \todo{add efficiency of 2 rounds} when two rounds of depletion were carried out \cref{subfig:2rounddep}. 
+However, while this method gave a very pure sample with very few mature cells remaining, the yield was not very good.
+
 \begin{figure}
 	\begin{subfigure}{\textwidth}
 	\includegraphics[width=0.8\textwidth]{Figures/1rounddepletion.png}
 	\caption{One round of depletion using Miltenyi lineage depletion beads and columns}
+	\label{subfig:1rounddep}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}{0.8\textwidth}
 	\includegraphics[width=\textwidth]{Figures/2rounddepletion.png}
 	\caption{Two rounds of depletion using Miltenyi lineage depletion beads and columns}
-	\label{subfig:2miltenyi}
+	\label{subfig:2rounddep}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}{0.8\textwidth}
@@ -286,10 +288,9 @@ This efficiency was improved to \todo{add efficiency of 2 rounds} when two round
 	
 \caption{Figure showing the different methods of depletion. Qiagen beads in shows that 89\% percent of cells are CD4-CD8-}
 \end{figure}
-However, while this method gave a very pure sample with very few mature cells remaining, the yield was not very good.
 
 Since the point of the depletion was just to reduce the quantity of mature cells so that the progenitor populations could be seen by flow cytometry, it was more important for the experiment that there was a lot of cells to interrogate rather than them being very pure.
-Therefore, Qiagen beads were tried and as shown, \fig{figure of Qiagen depletion}, while the purity was not as good as the Miltenyi beads \todo{efficiency of Qiagen beads}, the yield was much improved.
+Therefore, Qiagen beads were tried and as shown, \cref{subfig:Qiagen}, while the purity was not as good as the Miltenyi beads \todo{efficiency of Qiagen beads}, the yield was much improved.
 This was a better balance for the experiment, therefore, Qiagen beads were used.
 \todo{insert a table showing the efficiencies of each depletion method}
 
@@ -334,19 +335,19 @@ With this is mind, other potential B cell development patterns must be explored.
 
 
 
-\subsection{T cell development looks normal/abnormal in NOD mouse compared to control}
-\fig{CD4 v CD8 in NOD, KO and B6 (and FVB). Different ages, 5,9,12wks?}
-\fig{Graphs of DP, DN and SP}
+%\subsection{T cell development looks normal/abnormal in NOD mouse compared to control}
+%\fig{CD4 v CD8 in NOD, KO and B6 (and FVB). Different ages, 5,9,12wks?}
+%\fig{Graphs of DP, DN and SP}
 
-\todo{analyse data to see whether it is normal or abnormal. This is a good control to give an indication of the overall condition of the thymus, preferably over time to see how it changes as mouse ages with normal physiological atrophy of the thymus}
+%\todo{analyse data to see whether it is normal or abnormal. This is a good control to give an indication of the overall condition of the thymus, preferably over time to see how it changes as mouse ages with normal physiological atrophy of the thymus}
 
 \subsection{The NOD thymus contains B cell development transcription factors}
 
 If B cells are developing within the thymus, this begs the question as to whether the NOD thymus is providing an environment more conducive to B cell development compared to nondiabetic controls. 
-To invesitgate this, primers were designed that were specific for B cell development factors such as E2A, EBF, Pax5, VPreB and CXCL12.
+To investigate this, primers were designed that were specific for B cell development factors such as E2A, EBF, Pax5, VPreB and CXCL12.
 \todo{look in Hagman2006, Welinder2011, Mansson2008, Cobaleda2007, Radtke2013, Riley2013, Tokoyoda2004 for TF info}.
 
-To date, only regular PCR has been carried out to compare whether or not B cell development transcription factors are present in the NOD bone marrow and thymus.
+To date, only non-quantitative PCR has been carried out to compare whether or not B cell development transcription factors are present in the NOD bone marrow and thymus.
 Since normal B cell development occurs in the bone marrow, these transcription factors would be expected there and indeed they were seen there, as shown in \cref{fig:gels}. 
 Interestingly, all the genes, besides CXCL12, were also present in the NOD thymus too.
 This indicates that the thymic environment may also be allowing B cell development.
@@ -402,57 +403,48 @@ This was of interest and was therefore investigated further as it indicated ther
 
 \cref{fig:RAGCD19CD4CD8pos}
 
-As mentioned in \toref{Background on Rag expression in developing T and B cells}, Rag is expressed in both T and B cells during rearrangment of the TcR or BcR respectively.
-With the use of the NOD-RAG-GFP reporter mouse (See \toref{Methods on mice}), Rag expression can be seen indirectly via the expression of GFP which is visible on flow cytometry.
-How recently the RAG was activated in a cell can be indicated by the intensity of the GFP signal as GFP degrades over time.
-This means that active transcription of RAG/GFP will have a very bright signal, whereas cells which have deactivated RAG will have diminishing levels of GFP and therefore the signal will be less bright.
-
-Interestingly, whilst interrogating NOD thymi for the presence of CD19+RAG+ cells, it was noted that of these cells, a large percentage of them were also CD4\textsuperscript{+}CD8\textsuperscript{+}.
+Having seen RAG\textsuperscript{high}CD19\textsuperscript{+} cells in the NOD thymus suggesting active development of B cells, it was then noted that a large percentage of these cells were also CD4\textsuperscript{+}CD8\textsuperscript{+} \cref{subfig:ThyRAGCD19DP}.
 This was an interesting finding as it suggests there may be a point where cells are not yet fully lineage committed and are expressing markers of both T (CD4, CD8) and B (CD19) cells.
 These cells all have a high GFP signal and therefore are actively transcribing the protein, indicating that RAG is also active.
 This suggests that these cells are expressing markers of both T and B cells as well as rearranging a receptor, though it is not possible to tell which one.
 
 Unfortunately, due to lack of control mice of the correct age, it is not possible to say whether this is a normal pysiological process seen in nondiabetic control mice as well as NOD mice or whether it is unique to the NOD.
-However, due to normal B cell development occurring in the bone marrow, the thymus and bone marrow were compared for presence of RAG+CD19+CD4+CD8+ cells.
-As shown in \fig{figure of BM lack of RAGCD19CD4CD8 pos cells}, none of these cells were seen in the bone marrow. 
-This gives the impression that they are not a normal part of B cell development.
+Repetitions of the experiments would need to be carried out with the inclusion of B6 control mice.
+However, due to normal B cell development occurring in the bone marrow, the thymus and bone marrow were compared for presence of RAG+CD19+CD4+CD8+ cells and the bone marrow served as a tissue control.
 
-This finding could suggest an alternative mechanism by which B cells are increased in the NOD thymus, and that is that a cell is beginning to commit to the T cell lineage, then at some point receiving a signal which is causing it to begin to switch lineages and start expressing B cell markers.
+4 and 7 week old mice were analysed and a representative 4 week old NOD thymus and bone marrow are shown in \cref{fig:RAGCD19DP}. 
+Here, the difference between the thymus \cref{subfig:ThyRAGCD19DP} and bone marrow \cref{subfig:BMRAGCD19DP} is shown.
+While the thymus contains a significant population of RAG\textsuperscript{high}CD19\textsuperscript{+}CD4\textsuperscript{+}CD8\textsuperscript{+} cells, the bone marrow contains none.
+
+The lack of RAG\textsuperscript{high}CD19\textsuperscript{+}CD4\textsuperscript{+}CD8\textsuperscript{+} cells in the bone marrow suggests it is unlikely that these cells are a normal part of B cell development due to the bone marrow being the normal B cell development site.
+It is also unlikely that they are a normal part of T cell development as T cell commitment is thought to occur fully in the DN development stage, therefore when developing T cells are still CD4\textsuperscript{-}CD8\textsuperscript{-}.
+
+This suggests that they are thymus specific and it may highlight another abnormality within the NOD thymus that may or may not be related to the increased population of thymic B cells.
+It could potentially suggest an alternative mechanism by which B cells are increased in the NOD thymus, and that is that a cell is beginning to commit to the T cell lineage, then at some point receiving a signal which is causing it to begin to switch lineages and start expressing B cell markers.
 This potential redifferentiation could explain the existence of both B and T cell markers on the cells. 
 However, further research would be required to explore this further. \todo{think of expt}.
 
-The gating pattern used to look for these cells in the thymus and bone marrow of NOD WT and NOD KO is shown in \cref{fig:RAGposDP}.
-However, it was not known if this is normal during B cell development, therefore the bone marrow was used as a comparison to see if these cells existed there too, where B cells develop normally.
-Interestingly, there were no RAG+CD19+CD4+CD8+ cells seen in the bone marrow at all. 
-The comparison between a representative 4 week old NOD thymus and bone marrow is shown in \cref{subfig:BMvsThyRAGCD19DP}.
-The presence of these RAG+CD19+CD4+CD8+ cells in the thymus was consistent and seen in 4 week and 7 week old NOD thymi with group sizes of 4 or 5 mice in each age group. 
-The lack of these cells in the bone marrow suggests that they may be thymus-specific.
-However, whether or not the presence of these cells has any relation to the increased population of thymic B cells seen in the NOD mouse remains to be determined.
-One way of investigating this is to use non diabetic, control B6 mice and repeat the experiment with this control in place.
-
-
 These cells are present in NOD mice at both 4 and 7 weeks of age and it was therefore investigated whether or not there was a significant difference in the percentages of these cells between the two age groups. 
 The bone marrow is also included in the figure as a comparison.
-The results of this comparison are shown in \fig{add a graph showing how the ages affect the presence of RAG+CD19+DP cells in the thymus and bone marrow}
-\todo{add some data/graph/statistics to show significance, whether there is a difference between the ages etc}
+The results of this comparison are shown in \fig{add a graph showing how the ages affect the presence of RAG+CD19+DP cells in the thymus and bone marrow} and the data shows that.....
 
 
 \begin{figure}	
 	\begin{subfigure}{\textwidth}
 	\includegraphics[width=\textwidth]{Figures/Thymus1RAGCD19DP.png}
 	\caption{Thymus}
+	\label{subfig:ThyRAGCD19DP}
 	\end{subfigure}
 	\begin{subfigure}{\textwidth}
 	\includegraphics[width=\textwidth]{Figures/BM1RAGCD19DP.png}
 	\caption{Bone marrow}
+	\label{subfig:BMRAGCD19DP}
 	\end{subfigure}
 \caption{Representative plots to show the difference in presence of CD19+RAG+CD4+CD8+ cells in the NOD thymus and bone marrow in 4 week old NOD-RAG-GFP mice.}
-\label{fig:RAGCD19CD4CD8pos}
+\label{fig:RAGCD19DP}
 \end{figure}
 
-\fig{Gating pattern}
-\fig{Thymic RAG+CD19+CD4+CD8+ cells}
-\fig{BM RAG+CD19+CD4+CD8+ cells}
+
 \fig{Graph showing the difference between 4 and 7 weeks of cells above}
 
 
