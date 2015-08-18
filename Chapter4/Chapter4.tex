@@ -66,7 +66,9 @@ Thymi and bone marrow from NOD-RAG-GFP mice of 4, 7 and 11 weeks of age were use
 Setting the gates for RAG\textsuperscript{high} and RAG\textsuperscript{low} populations was done by looking at the RAG levels in the total thymic tissue including B and T cells.
 
 As shown in \cref{ThyRAGhighlowneg}, it appears that there are CD19\textsuperscript{+}RAG\textsuperscript{+} cells in the NOD thymus at 4, 7 and 11 weeks of age.
-As shown in \fig{Graph of change with time}, there is a significant decrease in the frequency of CD19\textsuperscript{+}RAG\textsuperscript{high} cells as the mice age.
+As shown in \cref{subfig:RAGhighlowneggraph}, the difference between the CD19\textsuperscript{+}RAG\textsuperscript{high} cells between 4 and 11 weeks is not significant, however the change in CD19\textsuperscript{+}RAG\textsuperscript{low} cells is significant.
+This gives the impression that B cell development is decreasing as mice age.
+The decreased population of RAGCD19\textsuperscript{low} cells suggests there are less newly developed B cells in the thymus as mice age.
 Data was obtained from 4/5 mice of each age group.
 
 
@@ -77,6 +79,11 @@ Data was obtained from 4/5 mice of each age group.
 	\includegraphics[width=\textwidth]{Figures/RAGhighlownegtotalthy.png}
 	\caption{RAG expression in total thymus}
 	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+	\includegraphics[width=\textwidth]{Figures/RAGhighlownegative.pdf}
+	\caption{Frequency of CD19\textsuperscript{+}GFP\textsuperscript{high}, CD19\textsuperscript{+}GFP\textsuperscript{low} and CD19\textsuperscript{+}GFP\textsuperscript{-}. Data analysed with a 1 way ANOVA and Tukey's test for comparison of multiple groups.}
+	\label{subfig:RAGhighlowneggraph}
+	\end{subfigure}
 \caption{CD19+ cells in the NOD thymus express RAG. 
 Top panel shows the RAG expression of CD19+ cells in the thymus of NOD-RAG-GFP reporter mice at 4, 7 and 11 weeks of age. Bottom panel shows the total thymic RAG expression. 
 This was used to set gates of RAG\textsuperscript{high}, RAG\textsuperscript{low} and RAG-. Gates were then put onto CD19+ population. 
@@ -85,7 +92,8 @@ Each age group plot is representative of 4/5 mice of given age.
 Gating pattern: lymphocytes, single cells, CD19\textsuperscript{+}.}
 \end{figure}
 
-\fig{Graph of change in RAG with age}
+\todo{Correct axis labels}
+
 \todo{Explanation}
 
 
@@ -102,15 +110,24 @@ To final strategy was lymphocytes, single cells, IgM\textsuperscript{-}, CD43\te
 
 As shown in \cref{fig:MatureBincProB}, the frequency of pro B cells in the NOD KO is decreased compared to the frequencies seen in the NOD WT and B6 control.
 This difference appears to be consistent and \todo{Add graph and talk about significance, if any}
-Interestingly, the frequency of IgM\textsuperscript{-}CD43\textsuperscript{+}CD19\textsuperscript{+} cells in the thymi of KO mice is lower than the frequency seen in the B6 control mouse. 
+Interestingly, the frequency of IgM\textsuperscript{-}CD43\textsuperscript{+}CD19\textsuperscript{+} cells in the thymi of KO mice is significantly lower than the frequency seen in the B6 control mouse and the NOD WT, see \cref{subfig:MatureBincproBgraph}. 
 This gives the impression that a mature B cell is important for allowing the enhancement of pro B cells in the thymus.
-Moreover, the need for a mature B cell is more important to increase thymic pro B cells than whatever mechanism is present in the NOD mouse strain that increases the intrathymic pro B cell presence.
+
+The difference between the NOD WT and B6, however, is not significant. 
+This suggests that there are no more pro B cells in the NOD than in the B6, suggesting that an increase in these progenitors can account for the overall increase in thymic B cells in the NOD.
+
 The investigation was carried out in a blind trial so that the strains of mice were not known during analysis in order to avoid bias in the results.
 
 \begin{figure}
 	\begin{subfigure}{\textwidth}
 	\includegraphics[width=\textwidth]{Figures/MatureBincproB.png}
 	\caption{CD19+CD43+IgM- pro B cells in, from left to right, B6 mouse, NOD WT and NOD KO mice of 6-8 weeks of age}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+	\centering
+	\includegraphics[width=0.6\textwidth]{Figures/MatureBincproBgraph.pdf}
+	\caption{Graph to show difference in pro B cell presence in NOD WT, NOD KO and B6 mouse thymi. STatistical significance was determined using a One-way ANOVA and Tukey's test. NOD KO has a statistically significantly lower frequency of pro B cells compared to both NOD WT and B6 control. NOD WT n=3, NOD KO n=4, B6 n=4.}
+	\label{subfig:MatureBincproBgraph}
 	\end{subfigure}
 \caption{Mature B cells increase frequency of pro B cells in the thymus}
 \label{fig:MatureBincProB}
@@ -138,6 +155,11 @@ It may be that the increased CD43 expression on NOD mice may be allowing the inf
 	\begin{subfigure}{\textwidth}
 	\includegraphics[width=\textwidth]{Figures/CD43expression.png}
 	\caption{Figure showing CD43 expression in IgM- cells in the thymus}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+	\centering
+	\includegraphics[width=0.6\textwidth]{Figures/CD43levels.pdf}
+	\caption{Graph showing increased CD43 expression NOD}
 	\end{subfigure}
 \caption{NOD mice show increased CD43 expression in the thymus}
 \label{fig:CD43expression}
@@ -328,7 +350,7 @@ With this is mind, other potential B cell development patterns must be explored.
 	\label{subfig:BLPgating}
 	\end{subfigure}
 	\begin{subfigure}{\textwidth}
-	\includegraphics[width=\textwidth]{Figures/BLPgraph.png}
+	\includegraphics[width=\textwidth]{Figures/ProgenitorMarkers.pdf}
 	\caption{Graph showing the frequencies of cells expressing each marker at the appropriate level.}
 	\label{subfig:BLPgraph}
 	\end{subfigure}
@@ -444,6 +466,11 @@ The results of this comparison are shown in \fig{add a graph showing how the age
 	\caption{Bone marrow}
 	\label{subfig:BMRAGCD19DP}
 	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+	\includegraphics[width=\textwidth]{Figures/BMvThyDP.pdf}
+	\caption{}
+	\label{BMvThyDPgraph}
+	\end{subfigure}
 \caption{Representative plots to show the difference in presence of CD19+RAG+CD4+CD8+ cells in the NOD thymus and bone marrow in 4 week old NOD-RAG-GFP mice.}
 \label{fig:RAGCD19DP}
 \end{figure}
@@ -472,6 +499,12 @@ This could suggest that these cells are just late at committing to a lineage, or
 	\includegraphics[width=\textwidth]{Figures/ThyRAGIgMTcR.png}
 	\caption{Representative NOD WT and NOD KO thymi looking for RAG+IgM+TcR+ cells}
 	\label{subfig:BMvThyRAGIgMTcR}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+	\centering
+	\includegraphics[width=\textwidth]{Figures/IgMTcRposgraph.pdf}
+	\caption{}
+	\label{subfig:IgMTcRposgraph}
 	\end{subfigure}
 \caption{This figure is about RAG\textsuperscript{+}IgM\textsuperscript{+}TcR$\beta$\textsuperscript{+} cells in the NOD BM and thymus. 12 thymi were analysed blind so as not to bias results. 3 NOD WT and 5 NOD KO thymi and bone marrow were analysed from 11 week old mice.}
 \label{fig:RAGIgMTcRpos}
@@ -631,6 +664,10 @@ Further repeats on a larger scale would need to be carried out to increase the v
 		\includegraphics[width=\textwidth]{Figures/WTserum2.jpg}
 		\caption{Serum treated WT NOD thymic stromal cells}
 	\end{subfigure}
+\end{figure}
+
+\begin{figure}
+\includegraphics{Figures/RAGhighlownegative.pdf}
 \end{figure}
 
 \subsection{Conclusion}
