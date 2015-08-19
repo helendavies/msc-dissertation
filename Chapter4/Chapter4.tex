@@ -68,7 +68,7 @@ Setting the gates for RAG\textsuperscript{high} and RAG\textsuperscript{low} pop
 As shown in \cref{ThyRAGhighlowneg}, it appears that there are CD19\textsuperscript{+}RAG\textsuperscript{+} cells in the NOD thymus at 4, 7 and 11 weeks of age.
 As shown in \cref{subfig:RAGhighlowneggraph}, the difference between the CD19\textsuperscript{+}RAG\textsuperscript{high} cells between 4 and 11 weeks is not significant, however the change in CD19\textsuperscript{+}RAG\textsuperscript{low} cells is significant.
 This gives the impression that B cell development is decreasing as mice age.
-The decreased population of RAGCD19\textsuperscript{low} cells suggests there are less newly developed B cells in the thymus as mice age.
+The decreased population of RAGCD19\textsuperscript{low} cells suggests there are less newly developed B cells in the thymus of NOD mice as they get older.
 Data was obtained from 4/5 mice of each age group.
 
 
@@ -85,22 +85,20 @@ Data was obtained from 4/5 mice of each age group.
 	\label{subfig:RAGhighlowneggraph}
 	\end{subfigure}
 \caption{CD19+ cells in the NOD thymus express RAG. 
-Top panel shows the RAG expression of CD19+ cells in the thymus of NOD-RAG-GFP reporter mice at 4, 7 and 11 weeks of age. Bottom panel shows the total thymic RAG expression. 
-This was used to set gates of RAG\textsuperscript{high}, RAG\textsuperscript{low} and RAG-. Gates were then put onto CD19+ population. 
-RAG\textsuperscript{high} cells are likely to be developing B cells as they express CD19 and RAG suggest active rearrangement. 
+Top panel shows the RAG expression of CD19+ cells in the thymus of NOD-RAG-GFP reporter mice at 4, 7 and 11 weeks of age. Bottom panel shows the total thymic RAG expression used to set gates of RAG\textsuperscript{high}, RAG\textsuperscript{low} and RAG-. 
+Gates were then put onto CD19+ population. 
+CD19\textsuperscript{+}RAG\textsuperscript{high} cells are likely to be developing B cells as they express CD19 and RAG, suggesting active rearrangement. 
 Each age group plot is representative of 4/5 mice of given age.
-Gating pattern: lymphocytes, single cells, CD19\textsuperscript{+}.}
+Gating pattern: lymphocytes, single cells, CD19\textsuperscript{+} (CD19 gate omitted when looking at total thymus RAG expression).}
 \end{figure}
 
 \todo{Correct axis labels}
-
-\todo{Explanation}
 
 
 \subsection{B cell development is dependent on the presence of a mature B cell}
 
 Following on from this finding, B cell KO NOD mice thymi were also investigated.
-In these mice, as stated in \toref{wherever I talked about KO mice}, these mice are unable to rearrange their IgM heavy chain and therefore cannot progress beyond the pro B cell stage. 
+In these mice, as stated in \cref{methods:mice}, these mice are unable to rearrange their IgM heavy chain and therefore cannot progress beyond the pro B cell stage. 
 In the bone marrow of these mice, a population of pro B cells is seen, but there are no pre B cells and no IgM\textsuperscript{+} cells.
 It was therefore expected that in their thymus there would also be a population of pro B cells, similar to that seen in the NOD WT mice. 
 However, this does not appear to be the case.
@@ -108,13 +106,9 @@ However, this does not appear to be the case.
 To investigate the presence of pro B cell frequency between the different mice strains, it was first necessary to determine an appropriate gating system so the strains could be compared fairly.
 To final strategy was lymphocytes, single cells, IgM\textsuperscript{-}, CD43\textsuperscript{+} then the frequency of CD19\textsuperscript{+} cells within this population was obtained as the frequency of pro B cells relative to the frequency of IgM\textsuperscript{-}CD43\textsuperscript{+} cells in each strain.
 
-As shown in \cref{fig:MatureBincProB}, the frequency of pro B cells in the NOD KO is decreased compared to the frequencies seen in the NOD WT and B6 control.
-This difference appears to be consistent and \todo{Add graph and talk about significance, if any}
-Interestingly, the frequency of IgM\textsuperscript{-}CD43\textsuperscript{+}CD19\textsuperscript{+} cells in the thymi of KO mice is significantly lower than the frequency seen in the B6 control mouse and the NOD WT, see \cref{subfig:MatureBincproBgraph}. 
-This gives the impression that a mature B cell is important for allowing the enhancement of pro B cells in the thymus.
-
-The difference between the NOD WT and B6, however, is not significant. 
-This suggests that there are no more pro B cells in the NOD than in the B6, suggesting that an increase in these progenitors can account for the overall increase in thymic B cells in the NOD.
+As shown in \cref{fig:MatureBincProBgraphs}, the frequency of pro B cells is significantly decreased in the NOD KO thymi compared to both NOD WT and B6 thymi (Data analysed using a One-Way ANOVA and Tukey's test).
+This is an interesting finding as it suggests that the enhancement of pro B cells in the thymus may be dependent on the presence of a mature B cell.
+The difference between the NOD WT and B6, however, is not significant suggesting that an increase in pro B cells cannot account for the increase in thymic B cells seen in the NOD WT thymus.
 
 The investigation was carried out in a blind trial so that the strains of mice were not known during analysis in order to avoid bias in the results.
 
@@ -126,20 +120,26 @@ The investigation was carried out in a blind trial so that the strains of mice w
 	\begin{subfigure}{\textwidth}
 	\centering
 	\includegraphics[width=0.6\textwidth]{Figures/MatureBincproBgraph.pdf}
-	\caption{Graph to show difference in pro B cell presence in NOD WT, NOD KO and B6 mouse thymi. STatistical significance was determined using a One-way ANOVA and Tukey's test. NOD KO has a statistically significantly lower frequency of pro B cells compared to both NOD WT and B6 control. NOD WT n=3, NOD KO n=4, B6 n=4.}
+	\caption{Graph to show difference in pro B cell frequency in NOD WT, NOD KO and B6 mouse thymi}
 	\label{subfig:MatureBincproBgraph}
 	\end{subfigure}
-\caption{Mature B cells increase frequency of pro B cells in the thymus}
+\caption{Mature B cells increase frequency of pro B cells in the thymus.
+Top panel shows representative FACS plots showing a decreased frequency of CD19\textsuperscript{+}IgM\textsuperscript{-}CD43\textsuperscript{+} cells (pro B cells) in the thymus.
+The bottom panel shows this data in a graph.
+Statistical significance was determined using a One-way ANOVA and Tukey's test. NOD KO has a statistically significantly lower frequency of pro B cells compared to both NOD WT and B6 control. NOD WT n=3, NOD KO n=4, B6 n=4. Frequencies shown are percentage of CD19\textsuperscript{+} cells within the IgM\textsuperscript{-}CD43{+} population within the thymus.}
 \label{fig:MatureBincProB}
 \end{figure}
 
-\fig{Add graph showing the differences in pro B frequencies between NOD/B6 and KO.}
 
 \subsection{NOD mice express higher levels of CD43 in the thymus}
 
-During analysis of data regarding frequencies of pro B cells in the NOD thymus compared to B6 thymi, it was noted that there was also a significant difference in frequency/intensity of CD43 expression.
+During analysis of data regarding frequencies of pro B cells in the NOD thymus compared to B6 thymi, it was noted that there appeared to be a difference in frequency/intensity of CD43 expression in the different strains.
 The frequency of IgM\textsuperscript{-} cells is very similar between B6, NOD WT and NOD KO mice.
-However, when the expression of CD43 is investigated within this population, it appears that the expression on NOD mice, both WT and KO, is much increased compared to B6 mice, as shown in \cref{fig:CD43expression}.
+However, when the expression of CD43 is investigated within this population, it appears that the expression on NOD mice, both WT and KO, is increased compared to B6 mice, as shown in \cref{fig:CD43expression}.
+Statistical analysis shows that only the difference between the KO and B6 is significant.
+The graph also shows a wide spread of frequencies for both NOD background strains.
+This spread may be decreased by increasing the group size as the number of mice was small.
+However, the B6 data is all very close suggesting that the B6 may be a more regimented environment compared to the NOD which could account for the differences in spread of data across the strains.
 The experiment was carried out blind so that all strains were analysed without bias.
 
 The reason for this is not known, however, it is possible that CD43 provides an important tool for allowing T cells to move from the blood into lymphoid tissues.
@@ -161,9 +161,15 @@ It may be that the increased CD43 expression on NOD mice may be allowing the inf
 	\includegraphics[width=0.6\textwidth]{Figures/CD43levels.pdf}
 	\caption{Graph showing increased CD43 expression NOD}
 	\end{subfigure}
-\caption{NOD mice show increased CD43 expression in the thymus}
+\caption{NOD mice show increased CD43 expression in the thymus.
+Top panel shows representative FACS plots showing increased CD43 expression in NOD WT and NOD KO mice.
+However, the graph shows that the difference is only significant between the NOD KO and B6, analysed using a One-Way ANOVA and Tukey's test.
+FACS plots gated lymphocytes, single cells, IgM\textsuperscript{-} then analysed on CD43 expression.
+NOD KO n=4, NOD WT n=3, B6 n=4. }
 \label{fig:CD43expression}
 \end{figure}
+
+%CD43 levels on B cells from last year???
 
 \subsection{Transfer}
 
@@ -177,7 +183,8 @@ Due to the preliminary nature of this transfer experiment, very small numbers of
 One recipient each for each fraction were taken at 7 days for analysis and the others were taken at 11 days post transfer.
 Tissues taken for analysis were bone marrow, thymus, spleen, pancreas, pancreatic lymph node and lateral axillary lymph node.
 The numbers/phenotypes of donor cells are shown in \cref{subfig:WTdonortable}.
-\fig{Show how expt set up - diagram}
+
+\todo{Diagram explaining set-up of experiment}
 
 
 The experiment was of interest due to the fact a similar thing has been attempted before by \citet{Serreze1998}, whereby NOD B cells were injected into NOD KO recipient mice.
@@ -186,18 +193,16 @@ However, the difference was that the injected B cells were conventional splenic 
 Here in my transfer experiment, the transferred cells were of thymic origin and since relatively little is known about thymic B cells, it was wondered whether the outcome would be the same. 
 Therefore, the aim of the experiment was 2 fold, one, to see if thymic B cells could survive transfer and two, to see if the presence of thymic B cells had an effect on the frequency of pro B cells in the KO thymus.
 
-Interestingly, in concordance with \citet{Serreze1998}, analysis revealed that mature B cells were only present in the recipient mice at the 7 day post transfer time point.
-Further to this, B cells are only seen in the thymus and spleen of recipient mice at the 7 day time point.
+Interestingly, in concordance with \citet{Serreze1998}, analysis revealed that mature B cells were only present in the recipient mice at the 7 day post transfer time point, see \cref{fig:Transfer}.
+Bone marrow, thymus, spleen, pancreas, pancreatic lymph node and axillary lymph nodes were all analysed to look for donor B cell presence, however, B cells are only seen in the the thymus and spleen at the 7 day time point.
 No B cells were seen in any of the tissues at the 11 day time point.
 This is similar to the findings of \citet{Serreze1998} and could suggest that the B cells are being killed off by cytotoxic T cells which have never developed tolerance to B cells due to their absence during T cell development.
-On the other hand, due to the fact that there was only one mouse for each group, the group size is very small and the results must be viewed with caution.
+On the other hand, due to the fact that the group size is very small, one mosue per group, the results must be viewed with caution.
 
 Although B cells are seen in the thymus and spleen of both recipients at the 7 day time point, it seems that there is a higher frequency of CD19\textsuperscript{+}IgM+ cells in the CD19\textsuperscript{+} recipient.
 This finding is not surprising as this recipient received mature B cells in the transferred cells.
 However, there are still some B cells seen in the CD19\textsuperscript{-} recipient.
-This could suggest two things.
-Firstly, B cells are developing from CD19\textsuperscript{-} progenitors which were injected.
-Or, secondly, it may be that these B cells were contaminating B cells which were injected in the first place.
+These could be B cells that developed from CD19\textsuperscript{-} progenitors which were injected or they may be contaminating B cells that were transferred.
 
 \begin{figure}
 	\begin{subfigure}{\textwidth}
@@ -215,10 +220,13 @@ Or, secondly, it may be that these B cells were contaminating B cells which were
 	\includegraphics[width=0.5\textwidth]{Figures/CD19negrecipthy.png}
 	\caption{Thymus of recipients showing B cell presence/absence at 7 and 11 days post transfer}
 	\end{subfigure}
-\caption{Figure showing B cell presence/absence in spleen and thymus over time}
+\caption{Figure showing B cell presence/absence in spleen and thymus over time.
+Top panel shows B cell presence in the spleen of the CD19+ and CD19- recipients at 7 and 11 days post transfer.
+Bottom panel shows the same but in the recipient thymi.
+Data shown is gated lymphocytes, single cells, GFP\textsuperscript{+} then analysed on CD19 expression.
+n=1 for every group.}
+\label{fig:Transfer}
 \end{figure}
-
-\todo{Proper figure legend. Comment on difference in frequencies in recipients}
 
 \subsubsection{Is there an effect on the number of pro B cells?}
 
@@ -602,6 +610,7 @@ Whereas the PLN should be inflamed in T1D, the lateral axillary lymph node shoul
 	\label{subfig:PLNGFPBcells}
 	\end{subfigure}
 	\begin{subfigure}{0.45\textwidth}
+	\centering
 	\includegraphics[width=\textwidth]{Figures/axLNGFPBcells.pdf}
 	\caption{Axillary lymph node}
 	\label{subfig:axLNGFPBcells}
