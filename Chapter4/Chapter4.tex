@@ -322,13 +322,13 @@ However, while this method gave a very pure sample with very few mature cells re
 	\label{subfig:Qiagen}
 	\end{subfigure}
 	
-\caption{Figure showing the different methods of depletion. Qiagen beads in shows that 89\% percent of cells are CD4-CD8-}
+\caption{Figure showing the different methods of depletion. 
+Methods for each outlined in \cref{Methods:MACSdepletion}.
+FACS plots gated lymphocytes, single cell CD4\textsuperscript{-}CD8\textsuperscript{-}, then for Miltenyi methods CD19\textsuperscript{-}CD11c\textsuperscript{-} and for Qiagen beads B220\textsuperscript{-}.}
 \end{figure}
 
-Since the point of the depletion was just to reduce the quantity of mature cells so that the progenitor populations could be seen by flow cytometry, it was more important for the experiment that there was a lot of cells to interrogate rather than them being very pure.
-Therefore, Qiagen beads were tried and as shown, \cref{subfig:Qiagen}, while the purity was not as good as the Miltenyi beads \todo{efficiency of Qiagen beads}, the yield was much improved.
-This was a better balance for the experiment, therefore, Qiagen beads were used.
-\todo{insert a table showing the efficiencies of each depletion method}
+Qiagen beads were also tested as an alternative to the Miltenyi kits. 
+As shown in \cref{subfig:Qiagen}, the efficiency of this method was also very good and the yield was also much improved compared to the Miltenyi beads therefore this was the chosen method of depletion.
 
 
 \subsection{BLPs are present in NOD mouse}
@@ -362,11 +362,18 @@ With this is mind, other potential B cell development patterns must be explored.
 	\caption{Graph showing the frequencies of cells expressing each marker at the appropriate level.}
 	\label{subfig:BLPgraph}
 	\end{subfigure}
-\caption{BLP figure. 11 mice. Double blind. 3 NOD WT, 3 NOD KO, 4 B6}
+\caption{BLPs are present in the NOD thymus. 
+Top panel shows gating pattern to look for BLPs in the thymus of mice. Lymphocyte and single cell gate not shown.
+Bottom panel shows the frequency of each marker within the population of the previous marker.
+One way ANOVA and Tukey's test carried out on Ly6D\textsuperscript{+} population revealing a significantly increased population of BLPs in the B6 mice compared to both NOD WT and NOD KO.
+11 mice were used, all aged 6-8 weeks. 
+The experiment was carried out blind to avoid bias. 
+NOD WT n=3, NOD KO n=3, B6 n= 4.}
 \label{fig:BLPs}
 \end{figure}
 
-\fig{Graph of Frequencies}
+\todo{Swap IL-7R$\alpha$ and Flt3 round on graph}
+
 
 
 
@@ -391,26 +398,36 @@ The lack of CXCL12 in the thymus is not a surprising result as it is a cytokine 
 
 \begin{figure}
 	\begin{subfigure}{0.5\textwidth}
-	\includegraphics[width=0.5\textwidth]{Figures/E2A.pdf}
+	\centering
+	\includegraphics[width=\textwidth]{Figures/E2A.pdf}
 	\caption{E2A}
 	\end{subfigure}
 	\begin{subfigure}{0.5\textwidth}
-	\includegraphics[width=0.5\textwidth]{Figures/EBF.pdf}
+	\centering
+	\includegraphics[width=\textwidth]{Figures/EBF.pdf}
 	\caption{EBF}
 	\end{subfigure}
 	\begin{subfigure}{0.5\textwidth}
-	\includegraphics[width=0.5\textwidth]{Figures/sPax5.pdf}
+	\centering
+	\includegraphics[width=\textwidth]{Figures/sPax5.pdf}
 	\caption{Pax5}
 	\end{subfigure}
 	\begin{subfigure}{0.5\textwidth}
-	\includegraphics[width=0.5\textwidth]{Figures/VPreB.pdf}
+	\centering
+	\includegraphics[width=\textwidth]{Figures/VPreB.pdf}
 	\caption{VPreB}
 	\end{subfigure}
-	\begin{subfigure}{0.5\textwidth}
+	\begin{subfigure}{\textwidth}
+	\centering
 	\includegraphics[width=0.5\textwidth]{Figures/CXCL12.pdf}
 	\caption{CXCL12}
 	\end{subfigure}
-\caption{Figure showing presence of all genes in bone marrow and thymus apart from CXCL12}
+\caption{B cell development transcription factors are present in NOD thymi.
+Gel electrophoresis of non-quantitative PCR products shows presence of B cell development transcription factors.
+Lanes from left to right; Thymus, Bone marrow, 100 bp marker. 
+600bp mark showed in red box.
+Expected product size is shown in blue box.
+Gels were run in 3\% agarose in 1 x TAE buffer. Gels supplemented with 1 $\mu$L ethidium bromide per 25 $\mu$L of 1 x TAE buffer. Gels run at constant 70V. }
 \label{fig:gels}
 \end{figure}
 
@@ -475,17 +492,19 @@ The results of this comparison are shown in \fig{add a graph showing how the age
 	\label{subfig:BMRAGCD19DP}
 	\end{subfigure}
 	\begin{subfigure}{\textwidth}
-	\includegraphics[width=\textwidth]{Figures/BMvThyDP.pdf}
+	\centering
+	\includegraphics[width=0.8\textwidth]{Figures/BMvThyDP.pdf}
 	\caption{}
 	\label{BMvThyDPgraph}
 	\end{subfigure}
-\caption{Representative plots to show the difference in presence of CD19+RAG+CD4+CD8+ cells in the NOD thymus and bone marrow in 4 week old NOD-RAG-GFP mice.}
+\caption{RAG\textsuperscript{+}CD19\textsuperscript{+}CD4\textsuperscript{+}CD8\textsuperscript{+} cells are present in the NOD thymus but not bone marrow.
+Top panel shows representative FACS plot of presence of these cells in the thymus. A CD19 gate was used on acquisition of data so that 100\% of CD19\textsuperscript{+} cells were acquired with only ~2\% of CD19\textsuperscript{-} cells.
+Middle panel shows absence of the cells in the bone marrow.
+Bottom panel shows no significant difference in frequency of these cells between 4 and 7 weeks of age in the thymus.
+Also shows the lack of RAG\textsuperscript{+}CD19\textsuperscript{+}CD4\textsuperscript{+}CD8\textsuperscript{+} cells in the bone marrow.
+4 week old NOD-RAG-GFP n=5, 7 week old NOD-RAG-GFP n=4.}
 \label{fig:RAGCD19DP}
 \end{figure}
-
-
-\fig{Graph showing the difference between 4 and 7 weeks of cells above}
-
 
 
 \subsection{RAG\textsuperscript{+}IgM\textsuperscript{+}TcR$\beta$\textsuperscript{+} cell presence in the NOD thymus}
@@ -652,7 +671,6 @@ In order to investigate this further, the group size would need to be significan
 
 
 \subsection{Autoantibody production}
-\todo{analyse the FACS of the stroma to look at the purity of stromal cells that will have been put on the microscope slide}
 
 The purpose of this experiment was to look for any autoantibodies present in the serum of a NOD mouse.
 To do this, thymi were first depleted of all CD45\textsuperscript{+} cells to leave only stromal cells which were then transferred onto microscope slides and incubated either in NOD WT serum or PBS.
@@ -676,8 +694,6 @@ Possible things to try include:
 If the action of the autoantibodies is thought to implicate the process of negative selection, it may be of use to use mice that have various components relating to this process knocked out.
 For example, an AIRE knock out mouse could potentially show whether the autoantibodies are specific to an AIRE-related component.
 
-
-\fig{Pictures of histology showing serum treated and control PBS treated slides}
 
 \begin{figure}
 	\begin{subfigure}{\textwidth}
