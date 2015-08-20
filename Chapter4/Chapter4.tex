@@ -551,17 +551,15 @@ However, it would be beneficial to carry out investigation at the protein level,
 
 \subsection{Pilot study to track movement/homing of thymic B cells on transfer into recipient mice}
 
-\todo{where B cells traffic to could give indication of their role in T1D. Also, use of GFP as  a marker. However, numbers were very small so analysis difficult. Needs to be done again in the future. Comment on whether it may be possible and what would need to change to make it work.}
-
 
 As little is known about the function of thymic B cells, a pilot study was set up with the aim of investigating the migration/homing abilities of thymic cells, including B cells when injected intravenously into recipient mice.
 The aims of the experiments were to see whether B cells and their progenitors derived from a donor NOD thymus had a preference for migrating back to the thymus following injection or whether they went elsewhere.
 By understanding the movements of thymic B cells and their preferential home tissues, it may give an indication as to what, if any, their contribution is to T1D pathogenesis.
 
 \fig{Showing the set up of expt} shows how the experiments were conducted. 
-Two donor thymi were taken and split into CD19+ and CD19- fractions using MACS.
-CD19+ fractions from both donor were then pooled and the same was done for the CD19- fractions.
-Four recipient mice were then injected with either CD19+ or CD19- thymic cells from the donors.
+Two donor thymi from NOD-RAG-GFP mice were taken and split into CD19+ and CD19- fractions using MACS.
+CD19+ fractions from both donors were then pooled and the same was done for the CD19- fractions.
+Four recipient NOD WT mice were then injected with either CD19+ or CD19- thymic cells from the donors.
 After specified time points, the recipient mice were sacrificed and their tissues were analysed.
 The tissues taken for analysis were as follows:
 \begin{itemize}
@@ -570,9 +568,9 @@ For example, they may have specific cytokine sensitivity which results in being 
 \item Spleen - The spleen was included for analysis as this is the normal site of B cell maturation.
 Therefore it was of interest to see if thymic derived donor cells would move here like conventional B cells do to finish development.
 \item Bone marrow - The bone marrow is the normal site of B cell development and therefore was included to see if the developing donor B cells would preferentially migrate here to develop in the same way as conventional B cells
-\item Pancreas - The pancreas contains the Islets of Langerhans which are destroyed in T1D through T and B cell mediated attack.
-It is the site of infiltration therefore it was included in analysis to see if thymic B cells were part of the infiltration process.
-If so, it may indicate that thymic B cells could have a direct role in the pathogenesis of the disease.
+%\item Pancreas - The pancreas contains the Islets of Langerhans which are destroyed in T1D through T and B cell mediated attack.
+%It is the site of infiltration therefore it was included in analysis to see if thymic B cells were part of the infiltration process.
+%If so, it may indicate that thymic B cells could have a direct role in the pathogenesis of the disease.
 \item Pancreatic lymph node - The PLN is where antigen-presenting cells move to from the pancreas in order to activate T cells.
 In T1D, APCs move from the pancreatic islets to the PLN carrying islet antigens and therefore the PLN is in an inflammatory state.
 This tissue was therefore included to look at the status of the lymph node to compare it to the control axillary lymph node.
@@ -609,84 +607,49 @@ Whereas the PLN should be inflamed in T1D, the lateral axillary lymph node shoul
 	\caption{Pancreatic lymph node}
 	\label{subfig:PLNGFPBcells}
 	\end{subfigure}
-	\begin{subfigure}{0.45\textwidth}
+	\begin{subfigure}{\textwidth}
 	\centering
-	\includegraphics[width=\textwidth]{Figures/axLNGFPBcells.pdf}
+	\includegraphics[width=0.45\textwidth]{Figures/axLNGFPBcells.pdf}
 	\caption{Axillary lymph node}
 	\label{subfig:axLNGFPBcells}
 	\end{subfigure}
-\caption{Graphs showing where transferred B cells go}
+\caption{Graphs showing where transferred B cells migrate to.
+Each graph shows the number of GFP\textsuperscript{+} B cells (CD19\textsuperscript{+}IgM\textsuperscript{+}) present in each tissue in each receipient/control. NOD WT control was included as a negative control as it has no GFP therefore any GFP\textsuperscript{+} B cells can be classed as `noise'. 
+NOD-RAG-GFP was included as a positive control. 
+Recipient mice were analysed at 4 and 7 days post transfer. n=1 for each group.}
 \label{fig:GFPBcellgraphs}
 \end{figure}
-\todo{Questions to ask of data: 1) Where do B cells go? 2)Do the B cells survive? 3) Is GFP a good tracker? 4) Do you get B cells in the CD19- recipients? 5) DO CD19+ cells increase in KOs after transfer? Can't tell as can't differentiate between donor and recipient) 6) Is there new GFP activation after transfer?}
 
-\subsubsection{NOD-RAG-GFP donor thymic cells, NOD WT recipients}
+The results obtained from this experiment suggests that transferred B cells will only migrate to the thymus, spleen and axillary lymph node, as shown in \cref{fig:GFPBcellgraphs}.
 
-The aim of this experiment was to see where development of B cells occurs in the recipient cells and to see whether or not the presence/absence of CD19+ cells has on the ability of early CD19- progenitor B cells to develop.
-It was also an opportunity to see whether GFP is a useful tool for tracking transferred cells or whether the half life is not long enough to track transferred cells for a useful amount of time in the recipient.
+Firstly, in the thymus, no GFP\textsuperscript{+} B cells were seen in the CD19\textsuperscript{+} recipient at either time point, shown by the numbers being less than that seen in the NOD WT control, see \cref{subfig:ThyGFPBcells}.
+However, the total number of cells in the thymus of each mouse was also different (NOD WT 8.8 x 10\textsuperscript{6}, 4 day CD19+ recipient 4.8 x 10\textsuperscript{6}, 4d CD19- recipient 9.8 x 10\textsuperscript{6}, 7d CD19+ recipient 3.1 x 10\textsuperscript{6}, 7d CD19+ recipient 5.1 x 10\textsuperscript{6}, NOD-RAG-GFP control 7.3 x 10\textsuperscript{6}).
+This shows that there are about double the number of thymic cells in the NOD compared to the CD19\textsuperscript{+} recipients at either time point, suggesting that the lower number of GFP+ B cells could be accounted for by the smaller number overall.
+This decrease in total thymus cell number may be due to the mouse itself or the preparation of the thymus.
+The other recipients have more similar total thymus cell numbers and are therefore more comparable.
+Only the CD19\textsuperscript{-} recipient shows an increase in GFP\textsuperscript{+} B cells and even then, only at the 4 day time point.
 
-\paragraph{Are there any GFP+ cells seen in the recipients?}
+In the bone marrow, \cref{subfig:BMGFPBcells}, all the recepients look very similar to the NOD control mouse, suggesting that any GFP\textsuperscript{+} B cells seen there are maybe just attributable to noise.
 
-\fig{Presence of GFP+ cells}
-\fig{BM, Spln and Thy, CD19vIgM, GFP, both time points}
-Analysis of the recipient mice at both 4 and 7 days post transfer revealed that there are GFP+ cells seen in the recipient mice at both time points.
-In particular, GFP+ cells at both time points seem to migrate to the bone marrow, spleen and control lymph node. 
-Some cells migrate to the thymus but only in the CD19- recipients and the population seen there is of very low frequency.
+The spleen, showever, does show an increase in GFP\textsuperscript{+} B cells in all recipients at all time points compared to NOD control, \cref{subfig:SpleenGFPBcells}. 
+This is interesting as it suggests that transferred GFP\textsuperscript{+} B cells are migrating to the spleen to develop, as would conventional B cells.
+The total thymus cell count for the NOD WT is about the same as the 7 day CD19\textsuperscript{-} recipient (~3.7 x 10\textsuperscript{6} cells), which is about half the number of cells in each of the other mice.
+However, the number of GFP\textsuperscript{+} B cells seen in all recipient mice is increased compared to the NOD mouse suggesting that the difference cannot be accounted for by the difference in thymus cell number.
 
-Analysis was mainly concerned with GFP+CD19+IgM+ cell presence.
-These cells were looked for in each of the recipient tissues mentioned above.
-However, only some tissues seemed to differ significantly from the control and these were the spleen, thymus and bone marrow.
-All the other tissues appeared to be very similar to the control NOD mouse included for analysis.
+In the pancreatic lymph node, \cref{subfig:PLNGFPBcells}, it appears that there is a lot of `noise' in the NOD control as this mouse should not have any GFP and yet the number of GFP\textsuperscript{+} B cells is supposedly far greater than that seen in the NOD-RAG-GFP positive control. 
+It seems that there are no GFP\textsuperscript{+} B cells in any recipients, and that this is reasonable due to the very small number seen in the NOD-RAG-GFP positive control mouse.
 
-Bone Marrow
+Finally, in the axillary lymph node \cref{subfig:axLNGFPBcells}, it appears that GFP\textsuperscript{+} B cells are only seen in the CD19\textsuperscript{+} and potentially CD19\textsuperscript{-} recipients at the 4 day time point.
+The total cell counts for each recipient and control were all fairly similar therefore it appears that any differences in GFP\textsuperscript{+} B cells cannot be accounted for by differences there.
 
-4 days:
-In this tissue, the presence of CD19+ cells is increased in the CD19+ recipient and the CD19- recipient in comparison to the NOD WT control.
-This increase is further accentuated in the CD19+ recipient.
-This could suggest that transferred CD19+ cells are moving to the bone marrow.
-Contaminating CD19+ cells in the CD19- fraction could account for the small increase in CD19+ population in the CD19- recipient.
-However, in terms of GFP presence, it seems that the levels of GFP in the B cells is negligable compared to the control WT NOD mouse.
-This suggests that the trasferred cells that may be increasing the CD19+ populations in the bone marrow are mature prior to entering the recipient bone marrow, shown by the lack of GFP.
-
-There are also no more CD19+RAG+ cells in the recipient mice compared to the control mice suggesting that there are no actively developing transferred B cells in the bone marrow.
-This could indicate that either B cells are not able to develop following transfer or that they are not doing so in the bone marrow 4 days post transfer.
-
-7 days:
-After 7 days, CD19+ cells are increased in both recipients. 
-Unlike at 4 days, the increase is similar in both recipients.
-GFP is also increased compared to the NOD control.
-
-Spleen
-
-4 days:
-In this tissue, a similar picture is seen compared to the bone marrow. 
-Again, CD19+ cells are increased in both the recipients compared to the NOD control but the GFP is only slightly increased, if at all.
-
-7 days:
-Again at 7 days, the frequency of CD19+RAG+ cells is increased, though the frequency of RAG+ cells in this population is not increased compared to the control.
+Overall it appears that GFP\textsuperscript{+} B cells migrate mainly to the spleen, with a some migrating to the thymus and axillary lymph node.
+This suggests that thymic derived B cells do not on the whole migrate back to the thymus following transfer.
+However, in the thymus, the CD19\textsuperscript{-} recipient is the only one to show an increase in GFP\textsuperscript{+} B cells. 
+This could be due to chance or contaminating B cells, or it may be due to the fact that this fraction contains CD19\textsuperscript{-} B cell progenitors which may need to be in the thymus to develop into B cells.
+This could indicate that thymic B cells need to develop initially in the thymus, but following this, they can continue development in the spleen, similar to conventional B cells.
+In order to investigate this further, the group size would need to be significantly increased to see whether this difference is due to chance or is a real observation.
 
 
-Thymus
-
-4 days:
-In this tissue the frequency of CD19+ cells is increased in the CD19- recipient and decreased in the CD19+ recipient.
-There is more GFP in both recipients than the NOD but the most is in the CD19+ recipient.
-
-7 days:
-Very similar picture to the 4 day time point.
-However, the frequency of B cells is similar in both recipients and both similar/lower than the frequency in the control.
-The levels of GFP are increased though in both recipients.
-
-
-The pancreas, control and pancreatic LNs showed no difference to the control NOD mouse suggesting that they were affected very little by the transferred cells. 
-The only difference was an increase in B cells in the control lymph node at the 7 day time point, but no increase in GFP+ cells.
-
-In all the 7 day tissues there were no IgM+TcR+ cells
-
-
-
-However, due to the very small scale of the experiment, the results need to be viewed with caution.
-Further repeats on a larger scale would need to be carried out to increase the validity of the results.
 
 \subsection{Autoantibody production}
 \todo{analyse the FACS of the stroma to look at the purity of stromal cells that will have been put on the microscope slide}
@@ -702,9 +665,6 @@ Further repeats on a larger scale would need to be carried out to increase the v
 	\end{subfigure}
 \end{figure}
 
-\begin{figure}
-\includegraphics{Figures/RAGhighlownegative.pdf}
-\end{figure}
 
 \subsection{Conclusion}
 
