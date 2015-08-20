@@ -654,15 +654,46 @@ In order to investigate this further, the group size would need to be significan
 \subsection{Autoantibody production}
 \todo{analyse the FACS of the stroma to look at the purity of stromal cells that will have been put on the microscope slide}
 
+The purpose of this experiment was to look for any autoantibodies present in the serum of a NOD mouse.
+To do this, thymi were first depleted of all CD45\textsuperscript{+} cells to leave only stromal cells which were then transferred onto microscope slides and incubated either in NOD WT serum or PBS.
+Subsequent staining with anti-mouse antibody revealed any antibodies bound to thymic stroma.
 
-\fig{Representative FACS showing stromal purity}
+Interestingly, as shown in \cref{subfig:WTserum}, there appeared to be intracellular staining seen only on the serum treated sample.
+The PBS incubated sample showed no such staining, \cref{subfig:WTcontrol}.
+
+This pattern of staining suggests that the NOD WT mouse may produce an antibody specific to an intracellular component of thymic stromal cells.
+However, it is not possible to say what the antibody is specfic for and further investigation would be needed to determine this.
+However, mTECS and cTECS present in the thymus are important mediators of positive and negative selection, therefore if antibodies are present to any components relating to these processes, it may be that they are affecting the efficient education of T cells.
+
+This experiment was carried out as a very preliminary experiment to see if it was worth further investigation and the results suggest that it is.
+Possible things to try include:
+\begin{itemize}
+\item Increasing group size from one thymus
+\item Try incubating NOD WT stroma in B6 serum to see if the antibody binding is specific to the NOD serum
+\item Try incubating B6 serum with NOD serum to see if the antigen is specific to the NOD mouse
+\end{itemize}
+
+If the action of the autoantibodies is thought to implicate the process of negative selection, it may be of use to use mice that have various components relating to this process knocked out.
+For example, an AIRE knock out mouse could potentially show whether the autoantibodies are specific to an AIRE-related component.
+
+
 \fig{Pictures of histology showing serum treated and control PBS treated slides}
 
 \begin{figure}
 	\begin{subfigure}{\textwidth}
-		\includegraphics[width=\textwidth]{Figures/WTserum2.jpg}
-		\caption{Serum treated WT NOD thymic stromal cells}
+		\includegraphics[width=\textwidth]{Figures/WTserum.png}
+		\caption{Serum treated}
+		\label{subfig:WTserum}
 	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+		\includegraphics[width=\textwidth]{Figures/WTcontrol.png}
+		\caption{PBS treated}
+		\label{subfig:WTcontrol}
+	\end{subfigure}
+\caption{This image shows NOD WT thymic stroma incubated with serum from a 16 week old NOD WT mouse (top) and NOD WT stroma incubated with PBS as a control (bottom).
+Following incubation with serum or PBS, samples were stained with anti-mouse antibody conjugated to FITC.
+Slides were imaged using...}
+\label{fig:histology}
 \end{figure}
 
 
