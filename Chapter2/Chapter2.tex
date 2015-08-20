@@ -18,10 +18,11 @@ This project is concerned with T1D and it's autoimmune basis.
 According to statistics provided by Diabetes UK, diabetes, both T1D and T2D, affects approximately 3.9 million people in the UK, with many more as yet undiagnosed. 
 Of all diabetes sufferers, around 10\% have T1D \toref{Diabetes UK 2015}.
 
-Insulin is a vitally important hormone involved with the maintenance of normal blood glucose levels.
-Insulin is vital for stopping the production of extra glucose by means of gluconeogenesis, glycogenolysis, lipolysis, ketogenesis and proteolysis.
-However, insulin deficiency as seen in T1D means that this cannot happen and also causes the increase in glucagon, the hormone which counteracts insulin to increase blood glucose by the mechanisms stated above\citep{Sonksen2000}.
-The total lack of insulin production ability in T1D means that effective glucose monitoring and self administration of glucose via injection or infusion is cruicial to keep these processes in check.
+Insulin is a vitally important hormone involved with the maintenance of normal blood glucose levels, in particular stopping dangerous rises in blood glucose levels.
+Insulin's main actions are to stop the production of extra glucose when blood glucose is already sufficiently high.
+It does this by keeping the brakes on gluconeogenesis, glycogenolysis, lipolysis, ketogenesis and proteolysis, and preventing the production of glucagon, the hormone which acts to raise glucose levels.
+However, in T1D, the resulting lack of insulin means that these processes cannot be kept in check causing subsequent hyperglycaemia \citep{Sonksen2000}.
+The total lack of insulin production ability in T1D means that effective glucose monitoring and self administration of glucose via injection or infusion is cruicial to maintain blood glucose homeostasis.
 
 Alongisde the charactistic symptoms of excessive thrist, drinking and urination, there are serious side effects both in the short and longer term.
 In the short term, extremes of blood glucose, either too high or too low can lead to hyper- or hypoglycaemia which can prove lethal if not treated promptly.
@@ -34,23 +35,19 @@ This has it's limitations due to the lack of tissue availability and because a l
 The other arm requires the use of animal models, particularly the nonobese diabetic (NOD) mouse, which is currently the best available animal model of T1D.
 The NOD mouse will be discussed further below.
 
-
-
-
 \section{The Nonobese Diabetic Mouse}
 
-The nonobese (NOD) mouse is the best available animal model of T1D, first developed by Makino et al \toref{Makino et 1980} in 1980.
-It is a model that is genetically predisposed to develop T1D by a well characterised pathogenesis over a well defined time course as outlined below and in \toref{figure showing T1D in NOD}.
+The nonobese (NOD) mouse is the best available animal model of T1D, first developed by Makino et al \toref{Makino et al 1980} in 1980.
+It is a model that is genetically predisposed to develop T1D by a well characterised pathogenesis over a well defined time course as outlined below and in \todo{Diagram of T1D in NOD}.
 
 \begin{enumerate}
 \item Sensitisation - the immune system first becomes aware of islet antigen and incorrectly recognises it as foreign
-\item Infiltration - cells of the immune system move to the pancreatic islets and infiltrate the tissue. For a while, the environment remains regulated and no damage occurs
-\item Insulitis - the immune cells in the islets become activated and cause inflammation
+\item Infiltration and insulitis - cells of the immune system move to the pancreatic islets and infiltrate the tissue. This is known as insulitis. For a while, the environment remains regulated and no damage occurs
 \item Beta cell destruction - activated cytotoxic T cells (CTL) begin to target and destroy beta cells. Beta cells are believed to die by apoptosis \citep{Cnop2005}.
 \end{enumerate}
 
 It is believed that the NOD mouse is a relevant model for T1D research as it is thought the human disease follows a similar pathogenesis.
-It has been seen in donated human diabetic tissues that there is infiltration, insulitis and CTL-mediated beta cell destruction.
+It has been seen in donated human diabetic tissues that there is infiltration of islets including many CD8\textsuperscript{+} T cells, suggesting that they may well be activating to cytotoxic T lymphocytes (CTL) and destroying $\beta$ cells in a similar way to that seen in the NOD mouse \citep{Hanafusa2008}.
 Each of the stages of T1D development will be discussed further in the relevant sections below.
 
 
@@ -59,21 +56,21 @@ Each of the stages of T1D development will be discussed further in the relevant 
 It is not known what causes T1D.
 There are numerous hypotheses as to how the immune system first becomes aware of islet antigens that normally remain hidden.
 
-
-One such hypothesis is that a childhood illness affecting the pancreas may cause release of islet antigen in an inflammatory environment \citep{Green1999}.
-This would therefore cause activation of autoreactive T cells and allow the initiation of beta cell destruction.
+One such hypothesis is that a childhood illness affecting the pancreas may cause release of islet antigen in an inflammatory environment \citep{Green1999, Andreoletti1997}.
+The inflammatory environment would mean that antigen presenting cells (APCs) would be expressing co-stimulatory molecules (see \toref{subsec:Tcellactivation}) so they would be able to activate T cells responsive to islet antigen released.
+This could then allow T cell-mediated $\beta$ cell destruction.
 However, this model for human disease would not fit with the disease seen in the NOD mouse as the highest incidence of T1D is seen in colonies housed in specific-pathogen-free facilities\citep{Delovitch1997}.
 This means the mice would not have had the same virus exposure to trigger the disease and yet T1D is observed anyway.
 
 Another possibility may involve the normal physiological process of pancreatic remodelling during growth and development.
 Normally this occurs in a non-inflamed environment and as cells die and are replaced, the debris is cleared up by macrophages.
 The lack of inflammatory signals means that APCs do not become activated and therefore cannot present to T cells and mount an immune response \citep{Green1999}.
-However, if there is inflammatory signalling, or presence of inflammatory cytokines, the APCs can become activate and therefore able to present to T cells to ellicit an immune response.
+However, if there is inflammatory signalling, or presence of inflammatory cytokines, the APCs are able to activate T cells and ellicit an immune response.
 This could suggest that the NOD mouse may be remodelling its pancreas in a more inflammatory environment, allowing the activation of APCs.
-Support for this theory was provided by the production of a TNFa-NOD mouse, whereby TNFa is expressed in the islets.
+Support for this theory was provided by the production of a TNF$\alpha$-NOD mouse, whereby TNF$\alpha$ is expressed in the islets.
 The presence of this inflammatory cytokine sped up the onset of diabetes and it was seen that some beta cells apoptosed prior to DC infiltration and that the DCs became activated\citep{Green1998}.
 
-Autoantigens believed to be important in T1D are glutamic acid decarboxylase (GAD), insulin, islet-specific glucose-6-phosphatase catalytic subunit-related protein (IGRP) and insulinoma antigen-2 and 2beta \citep{Green1999, Roep2012}.
+Autoantigens believed to be important in T1D are glutamic acid decarboxylase (GAD), insulin, islet-specific glucose-6-phosphatase catalytic subunit-related protein (IGRP) and insulinoma antigen-2 and 2$\beta$ \citep{Green1999, Roep2012}.
 
 
 \subsection{Infiltration and Insulitis}
@@ -83,15 +80,14 @@ First only the edges of the islets are affected and this is known as peri-insuli
 However, soon cells move into the islets too.
 Cells involved are DCs, macrophages, B cells and T cells\citep{Brodie2008}.
 It is believed that insulitis is the point at which tolerance to beta cell antigen is lost \citep{Thomas2000}.
-There is evidence to suggest that this pathogenesis is limited only to the NOD mouse as pancreatic samples from diabetic humans also reveal infiltrated islets.
-Similarly to the NOD mouse, the infiltrate contained APCs and lymphocytes which were mainly CD8+ T cells \citep{Hanafusa2008}
+There is evidence to suggest that this pathogenesis is not limited only to the NOD mouse as pancreatic samples from diabetic humans also reveal infiltrated islets.
+As mentioned above, this infiltrate contains CD8\textsuperscript{+} T cells, which have potential to become CTLs, other lymphocytes and APCs \citep{Hanafusa2008}.
 
 \subsection{Beta cell destruction}
 
 Following non-destructive insulitis, immune cells gain their aggressive traits and beta cells begin to be destroyed.
-The destruction of beta cells in the NOD pancreatic islets is believed to be mediated by cytotoxic T lymphocytes (CTLs)\citep{Thomas2000, Brodie2008}.
-Due to the large population of CD8+ lymphocytes seen in the infiltrate of diabetic pancreatic samples from human\citep{Hanafusa2008}, it is possible that these are developing into CTLs and killing off beta cells.
-The destruction of beta cells in T1D leads to absolute insulin deficiency \citep{Daneman2006}
+The destruction of beta cells in NOD and human pancreatic islets is believed to be mediated by cytotoxic T lymphocytes (CTLs)\citep{Thomas2000, Brodie2008, Hanafusa2008}.
+The destruction of beta cells in T1D leads to absolute insulin deficiency \citep{Daneman2006}.
 
 \section{B cells}
 \subsection{Role of B cells}
@@ -108,46 +104,47 @@ This will be discussed in more detail in \cref{sec:BcellsinT1D}
 \subsubsection{B cell commitment}
 
 Haematopoietic stem cells are the progenitors from which all blood cells derive.
-These cells are found in the bone marrow and, via the production of various progenitors, can produce cells of megakaryocytes, erythrocytes, lymphocytes, granulocytes, macrophages and natural killer cells.
+These cells are found in the bone marrow and, via the production of various progenitors, can produce megakaryocytes, erythrocytes, lymphocytes, granulocytes, macrophages and natural killer cells.
 HSCs are characterised by their Lin\textsuperscript{-} Sca\textsuperscript{high} c-kit\textsuperscript{high} expression (So called LSK cells) and lack of surface Flt3\citep{Welinder2011}.
 
-Following the haematopoietic stem cell stage, multipotent progenitors form which have the capability of producing all types of blood cell.
-These cells are also LSK but also express Flt3\textsuperscript{low}\citep{Welinder2011}.
+Following the haematopoietic stem cell stage, multipotent progenitors form which have the capability of producing all types of blood cell, but lack the self-renewing ability of HSCs \toref{Ref for this}.
+These cells are LSK but also express Flt3\textsuperscript{low} \citep{Welinder2011}.
 Interestingly, MPPs can express genes of multiple lineages \citep{Hu1997} suggesting that this expression is due to priming for lineage committment, rather than commitment itself.
-It is thought that by expressing these genes, it maintains them in an accessible chromatin state, ready for commitment\citep{Welinder2011}.
-Evidence for this has been seen through changes in chromatin staus of lineage restricted genes during blood cell development\citep{Weishaupt2010}.
+It is thought that by expressing these genes, it maintains them in an accessible chromatin state, ready for commitment \citep{Welinder2011}.
+Evidence for this has been seen through changes in chromatin staus of lineage restricted genes during blood cell development \citep{Weishaupt2010}.
 
 Following MPP development, magakaryocytic and erythrocytic potential is much reduced and the so-called lymphoid primed multipotent progenitor (LMPP) arises.
-These cells are capable only of lymphocyte, macrophage, granulocyte and NK cell production\citep{Adolfsson2005}.
+These cells are capable only of lymphocyte, macrophage, granulocyte and NK cell production \citep{Adolfsson2005}.
 LMPPs are characterised by being LSK but also Flt3\textsuperscript{high}.
 
-Next, Il-7Ra upregulates and Sca-1 and c-kit downregulate and to form common lymphoid progenitors (CLP).
-These cells are capable only of B and T lymphocyte development and NK cell development \citep{Kondo1997} and are Sca-1\textsuperscript{low} c-kit\textsuperscript{low} Flt3\textsuperscript{+} Il-7Ra\textsuperscript{+}.
-Flt3 is the receptor for Flt3 ligand (Flt3L) which is a growth promoter found in the bone marrow for CLPs.
-It works synergistically with IL-7 to promote lymphocyte proliferation and this occurs early in lymphopoiesis as Flt3 acts to increase IL-7Ra expression so cells are more responsive to IL-7 \citep{Holmes2006}.
+Next, Il-7R$\alpha$ upregulates and Sca-1 and c-kit downregulate and to form common lymphoid progenitors (CLP).
+These cells are capable only of B and T lymphocyte development and NK cell development \citep{Kondo1997} and are Sca-1\textsuperscript{low} c-kit\textsuperscript{low} Flt3\textsuperscript{+} Il-7R$\alpha$\textsuperscript{+}.
+Flt3 is the receptor for Flt3 ligand (Flt3L) which is found in the bone marrow and acts as a growth promoter for CLPs.
+Flt3L also works synergistically with IL-7 to promote lymphocyte proliferation \citep{Holmes2006}.
 
 However, further research into CLPs has revealed significant heterogenity within the population.
 Many different groups have used different methods, markers and reporters in order to try and identify a subpopulation of CLPs which is restricted to the B cell lineage. 
-Some of these are outlined below
+Some of these are outlined below:
 \begin{itemize}
-\item \citet{Mansson2010} - Expression of lambda5 and Rag1 was used to divide the CLP compartment into cells that are able to produce T, B and NK cells, cells that are able to produce T and B cells, and those that are B cell restricted.
-Using lambda5 reporter mice crossed with Rag1 reporter mice, it was found that CLPs could be divided into three populations.
-L5-Rag1\textsuperscript{low} cells which produced T, B and NK cells, L5-Rag1\textsuperscript{high} which produced T and B cells with reduced NK cell potential, and L5\textsuperscript{+}Rag1\textsuperscript{high} cells which were B cell lineage restricted.
-The also found that the L5\textsuperscript{high}Rag1\textsuperscript{high} cells had increased expression of the surface marker Ly6D.
+\item \citet{Mansson2010} - Expression of $\lambda$5 and Rag1 was used to divide the CLP compartment into cells that are able to produce T, B and NK cells, cells that are able to produce T and B cells, and those that are B cell restricted.
+Using $\lambda$5 reporter mice crossed with Rag1 reporter mice, it was found that CLPs could be divided into three populations.
+$\lambda$5\textsuperscript{-}Rag1\textsuperscript{low} cells which produced T, B and NK cells, L5\textsuperscript{-}Rag1\textsuperscript{high} which produced T and B cells with reduced NK cell potential, and $\lambda$5\textsuperscript{+}Rag1\textsuperscript{high} cells which were B cell lineage restricted.
+They also found that the $\lambda$5\textsuperscript{high}Rag1\textsuperscript{high} cells had increased expression of the surface marker Ly6D.
 \item \citet{Inlay2009} - Expression of Ly6D was used as a marker for determining B cell lineage commitment.
-For their investigations they split CLPs into Ly6D+ and Ly6D- fractions and then looked at their ability to produce T, B and NK cells.
-Interestingly, Ly6D- CLPs were able to produce all three types of progeny and were therefore termed all-lymphoid progenitors, ALPs.
-On the other hand, Ly6D+ CLPs were almost totally B cell committed.
+For their investigations they split CLPs into Ly6D\textsuperscript{+} and Ly6D\textsuperscript{-} fractions and then looked at their ability to produce T, B and NK cells.
+Interestingly, Ly6D\textsuperscript{-} CLPs were able to produce all three types of progeny and were therefore termed all-lymphoid progenitors, ALPs.
+On the other hand, Ly6D\textsuperscript{+} CLPs were almost totally B cell committed.
 \item \citet{Zhang2013} - Expression of Ly6D and Rag1 were used as markers to follow B cell commitment and differentiation.
 The CLP compartment was split based on Flt3 expression, Rag1 expression and Ly6D expression.
 It was found that those cells expressing Ly6D and Rag1 were the most potent at producing B cells. 
-Most of these cells expressed Flt3.
-These B cell producing cells also had the highest levels of Rag1, EBF and pax5 transcripts indicating B cell lineage progression.
+Most of these cells also expressed Flt3.
+These B cell producing cells also had the highest levels of B cell gene Rag1, EBF and pax5 transcripts (for example, Rag1, EBF, Pax5, see \cref{subsec:Bcellgenes} indicating B cell lineage progression.
 \end{itemize}
 
 It therefore appears that within the CLP stage, there are subpopulations of cells which have leanings towards different lineages.
-It may be that the appearance of these different subpopulation may be due to the development of the CLPs, that is, the more committed progenitors (for example, BLPs) are at a later stage of CLP development than less committed progenitors (for example, ALPs).
-It appears that Rag1 and Ly6D are very important in determining B cell restricted progenitors and that it is reasonable to hypothesise that a committed B cell progenitor (BLP) could have the phenotype of Sca-1\textsuperscript{low} c-kit\textsuperscript{low} Flt3\textsuperscript{+} IL-7Ra\textsuperscript{+} Ly6D\textsuperscript{+} with evidence of previous Rag1 expression and robust levels of B cell development gene transcripts.
+It may be that the appearance of these different subpopulations is linked to the developmental stage of the CLP.
+For example, the more committed progenitors, like BLPs, might be more developed CLPs compared to less committed progenitors, such as ALPs.
+It appears that Rag1 and Ly6D are very important in determining B cell restricted progenitors and that it is reasonable to hypothesise that a committed B cell progenitor (BLP) could have the phenotype of Sca-1\textsuperscript{low} c-kit\textsuperscript{low} Flt3\textsuperscript{+} IL-7R$\alpha$\textsuperscript{+} Ly6D\textsuperscript{+} with evidence of previous Rag1 expression and robust levels of B cell development gene transcripts.
 
 Following the development of B cell comitted progenitors, these cells then go on to express B220 (expressed on B cells and some plasmacytoid DCs), followed by CD19.
 Originally it was thought that B cells were only committed to the B cell lineage once B220 and CD19 were being expressed, however, there is now much evidence to suggest that this committment step occurs prior to their expression.
@@ -172,12 +169,6 @@ From here they are carried by the central sinus then venous circulation to the s
 \subsubsection{B cell receptor development}
 \label{subsubsec:Bcellrecepdevelopment}
 
-
-The formation of a B cell receptor (BcR) is vital for the development of a B cell.
-The BcR may either membrane-bound or secreted in the form of antibody.
-
-B cells are capable of recognising invading pathogens in a very specific manner thanks to it's highly specific BcR.
-
 The B cell receptor is the B cell's way of identifying pathogens in a very specific manner.
 This means that each B cell must have a different BcR in order to have repertoire capable of recognising different antigens.
 In order to produce such a highly diverse repertoire, there are a few mechanisms in place during B cell development which allow the production of a highly diverse BcR across B cells.
@@ -190,7 +181,7 @@ The constant regions give the antibody its class, for example, IgM, IgD, IgE, Ig
 
 For both heavy and light chains, the variable region is made up of a V (variable), D (Diversity, heavy chain only) and J (joining) gene segments. 
 Genomically encoded are multiple copies of different V, D and J genes and during rearrangement, one of each of these genes are selected at random and joined to produce different combinations of receptors.
-This process is mediated by enzymes known as RAG recombinases which are encoded by the recombination activating genes (RAG).
+This process is mediated by recombinase enzymes encoded by the recombination activating genes (RAG) and are therefore known as rag recombinases.
 These enzymes recognise recombination signal sequences (RSS) found next to the coding regions of each V, D and J gene and bring the ends of the chosen genes near to each other to be joined \citep{Fugmann2014, Oettinger1999}.
 To join the segments, RAG proteins cleave at either end of the genes and leave hairpin loops of DNA.
 From here a nuclease nicks the loops leaving short sequences at the end of each gene to be joined.
@@ -199,11 +190,11 @@ Further diversity is also added via the use of an enzyme called terminal deoxynu
 The use of TdT allows the production of the ~10\textsuperscript{14} different immunoglobulins \citep{Motea2010}.
 
 In order to progress from the pro B to the pre B cell stage, the rearrangement of the IgM heavy chain must begin.
-This has happened, it can be coupled to a surrogate light chain to form the pre-BcR which has the role of initiating light chain rearrangement so that a full IgM molecule can be produced \citep{Burrows2002}.
+Once this has happened, it can be coupled to a surrogate light chain to form the pre-BcR which has the role of initiating light chain rearrangement so that a full IgM molecule can be produced \citep{Burrows2002}.
 The transition from pro B to pre B cells is also the first point of screening for autoreactivity\citep{Pieper2013}.
 
-Antibodies are the secreted form of the BcR and are produced by B cells that have differentiated into plasma cells.
-Antibodies are secreted into the blood stream to help with pathogen toxin neutralisation, phagocytosis and complement activation\citep{Janeway2008}.
+The BcR may either be membrane bound or secreted in the form of antibody.
+Antibodies are produced by B cells that have differentiated into plasma cells and are secreted into the blood stream to help with pathogen toxin neutralisation, phagocytosis and complement activation\citep{Janeway2008}.
 
 
 \subsection{Genes and Transcription Factors driving B cell development}
@@ -213,20 +204,21 @@ The process of B cell development is reliant on the expression of particular gen
 The matter is complicated by the non-linear action of these factors, they all act to regulate each other and work together to drive B cell development \citep{Mandel2010}.
 
 PU.1 is an important transcription factor which requires repression in order to allow B cell development \citep{Dekoter2000}. 
-Without this repression, myeloid cell development is encouraged therefore PU.1 is said to act in a dose dependent manner.
+Without this repression, myeloid cell development is encouraged, therefore PU.1 is said to act in a dose dependent manner.
 PU.1 is regulated by Gfi-1, which is controlled by Ikaros, a transcription factor known for it's importance in allowing B cell development \citep{Yoshida2006}. 
 
-Lowered expression of PU.1 upregulates the expression of IL-7Ra, EBF and Pax5 which are all important factors for B cell development \citep{Hagman2006}.
-PU.1 acts on progenitors in order to aid production of CLPs\citep{Hagman2006}.
+Lowered expression of PU.1 upregulates the expression of IL-7R$\alpha$, EBF and Pax5 which are all important factors for B cell development \citep{Hagman2006}.
+PU.1 acts on progenitors in order to aid production of CLPs \citep{Hagman2006}.
 
 Downstream from CLPs, other factors such as E2A, EBF and Pax5 all become important in the commitment to and progression in the B cell lineage \citep{Mansson2008}.
-E2A encodes two transcription factors, E12 and E46, both of which are important for B cells development \citep{Bain1997}, shown by the developmental block at the pre pro B cell stage in the absence of E2A \citep{Bain1994}.
+E2A encodes two transcription factors, E12 and E46, both of which are important for B cell development \citep{Bain1997}, shown by the developmental block at the pre-pro B cell stage in the absence of E2A \citep{Bain1994}.
 E2A is also a requirement for the expression of EBF-1, which in turn activates genes crucial to BcR development, such as VPreB (a surrogate light chain) \citep{Welinder2011}.
 Alongside gene activation, Ebf-1 also activates the transcription factor FOXO-1 which is important for continued B cell development and Rag expression.
 
 Pax5 is also an important transcription factor.
 Originally, it was believed to be the factor that coincided with B cell commitment, however, there is now evidence to suggest that B cell commitment occurs prior to Pax5 expression \citep{Mansson2008}.
 It is now thought that Pax5 is important for progression in the B cell lineage, rather than commitment.
+Mature B cells made deficient in pax5 have been shown to be able to dedifferentiate from the B cell lineage, suggesting that pax5 is important in maintaining lineage restriction \citep{Cobaleda2007}.
 Pax5 is also important for the repression of the T cell lineage through repression of Notch1 \citep{Souabni2002}.
 Notch1 will be further discussed in \cref{subsec:Tcellgenes}.
 
@@ -253,14 +245,25 @@ However, once the B cells have left the bone marrow, receptor editing is not an 
 
 \section{T cells}
 \subsection{Role}
-T-helper
-T-killer
-T-regulatory
+\label{subsec:Tcellfunctions}
+
+There are different types of T cells and they all have different functions as outlined below:
+
+
+\begin{itemize}
+\item CD4+ Helper T lymphocytes - CD4+ Helper T cells (CD4+ T cells) are cells which are able to help other immune cells carry out their own functions. 
+Helper T cells express CD4 which allows them to respond to MHC Class II expressed on the surface of APCs. 
+Activated CD4+ T cells are able to help with CD8+ cytotoxic T cell activation and B cell antibody production.
+\item CD8+ Cytotoxic T lymphocytes - CD8+ cytotoxic T cells (CTL) are produced through activation of CD8+ T cells.
+Once activated, CTLs are capable of killing off their target cells in a highly specific manner.
+\item Regulatory T cell - There are different types of regulatory T cells (Tregs) which all act to suppress of harmful immune responses in the periphery
+\end{itemize}
+
 
 \subsection{Development}
 
 T cells develop in the thymus.
-However, the thymus does not contain any self-renewing cells therefore the process of T cell development relies on the constant seeding of the thymus by progenitors from the bone marrow \citep{Zlotoff2011}.
+However, the thymus does not contain any self-renewing cells, therefore, the process of T cell development relies on the constant seeding of the thymus by progenitors from the bone marrow \citep{Zlotoff2011}.
 However, the cell that is responsible for this seeding and acts as a T cell progenitor is not known.
 There are many candidates and these have been identified by looking at the requirements of a cell to be able to settle in the thymus and develop into a T cell.
 
@@ -282,40 +285,29 @@ In the DP stage, in this stage, T cells undergo their first round of education, 
 This is the process whereby all developing T cells are exposed to cortical epithelial cells expressing MHC class I and MHC Class II.
 If the T cell doesn't recognise either MHC Class, or binds with a very high affinity, they receive a death signal and are deleted by apoptosis.
 However, for those T cells that bind to one of the MHC Classes with the correct affinity, they receive a survival signal and continue with their development.
-This process is to eliminate all those T cells that wouldn't be able to recognise self MHC presenting peptide and all those which  may react dangerously to it.
+This process is to eliminate all those T cells that wouldn't be able to recognise self MHC presenting peptide and all those which  may react dangerously to it \toref{reference this}.
 
 Assuming a T cell is positively selected, depending on which MHC Class it recognised, determines the type of T cell it will become.
 For example, if a T cell recognised MHC Class II, it develops into a CD4 single positive (CD4+) T cell or if it recognised MHC Class I, it becomes a CD8 single positive (CD8) T cell.
 
 Following positive selection, T cells then pass through negative selection which is mediated by medullary thymic epithelials cells (mTECs).
 This process is an important step in preventing autoreactivity as it is here that developing T cells are presented with self antigens.
-If T cells have a receptor capable of responding to the self antigens, they are deleted from the repertoire so that only non self-reactive T cells can develop and be released into the periphery.
+mTECs express AIRE, an enzyme which is capable of producing many self antigens so that mTECs can express them and show them to developing T cells.
+The affifnity with which T cells can recognise these antigens is important for determining whether or not a T cell is allowed to continue developing.
+Cells which bind strongly to the self antigens are given a death signal as these are likely to be able to react to the antigen in the periphery and cause an autoimmune response.
+
+The aim of T cell development in the thymus is to only allow the release of non self reactive T cells into the periphery and is therefore the first stage of T cell tolerisation. 
+(T cell tolerance is discussed further in \cref{subsec:Tcelltolerance}
 
 The education of T cells in the thymus is the first step of preventing autoimmunity by removing potentially autoreactive T cells from the T cell repertoire.
 Another step in helping to prevent autoimmunity is the differentiation of CD4+ T cells into regulatory T cells (Tregs).
 There are many types of Tregs which all act to suppress harmful immune responsed in the periphery.
 
-\todo{TcR development}
-
-Development - progenitors that move to the thymus from the bone marrow and become T cells
-DN, DP, SP.
-CD4+ then become CD4+ Tregs...
+\todo{References for this section}
 
 
-\subsection{T cell functions and activation}
-
-\begin{itemize}
-\item CD4+ Helper T lymphocytes - CD4+ Helper T cells (CD4+ T cells) are cells which are able to help other immune cells carry out their own functions. 
-Helper T cells express CD4 which allows them to respond to MHC Class II expressed on the surface of APCs. 
-Activated CD4+ T cells are able to help with CD8+ cytotoxic T cell activation and B cell antibody production.
-\item CD8+ Cytotoxic T lymphocytes - CD8+ cytotoxic T cells (CTL) are produced through activation of CD8+ T cells.
-Once activated, CTLs are capable of killing off their target cells in a highly specific manner.
-\item Treg - suppression of harmful immune responses in the periphery
-\end{itemize}
-
-
-
-\subsubsection{Antigen Presentation and T cell Activation}
+\subsection{Antigen Presentation and T cell Activation}
+\label{subsec:Tcellactivation}
 
 Antigen presentation is the process by which the innate immune system can signal to the adaptive immune system that an immune response is required.
 Professional APCs (macrophages, DCs and B cells (see \cref{subsec:Bcellrole}) scavenge pathogens when they invade and phagocytose them.
@@ -323,22 +315,30 @@ From here they breakdown the pathogen, then express their antigen in MHC Class I
 This peptide/MHC complex can then be recognised by the T cell receptor on a T cell.
 This provides signal one of T cell activation.
 In inflammatory conditions, a costimulatory molecule is also expressed on the APC which provides signal two of T cell activation.
-T cells are then able to carry out their functions \toref{T cell section}.
+T cells are then able to carry out their functions, see \cref{subsec:Tcellfunctions}.
+
+CD8\textsuperscript{+}, however, recognise MHC Class I which is expressed on every nucleated cell.
+This makes these cells important for the detection of virally infected or cancerous cells.
+Damaged cells such as these are able to express antigens on their MHC Class I and they are recognised by CD8\textsuperscript{+} T cells.
+
+Interestingly, APCs are also able to cross-present so that exogenous antigens which would normally be expressed on MHC Class II are passed to the endogenous pathway following phagocytosis, thus allowing the activation of CD8\textsuperscript{+} T cells.
 
 APCs are of importance in T1D as they are the cells which can present islet antigens to autoreactive T cells causing their activation.
 The activated T cells are then able to destroy their target cells, beta cells.
+
+\todo{References}
 
 \subsection{Genes and Transcription factors}
 \label{subsec:Tcellgenes}
 
 As with B cell development, T cell development relies on genes and transcription factors to drive development in the lineage.
 
-The first stage of T cell development is the development of ETPs from their immediate precursors arriving in the thymus.
+The first stage of T cell development is the development of early thymic progenitors (ETPs) from their immediate precursors arriving in the thymus.
 There are a number of transcription factors that help with this process and, indeed, deficiency in any of these transcription factors can lead to a decrease in the ETP population without affecting their progenitors.
 These transcription factors include Notch1, T-cell factor 1 (TCF-1) and GATA-binding protein 3 (Gata3) \citep{Sambandam2005, Naito2011, Weber2011, Hosoya2009}.
 
 E2A, as mentioned in \cref{subsec:Bcellgenes}, is a protein encoding two transcription factors.
-E2A proteins are also important in T cell development and it's action appears both upstream of Notch1 by affecting LMPPs \citep{Dias2008}, and downstream, helping to drive T cell transition from DN1 to DN2 \citep{Naito2011}.
+E2A proteins are also important in T cell development and their actions appears both upstream of Notch1 by affecting LMPPs \citep{Dias2008}, and downstream, helping to drive T cell transition from DN1 to DN2 \citep{Naito2011}.
 As well as this, it appears to regulate the expression of Notch1 itself \citep{Dias2008}.
 
 There are also other transcription factors involved in T cell development, such as RUNT-related transcription factor (Runx) and Bcl11b \citep{Naito2011}.
@@ -346,12 +346,13 @@ Runx is important for progression from ETP to DN2 and DN2 to DN3, while Runx app
 Prior to absolute T cell commitment, DN2 cells retain DN, NK and macrophage potential \citep{Naito2011}.
 Evidence for this is shown by the dedifferentiation of developing T cells and a subsequent NK cell phenotype, even in committed DN3 cells \citep{Liu2010}.
 
-\todo{Look at Porrit Rothenburg and Sekai}
+%\todo{Look at Porrit Rothenburg and Sekai}
 
-\todo{Notch1}
+\todo{A bit more on Notch1}
 
 
 \subsection{Tolerance}
+\label{subsec:Tcelltolerance}
 
 Due to T cells also having huge receptor diversity as with B cells, there are mechanisms in place to prevent the release or action of autoreactive T cells.
 
@@ -390,20 +391,19 @@ These potential roles will be discussed in more detail below.
 Investigations into the role of B cells in T1D have revealed that the presence of B cells is crucial for T1D onset.
 
 Evidence for this came in 1996 when \citet{Serreze1996} produced a mouse protected from diabetes by genetically depleting B cells from the NOD mouse.
-These mice retained normal T cell populations and all known diabetes susceptibility genes, but lacked B cells.
-Further evidence came in 1997 when \citet{Noorchasm1997} used anti Ig-mu antibody to deplete B cells from female NOD mice and compared the onset of insultis and blood glucose levels with control NOD mice.
-They found that insulitis was not present in the Ig-mu treated mice, but was present in the controls.
-The blood glucose levels were also normal in the Ig-mu treated mice, whereas hyperglycaemia was seen in the controls.
-Interestingly, they also found that following remaoval of Ig-mu antibody, the B cell pool repopulated and insulitis returned.
+These mice retained normal T cell populations and all known diabetes susceptibility genes, but lacked B cells suggesting that the diabetes protection resulted from the lack of B cells.
+The resulting mouse was known as the NOD.Ig$\mu$\textsuperscript{null} mouse which had a functionally inactived Ig-$\mu$ chain and therefore cannot produce B cells.
+Further evidence came in 1997 when \citet{Noorchasm1997} used anti Ig-$\mu$ antibody to deplete B cells from female NOD mice and compared the onset of insultis and blood glucose levels with control NOD mice.
+They found that insulitis and hyperglycaemia were not present in the Ig-$\mu$ treated mice, but were present in the controls.
+Interestingly, they also found that following remaoval of Ig-$\mu$ antibody, the B cell pool repopulated and insulitis returned, giving further evidence that insulitis and diabetes are linked to B cell presence.
 
 
 
 \subsection{Antibody production}
 
-The role of antibody production, or autoantibody production in the case of T1D by B cells has been investigated.
-It is clear autoantibodies are present in T1D to islet autoantigens, and in fact this is one way in which candidate autoantigens were looked for.
+Autoantibodies are present in T1D and have in fact been useful in identifying candidate islet autoantigens \citep{Roep2012}, however, the role that they play in the pathogenesis of T1D is not known.
 
-To assess the potential role of autoantibodies, autoantibodies from diabetic NOD mice were transferred to NOD.Igmu\textsuperscript{null} mice to see if diabetes susceptibility could be transferred.
+To assess the potential role of autoantibodies, autoantibodies from diabetic NOD mice were transferred to NOD.Ig$\mu$\textsuperscript{null} mice to see if diabetes susceptibility could be transferred.
 However, there was no change in diabetes protection so the mice remained disease free \citep{Serreze1998}.
 This gives the impression that, while autoantibodies may be important in the disease, they are not sufficient to cause disease onset and are likely to not be the primary role of B cells in the T1D pathogenesis.
 
@@ -411,9 +411,9 @@ This gives the impression that, while autoantibodies may be important in the dis
 
 Following the finding that autoantibodies are likely to not be the principle mechanism of action for B cells in T1D pathogenesis, \citet{Serreze1998} also looked into the antigen presenting capacity of B cells.
 In particular, their ability to present GAD and ellicit T cell responses was investigated.
-It was noted that B cells were critical for the initial priming of T cells to GAD, shown by the lack of spontaneous T cell response in NOD.Igmu\textsuperscript{null} mice compared to control NODs.
+It was noted that B cells were critical for the initial priming of T cells to GAD, shown by the lack of spontaneous T cell response in NOD.Ig$\mu$\textsuperscript{null} mice compared to control NODs.
 However, it seemed that following initial priming, other APCs were sufficient to present to T cells on restimulation with GAD antigen.
-This could explain the reason that transferred T cells from NOD mice into NOD/SCID mice (which lack both T and B cells and are protected from T1D) can transfer disease into the NOD/SCID mouse \citep{Charlton2001}.
+This could explain why transfer of T cells from NOD mice into other mice lacking B cells such as NOD/SCID mice (which have no T or B cells and are protected from T1D) can cause disease as APCs other than B cells in the recipient mice would be sufficient to reactivate the transferred T cells \citep{Charlton2001}.
 
 Further evidence for B cells acting as an APC to activate autoreactive T cells comes from studies whereby they have been rendered MHC Class II deficient.
 In this study, I-A\textsuperscript{g7} (MHC Class II expressed in NOD mice \citep{Stratmann2005}) expression was deficient in B cells but normal on other non-B cell APCs \citep{Noorchashm1999}.
@@ -424,7 +424,7 @@ In this study, B cells were manipulated so that 1-3\% of the B cell population w
 Controls were also modified using similar transgenes but these gave limited insulin binding capabilities.
 It was seen that the mice with insulin specific B cells developed T1D at a much faster rate than controls, suggesting that antigen specifity of B cells is an important determinant of T1D onset \citep{Hulbert2001}.
 
-To assess the relative importance of autoantibody production versus antigen presentation \citet{Wong2004} compared NOD microMT mice with transgenic mice that were unable to secrete antibodies but still displayed a normal BcR.
+To assess the relative importance of autoantibody production versus antigen presentation \citet{Wong2004} compared NOD.$\mu$MT mice (mice that are unable to rearrange their IgM heavy chain and therefore unable to progress beyond the pro B cell stage \toref{Reference for mouse}) with transgenic mice that were unable to secrete antibodies but still displayed a normal BcR.
 They found that the transgenic mice had an increased incidence of T1D compared to the NOD microMT controls, suggesting that B cells drive T1D pathogenesis via an antibody independent mechanism \citep{Wong2004}.
 
 The evidence to date suggests that presentation of self antigens to autoreactive T cells are the principle action of B cells in the pathogenesis of T1D.
@@ -438,35 +438,17 @@ The evidence to date suggests that presentation of self antigens to autoreactive
 
 %Cross presentation of antigen to present to T cells?
 
-\subsection{}
-
 \section{Abnormal B cell presence in the NOD mouse thymus}
 
 \subsection{Thymic B cells}
-
-Normal mouse thymi contain some B cells \citep{Miyama1988, Akashi2000}
-
-Potentially migrate to thymus, but development is more likely, due to TSPs having B cell potential \citep{Porritt2004} and progenitors being present in the thymus \citep{Akashi2000}
-
-It seems they are increased in NOD \toref{Find a B***** reference for increasd B cells in NOD}
-
-
-
-Migration - 
-
-Development -
  
-\todo{thymic B cells are increased in the NOD conpared to nondiabetic controls}
-
-
-
 It is normal for B cells to be present in the thymus in small numbers \citep{Isaacson1987, Akashi2000, Miyama1988} of non diabetic humans \citep{Isaacson1987} and mice \citep{Akashi2000}. 
 However, in the NOD mouse, this population of B cells is dramatically increased \citep{OReilly1994, Serreze1998}.
-It is not known how B cells come to populate the thymus, it is thought to either be as a result of migration to the thymus or development from progenitors within the thymus \fig{Migration v development}.
+It is not known how B cells come to populate the thymus, it is thought to either be as a result of migration to the thymus or development from progenitors within the thymus \fig{Add figure of migration v development}.
 Development is more likely due to the fact that some thymic progenitors do have B cell potential \citep{Porritt2004} and developing pro and pre B cells are seen in the thymus \citep{Akashi2000}.
 
 This increase in thymic B cells has previously been confirmed by flow cytometry carried out in our lab to compare B cells in the bone marrow and thymus of NOD mice and control, non diabetic B6 mice.
-As shown in \fig{Add figure of JV data}, the presence of B cells in the NOD mouse thymi is significantly increased compared to B6 thymi and the difference between the strains increases as the mice age. (Acknowldegements to Jennifer Varian for provision of raw data). \todo{Explain the graph when it is done!}
+As shown in \fig{Add figure of JV data and explain it}, the presence of B cells in the NOD mouse thymi is significantly increased compared to B6 thymi and the difference between the strains increases as the mice age. (Acknowldegements to Jennifer Varian for provision of raw data).
 
 The age-related increase in B cells is intriguing as it appears to correlate with the progression of the disease in the NOD mouse.
 This could suggest that either thymic B cells are involved in driving the disease progression, or it may be that they are a result of disease progression.
@@ -477,11 +459,9 @@ This increase in thymic B cells is not entirely unique to NOD mice, it is also a
 \subsubsection{Potential role of thymic B cells in T1D}
 
 The function of thymic B cells is not known.
-However, it is proposed that they may in some way interfere with the proces of negative selection.
-This would fit with the fact that the thymic B cell population increases, suggesting that there are more autoreactive T cells being produced to drive the disease as the B cell population is increasing.
-
-
-B cells may be contributing to neg selection \citep{Frommer}
+However, it is proposed that they may be interfering with the proces of negative selection as they have been seen to position themselves next to mTECs in the thymus.
+This would fit with the fact that the thymic B cell population increases as the disease progresses.
+The increase in thymic B cells may be related to the increasing release of autoreactive T cells seen with disease progression.
 
 \paragraph{Interference in negative selection}
 
@@ -505,7 +485,7 @@ The aim of this project is to more fully understand the process of potential int
 These are the main questions that this project aims to investigate:
 \begin{itemize}
 \item Is there presence of early progenitors, developing B cells and active development of B cells in the NOD thymus?
-\item Does the thymus of the NOD WT mouse look different to NOD microMT B cell KO mice in terms of B cell progenitors/developing B cells?
+\item Does the thymus of the NOD WT mouse look different to NOD.$\mu$MT B cell KO mice in terms of B cell progenitors/developing B cells?
 \item How does the NOD thymus compare to the nondiabetic B6 thymus in terms of intrathymic B cell development?
 \end{itemize}
 
