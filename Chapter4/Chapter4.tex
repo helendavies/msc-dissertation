@@ -6,44 +6,52 @@
 
 
 
-\section{B cells are developing in the NOD thymus}
+\section{NOD mice have a significantly increased population of thymic B cells}
 
-\todo{Recap that B cells are increased in NOD. Include references. Brief refresher. Then say we have also confirmed this}
+As mentioned previously in \cref{sec:thymicBcells}, it is normal for a small population of B cells to be present in the thymus of both humans and mice.
+However, it has been noted by our lab and others \toref{Increased thy Bs in nod}, that this population is significantly increased in the NOD mouse.
 
-\fig{Compare NOD to B6 in thymus and spleen. Compare B cells and T cells. Look for total thymus abnormality or just B cells. Do NOD mice just have more B cells? Hence inclusion of spleen data.}
+We confirmed this by carrying out flow cytometry studies on the thymus of both NOD and B6 mice to look for the presence of thymic B cells and found that the thymic B cell population was significantly increased in the NOD mouse compared to the B6, as shown in \fig{B cells increased in NOD}.
+
+To see whether this increase in thymic B cells is having an effect on T cell development in the thymus, the frequencies of DN, DP and SP T cells in NOD and B6 thymi were compared using flow cytometry.
+Analysis of this data, shown in \fig{T cell development}, showed that there was no significant difference between NOD and B6 developing T cell populations at any age.
+This would give the impression that the B cell abnormality does not result from a defect in the whole thymus and is more likely to be B cell specific.
+
+It was also necessary to confirm whether or not the NOD mouse has an increased population of B cells overall which would account for the increase in the thymus.
+If this were the case, it would be expected that there would be an increase in B cells in all tissues, not just the thymus.
+As shown in \fig{BM and Thy B cells}, there is no significant difference between the frequency of B cells in the NOD and B6 bone marrow at any age, whereas the frequency of B cells is significantly increased in the thymus at both 9 and 13 weeks of age.
+This would suggest that the increase in B cells is specific to the thymus, not to the mouse as a whole.
+
+  
 
 The reason for B cells being present in the thymus is unknown. 
-The potential hypotheses include developm
-Data to date suggests that B cells are developing in the thymus due to the fact pro and pre B cells can be seen there. 
-However, there are also other methods for investigating potential intrathymic B cell development.
-This project focuses on the following areas of investigation:
+The potential hypotheses include development from progenitors in the thymus which have retained B cell potential, or migration from the bone marrow following preamture release.
+The current consensus is that B cells are developing within the thymus. Evidence for this comes from the findings by the likes of \citet{Perrera2013} who concluded that B cell development from progenitors is more likely to be the origin of thymic B cells than migration.
 
-\begin{enumerate}
-\item Utilisation of flow cytometry to look for pro and pre B cells in the thymus of NOD mice and to see how the state of the NOD thymus compares with other control mice.\cref{subsec:proandpre}
-
-\item Utilisation of flow cytometry to look for very early progenitors at the initial stages of B cell commitment within the thymus. 
-This required the use of magnetic-activated cell sorting (MACS) to deplete thymi of mature cells to reveal the smaller progenitor populations. 
-The presence of early B cell progenitors in the thymus could then be compared between NOD mice and controls. \cref{subsec:earlyprogens}
-
-\item Utilisation of polymerase chain reaction to investigate the presence of transcription factors and genes driving B cell development in the  thymus. \cref{subsec:TFs}
-\end{enumerate}
-
-Each will be discussed in the relevant sections below.
 
 \subsection{There are pro and pre B cells present in the NOD thymus}
 \label{subsec:proandpre}
 
 \fig{Include BM and thymus, NOD and B6}
 
-As mentioned previously, following commitment to the B cell lineage, B cells develop through different developmental stages.
-The first is the CD19+CD43+IgM- pro B cell stage.
-Following this, IgM heavy chain rearrangement begins and the developing B cells produce an IgM heavy chain. 
-They can then progress to the CD19+CD43-IgM- pre B cell stage.
-Finally, in the bone marrow, B cells produce a fully functioning B cell receptor (IgM) and are then a CD19\textsuperscript{+}CD43\textsuperscript{-}IgM\textsuperscript{+} immature B cell.
-These immature B cells then move to the spleen to finish their development and become mature B cells.
+As mentioned previously in \cref{subsubsec:committedBcelldevelopment}, B cells in the bone marrow develop through different developmental stages.
+The first of these stages is the CD19\textsuperscript{+}CD43\textsuperscript{+}IgM\textsuperscript{-} pro B cell stage.
+Subsequently, the IgM heavy chain is rearranged and couple to a surrogate light chain (such as VPreB), forming the preBCR.
+The sucessful formation of a preBCR allows progression to the CD19\textsuperscript{-}CD43\textsuperscript{-}IgM\textsuperscript{-} pre B cell stage.
+Subsequently, the light chain rearranges resulting in a full IgM molecule and the B cell can be released from the bone marrow to migrate to the spleen to finish its development.
 
-Although the majority of CD19\textsuperscript{+} cells in the NOD thymus are mature IgM\textsuperscript{+} B cells, there are also populations of developing B cells at the pro and pre B cells stages, \cref{fig:propre}.
-This gives the impression that B cells are developing within the thymus rather than migrating there and warrants further investigation. 
+Pro and pre B cells are seen in normal B cell development in the bone marrow of both NOD and B6 mice, as shown in \fig{BM pro and pre Bs}.
+The similarity in the bone marrow between the two strains suggests that B cell development in the bone marrow of the NOD mouse is normal.
+
+It was then investigated whether pro and pre B cells could be seen in the thymus.
+As shown in \fig{Pro and pre in thy NOD/B6}........ \todo{Most of are mature B cells but...}.
+
+Presence of these developing B cells suggest that B cells could be developing within the thymus and that further investigation is warranted.
+
+
+
+\todo{Caption:Pro and pre B cells are present in the bone marrow and thymus of NOD and B6 mice}
+
 
 
 \begin{figure}
@@ -55,6 +63,29 @@ This gives the impression that B cells are developing within the thymus rather t
 \subsection{Developing B cells in the thymus express RAG}
 
 \todo{Can only say that the thymus can support this particular step in development, not necessarily that the pro and pre B cells found above are developing, they might leave!}
+
+Next it was investigated whether the thymic environment was able support BcR rearrangement.
+To do this, NOD-RAG-GFP reporter mice were utilised.
+These mice express GFP under the control of the RAG promoter, therefore, during receptor rearrangement when RAG is being transcribed, GFP is also produced.
+This results in a mouse that is capable of indirectly indicating B cell development through the production of GFP during RAG expression and receptor rearrangement.
+
+However, even though transcription of RAG and GFP are stopped at the same time, GFP degrades slowly over time with a half life of approximately 56 hours in vivo \citep{McCaughtry2007}.
+This means that the intensity of GFP signal seen on flow cytometry correlates with how recently RAG/GFP transcription was active.
+For example, as shown in \cref{subfig:RAGhighlownegtotthy} the RAG\textsuperscript{high} population represents the developing cells which are actively rearranging their receptor.
+The RAG\textsuperscript{low} population shows the cells that have recently rearranged their receptor but subsequently deactivated RAG/GFP transcription, therefore the GFP signal is decreased.
+
+To investigate whether the thymus may be able to support BcR rearrangement, cells of the B cell lineage were identified by expression of CD19 then these cells were interrogated for GFP expression.
+As shown in \cref{subfig:RAGhighlownegthyB}, there are CD19\textsuperscript{+}RAG\textsuperscript{high} cells within the thymus of NOD mice at 4, 7 and 11 weeks of age.
+This finding suggests that these B cells are actively rearranging their receptor in the thymus.
+Further to this, as shown in \cref{subfig:RAGhighlowneggraph}, it appears that the frequency of CD19\textsuperscript{+}GFP\textsuperscript{+} cells decreases as mice age.
+In particular, the frequency of CD19\textsuperscript{+}GFP\textsuperscript{low} cells decreases significantly (\todo{p value}) between 4 and 11 weeks of age.
+Conversely, the frequency of the CD19\textsuperscript{+}GFP\textsuperscript{-} increases significantly between 4 and 7 weeks of age.
+The significant decrease in CD19\textsuperscript{+}GFP\textsuperscript{low} cells in the NOD thymus could show that there is a decreased frequency of newly developed B cells in the thymus of older NOD mice.
+
+Data was obtained from 4/5 sex-matched mice of ages stated.
+Gates for GFP\textsuperscript{high}, GFP\textsuperscript{low} and GFP\textsuperscript{-} were set using the GFP expression in the total thymus, of which the majority would be developing T cells rearranging their TcR.
+
+%bone marrow
 
 To try and identify whether or not pro and pre B cells are developing within the thymus rather than migrating there, the expression of RAG in these developing B cells was investigated.
 The necessity of RAG expression for BcR rearrangement and subsequent progression to the pre B cell stage means that active RAG expression indicates active development.
@@ -86,6 +117,7 @@ Data was obtained from 4/5 mice of each age group.
 	\label{subfig:RAGhighlownegthyB}
 	\includegraphics[width=\textwidth]{Figures/RAGhighlownegtotalthy.png}
 	\caption{RAG expression in total thymus}
+		\label{subfig:RAGhighlownegtotthy}
 	\end{subfigure}
 	\begin{subfigure}{\textwidth}
 	\includegraphics[width=\textwidth]{Figures/RAGhighlownegative.pdf}
