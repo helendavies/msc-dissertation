@@ -11,18 +11,51 @@
 As mentioned previously in \cref{sec:thymicBcells}, it is normal for a small population of B cells to be present in the thymus of both humans and mice.
 However, it has been noted by our lab and others \toref{Increased thy Bs in nod}, that this population is significantly increased in the NOD mouse.
 
-We confirmed this by carrying out flow cytometry studies on the thymus of both NOD and B6 mice to look for the presence of thymic B cells and found that the thymic B cell population was significantly increased in the NOD mouse compared to the B6, as shown in \fig{B cells increased in NOD}.
+We confirmed this by carrying out flow cytometry studies on the thymus of both NOD and B6 mice to look for the presence of thymic B cells and found that the thymic B cell population was significantly increased in the NOD mouse compared to the B6, as shown in \cref{subfig:IncthyBcells}.
 
 To see whether this increase in thymic B cells is having an effect on T cell development in the thymus, the frequencies of DN, DP and SP T cells in NOD and B6 thymi were compared using flow cytometry.
-Analysis of this data, shown in \fig{T cell development}, showed that there was no significant difference between NOD and B6 developing T cell populations at any age.
+Analysis of this data, shown in \cref{fig:NODB6Tcells}, showed that there was no significant difference between NOD and B6 developing T cell populations at any age.
 This would give the impression that the B cell abnormality does not result from a defect in the whole thymus and is more likely to be B cell specific.
 
 It was also necessary to confirm whether or not the NOD mouse has an increased population of B cells overall which would account for the increase in the thymus.
 If this were the case, it would be expected that there would be an increase in B cells in all tissues, not just the thymus.
-As shown in \fig{BM and Thy B cells}, there is no significant difference between the frequency of B cells in the NOD and B6 bone marrow at any age, whereas the frequency of B cells is significantly increased in the thymus at both 9 and 13 weeks of age.
+As shown in \cref{subfig:BMBcells}, there is no significant difference between the frequency of B cells in the NOD and B6 bone marrow at any age, whereas the frequency of B cells is significantly increased in the thymus at both 9 and 13 weeks of age.
 This would suggest that the increase in B cells is specific to the thymus, not to the mouse as a whole.
 
-  
+\begin{figure}
+	\begin{subfigure}{0.5\textwidth}
+	\includegraphics[width=\textwidth]{Figures/IncthyBcells.pdf}
+	\caption{}
+	\label{subfig:IncthyBcells}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+	\includegraphics[width=\textwidth]{Figures/BMBcells.pdf}
+	\caption{}
+	\label{subfig:BMBcells}
+	\end{subfigure}
+\caption{B cell frequency is increased in the NOD thymus (a), but not bone marrow (b) compared to B6 controls.}
+\label{fig:IncthyBcells}
+\end{figure}
+
+\begin{figure}
+	\begin{subfigure}{0.3\textwidth}
+	\includegraphics[width=\textwidth]{Figures/4wkThyTcells.pdf}
+	\caption{}
+	\label{subfig:4wkThyTcells}
+	\end{subfigure}
+	\begin{subfigure}{0.3\textwidth}
+ 	\includegraphics[width=\textwidth]{Figures/9wkThyTcells.pdf}
+	\caption{}
+	\label{subfig:9wkThyTcells}
+	\end{subfigure}
+	\begin{subfigure}{0.3\textwidth}
+ 	\includegraphics[width=\textwidth]{Figures/12wkThyTcells.pdf}
+	\caption{}
+	\label{subfig:12wkThyTcells}
+	\end{subfigure}
+\caption{T cell populations are normal between NOD and B6. (a) 4 weeks, (b) 9 weeks, (c) 12 weeks.}
+\label{fig:NODB6Tcells}
+\end{figure}
 
 The reason for B cells being present in the thymus is unknown. 
 The potential hypotheses include development from progenitors in the thymus which have retained B cell potential, or migration from the bone marrow following preamture release.
@@ -151,21 +184,19 @@ Statistical significance was determined using a One-way ANOVA and Tukey's test. 
 \subsection{NOD mice express higher levels of CD43 in the thymus}
 \label{Results:CD43}
 
-\todo{?results from last year on CD43 levels. Give a reason for looking at CD43 then discuss fully in discussion}.
-
-During analysis of data regarding frequencies of pro B cells in the NOD thymus compared to B6 thymi, it was noted that there appeared to be a difference in frequency/intensity of CD43 expression in the different strains.
+During analysis of the data showing pro B cell presence in the NOD thymus, it was noted that there were differences in CD43 expression between mice of NOD background and B6 controls.
 CD43 is thought to be involved in T cell activation and adhesion in vitro \citep{McEvoy1997} and T cell migration from the blood into lymphoid tissues in vivo \citep{Johnson1999}.
 Further to this, it seems that an anti-CD43 antibody is capable of preventing T1D in NOD mice \citep{Johnson1999}, suggesting that it may have a role in T1D pathogenesis.
+Given the potential implication of CD43 in T1D pathogenesis, the discrepancy in CD43 expression was investigated.
 
-The frequency of IgM\textsuperscript{-} cells is very similar between B6, NOD and NOD KO mice.
-However, when the expression of CD43 is investigated within this population, it appears that the expression on both NOD and NOD KO, is increased compared to B6 mice, as shown in \cref{fig:CD43expression}.
-Statistical analysis shows that only the difference between the KO and B6 is significant.
-The graph also shows a wide spread of frequencies for both NOD background strains.
-This spread may be decreased by increasing the group size as the number of mice was small.
-However, the B6 data is all very close suggesting that the B6 may be a more regimented environment compared to the NOD which could account for the differences in spread of data across the strains.
-The experiment was carried out blind so that all strains were analysed without bias.
+Samples were gated on lymphocytes, single cells and IgM\textsuperscript{-}.
+The frequency of IgM\textsuperscript{-} cells in the thymus was very similar between all mouse strains, however, CD43 expression appeared to be increased in NOD and NOD KO compared to B6, as shown in \cref{fig:CD43expression}.
+Statistical analysis shows that the difference in frequencies of IgM\textsuperscript{-}CD43\textsuperscript{+} between the NOD KO and B6 is statistically significant \todo{P values, check stats}.
+However, there appears to be a wide spread of frequencies of IgM\textsuperscript{-}CD43\textsuperscript{+} cells in both NOD and NOD KO mice.
+This suggests that the experiments need to be repeated to try and increase the reproducibility of the results.
+This spread is not seen in the B6 mouse suggesting that the thymic environment of the B6 mouse may be more regulated than the NOD which shows varying frequencies of IgM\textsuperscript{-}CD43\textsuperscript{+} cells.
 
-
+The experiment used 11 mice and was carried out single blind so that analysis was performed without bias.
 
 \begin{figure}
 	\begin{subfigure}{\textwidth}
