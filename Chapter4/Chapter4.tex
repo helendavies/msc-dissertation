@@ -38,18 +38,19 @@ This would suggest that the increase in B cells is specific to the thymus, not t
 \end{figure}
 
 \begin{figure}
-	\begin{subfigure}{0.3\textwidth}
+	\begin{subfigure}{0.5\textwidth}
 	\includegraphics[width=\textwidth]{Figures/4wkThyTcells.pdf}
 	\caption{}
 	\label{subfig:4wkThyTcells}
 	\end{subfigure}
-	\begin{subfigure}{0.3\textwidth}
+	\begin{subfigure}{0.5\textwidth}
  	\includegraphics[width=\textwidth]{Figures/9wkThyTcells.pdf}
 	\caption{}
 	\label{subfig:9wkThyTcells}
 	\end{subfigure}
-	\begin{subfigure}{0.3\textwidth}
- 	\includegraphics[width=\textwidth]{Figures/12wkThyTcells.pdf}
+	\begin{subfigure}{\textwidth}
+	\centering
+ 	\includegraphics[width=0.5\textwidth]{Figures/12wkThyTcells.pdf}
 	\caption{}
 	\label{subfig:12wkThyTcells}
 	\end{subfigure}
@@ -65,7 +66,6 @@ The current consensus is that B cells are developing within the thymus. Evidence
 \subsection{There are pro and pre B cells present in the NOD thymus}
 \label{subsec:proandpre}
 
-\fig{Include BM and thymus, NOD and B6}
 
 As mentioned previously in \cref{subsubsec:committedBcelldevelopment}, B cells in the bone marrow develop through different developmental stages.
 The first of these stages is the CD19\textsuperscript{+}CD43\textsuperscript{+}IgM\textsuperscript{-} pro B cell stage.
@@ -73,99 +73,72 @@ Subsequently, the IgM heavy chain is rearranged and couple to a surrogate light 
 The sucessful formation of a preBCR allows progression to the CD19\textsuperscript{-}CD43\textsuperscript{-}IgM\textsuperscript{-} pre B cell stage.
 Subsequently, the light chain rearranges resulting in a full IgM molecule and the B cell can be released from the bone marrow to migrate to the spleen to finish its development.
 
-Pro and pre B cells are seen in normal B cell development in the bone marrow of both NOD and B6 mice, as shown in \fig{BM pro and pre Bs}.
+Pro and pre B cells are seen in normal B cell development in the bone marrow of both NOD and B6 mice, as shown in \cref{subfig:BMpropre}.
 The similarity in the bone marrow between the two strains suggests that B cell development in the bone marrow of the NOD mouse is normal.
 
 It was then investigated whether pro and pre B cells could be seen in the thymus.
-As shown in \fig{Pro and pre in thy NOD/B6}........ \todo{Most of are mature B cells but...}.
+As shown in \cref{subfig:Thypropre}, pro and pre B cells can be seen in the thymus of NOD and B6 mice.
+Data shown is representative of several mice aged between 6-9 weeks.
+This age was chosen as it is the time when B cells increase in the thymus of NOD mice compared to B6 mice.
+The presence of pro and pre B cells suggests that B cell development in the thymus may be possible, however, it is not possible to say whether these cells have developed in the thymus or migrated there.
+However, it is does suggest that the thymus is capable of providing an environment where they are able to survive.
 
 Presence of these developing B cells suggest that B cells could be developing within the thymus and that further investigation is warranted.
 
 
-
-\todo{Caption:Pro and pre B cells are present in the bone marrow and thymus of NOD and B6 mice}
-
-
-
-\begin{figure}
-	\includegraphics[width=\textwidth]{Figures/NODpropre.png}
-	\caption{Pro (IgM\textsuperscript{-}CD43\textsuperscript{+}) and pre (IgM\textsuperscript{-}CD43\textsuperscript{-})B cells are present in thymi of NOD mice at all ages. Plots are representative of several repeats of flow cytometry of NOD mice at the stated ages. Samples are acquired using a CD19 gate which acquires 100\% of all CD19+ cells and ~2\% of CD19- cells. Gating pattern: Lymphocytes, single cells, CD19\textsuperscript{+} then IgM vs CD43 as shown.}
-	\label{fig:propre}
-\end{figure}
-
-\subsection{The NOD thymus can support BcR rearrangement}
-
-Next it was investigated whether the thymic environment was able support BcR rearrangement.
-To do this, NOD-RAG-GFP reporter mice were utilised.
-These mice express GFP under the control of the RAG promoter, therefore, during receptor rearrangement when RAG is being transcribed, GFP is also produced.
-This results in a mouse that is capable of indirectly indicating B cell development through the production of GFP during RAG expression and receptor rearrangement.
-
-However, even though transcription of RAG and GFP are stopped at the same time, GFP degrades slowly over time with a half life of approximately 56 hours in vivo \citep{McCaughtry2007}.
-This means that the intensity of GFP signal seen on flow cytometry correlates with how recently RAG/GFP transcription was active.
-For example, as shown in \cref{subfig:RAGhighlownegtotthy} the RAG\textsuperscript{high} population represents the developing cells which are actively rearranging their receptor.
-The RAG\textsuperscript{low} population shows the cells that have recently rearranged their receptor but subsequently deactivated RAG/GFP transcription, therefore the GFP signal is decreased.
-
-To investigate whether the thymus may be able to support BcR rearrangement, cells of the B cell lineage were identified by expression of CD19 then these cells were interrogated for GFP expression.
-As shown in \cref{subfig:RAGhighlownegthyB}, there are CD19\textsuperscript{+}GFP\textsuperscript{high} cells within the thymus of NOD mice at 4, 7 and 11 weeks of age.
-This finding suggests that these B cells are actively rearranging their receptor in the thymus.
-If these cells had migrated to the thymus from the bone marrow, it would be expected that the GFP expression would be lower due to GFP decay during the migration process.
-Further to this, as shown in \cref{subfig:RAGhighlowneggraph}, it appears that the frequency of CD19\textsuperscript{+}GFP\textsuperscript{+} cells decreases as mice age.
-In particular, the frequency of CD19\textsuperscript{+}GFP\textsuperscript{low} cells decreases significantly (\todo{p value}) between 4 and 11 weeks of age.
-Conversely, the frequency of the CD19\textsuperscript{+}GFP\textsuperscript{-} increases significantly between 4 and 7 weeks of age.
-The significant decrease in CD19\textsuperscript{+}GFP\textsuperscript{low} cells in the NOD thymus could show that there is a decreased frequency of newly developed B cells in the thymus of older NOD mice.
-
-Data was obtained from 4/5 sex-matched mice of ages stated.
-Gates for GFP\textsuperscript{high}, GFP\textsuperscript{low} and GFP\textsuperscript{-} were set using the GFP expression in the total thymus, of which the majority would be developing T cells rearranging their TcR.
-
-%bone marrow
-
-
 \begin{figure}
 	\begin{subfigure}{\textwidth}
-	\includegraphics[width=\textwidth]{Figures/RAGhighlownegthyB.png}
-	\caption{Thymic B cells expressing RAG}
-	\label{subfig:RAGhighlownegthyB}
-	\includegraphics[width=\textwidth]{Figures/RAGhighlownegtotalthy.png}
-	\caption{RAG expression in total thymus}
-		\label{subfig:RAGhighlownegtotthy}
+	\centering
+	\includegraphics[width=0.7\textwidth]{Figures/Bonemarrowpropre.png}
+	\caption{Bone marrow}
+	\label{subfig:BMpropre}
 	\end{subfigure}
 	\begin{subfigure}{\textwidth}
-	\includegraphics[width=\textwidth]{Figures/RAGhighlownegative.pdf}
-	\caption{Frequency of CD19\textsuperscript{+}GFP\textsuperscript{high}, CD19\textsuperscript{+}GFP\textsuperscript{low} and CD19\textsuperscript{+}GFP\textsuperscript{-}. Data analysed with a 1 way ANOVA and Tukey's test for comparison of multiple groups.}
-	\label{subfig:RAGhighlowneggraph}
+	\centering
+	\includegraphics[width=0.7\textwidth]{Figures/Thymuspropre.png}
+	\caption{Thymus}
+	\label{subfig:Thypropre}
 	\end{subfigure}
-\caption{CD19+ cells in the NOD thymus express RAG. 
-Top panel shows the RAG expression of CD19+ cells in the thymus of NOD-RAG-GFP reporter mice at 4, 7 and 11 weeks of age. Bottom panel shows the total thymic RAG expression used to set gates of RAG\textsuperscript{high}, RAG\textsuperscript{low} and RAG-. 
-Gates were then put onto CD19+ population. 
-CD19\textsuperscript{+}RAG\textsuperscript{high} cells are likely to be developing B cells as they express CD19 and RAG, suggesting active rearrangement. 
-Each age group plot is representative of 4/5 mice of given age.
-Gating pattern: lymphocytes, single cells, CD19\textsuperscript{+} (CD19 gate omitted when looking at total thymus RAG expression).}
+\caption{Pro and pre B cells are found in the bone marrow and thymus of both NOD and B6. Single cell suspensions prepared and stained with CD19, IgM and CD43 antibodies for flow cytometry. Thymic samples gated on acquisition for CD19\textsuperscript{+} cells (100\% CD19\textsuperscript{+} cells, approx. 2\% everything else). For analysis, samples were gated lymphocytes, single cells, CD19\textsuperscript{+}, IgM\textsuperscript{-} then split into pro and pre B cells using CD43 expression. Bone marrow plots are representative of 4 NOD and 6 B6 mice. Thymus plots are representative of 3 NOD and 4 B6 mice. All mice are aged between 6-9 weeks of age.}
+\label{fig:PropreBcells}
 \end{figure}
 
-\todo{Correct axis labels}
+
+
 
 
 \subsection{B cell development is dependent on the presence of a mature B cell}
 
-Following the finding that pro and pre B cells are present in the NOD thymus, NOD KO mice were also investigated.
-As stated in \cref{methods:mice}, these mice are unable to rearrange their IgM heavy chain and therefore cannot progress beyond the pro B cell stage. 
-In the bone marrow of these mice, a population of pro B cells is seen, but there are no pre B cells and no IgM\textsuperscript{+} cells. \todo{FACS plot of KO BM}.
+Following on from the finding of pro and pre B cells in NOD and B6 thymi, it was wondered if the frequency of pro B cells is different between the strains of mice.
+In particular, thought was given to whether the frequency of pro B cells would be increased in NOD mice compared to B6 which could account for the increased B cells seen in the NOD thymi.
+NOD KO mice were also investigated to see how they compared to the NOD and B6.  
+
+
+As stated in \cref{methods:mice}, NOD KO mice are unable to rearrange their IgM heavy chain and therefore cannot progress beyond the pro B cell stage. 
+In the bone marrow of these mice, a population of pro B cells is seen, but there are no pre B cells and no IgM\textsuperscript{+} cells. \cref{subfig:KOBM}.
 It was therefore expected that in their thymus there would also be a population of pro B cells, similar to that seen in the NOD WT mice. 
 However, this does not appear to be the case.
 
-To investigate the presence of pro B cell frequency between the different mice strains, it was first necessary to determine an appropriate gating system so the strains could be compared fairly.
-The final strategy was lymphocytes, single cells, IgM\textsuperscript{-}, CD43\textsuperscript{+} then the frequency of CD19\textsuperscript{+} cells within this population was obtained as the frequency of pro B cells relative to the frequency of IgM\textsuperscript{-}CD43\textsuperscript{+} cells in each strain.
 
-As shown in \cref{subfig:MatureBincproBgraph}, the frequency of pro B cells is significantly decreased in the NOD KO thymi compared to both NOD WT and B6 thymi (Data analysed using a One-Way ANOVA and Tukey's test). \todo{Check stats}
+Data was obtained through flow cytometric analysis in a single blind trial using 11 mice (NOD n=3, NOD KO = 4, B6 n=4). 
+Data was gated on acquisition for CD19\textsuperscript{+} cells (100\% of CD19\textsuperscript{+} and only approx. 2\% of other cells).
+The gating strategy used for analysis was lymphocytes, single cells, IgM\textsuperscript{-}, CD43\textsuperscript{+} then the frequency of CD19\textsuperscript{+} cells within this population was obtained as the frequency of pro B cells relative to the frequency of IgM\textsuperscript{-}CD43\textsuperscript{+} cells in each strain.
+
+As shown in \cref{subfig:MatureBincproBgraph}, the difference between the NOD and B6 is not significant suggesting that an increase in pro B cells cannot account for the increase in thymic B cells seen in the NOD thymus.
+However, the frequency of pro B cells is significantly decreased in the NOD KO thymi compared to both NOD WT and B6 thymi (Data analysed using a One-Way ANOVA and Tukey's test). \todo{Check stats}
 This is an interesting finding as it suggests that the enhancement of pro B cells in the thymus may be dependent on the presence of a mature B cell.
-The difference between the NOD and B6, however, is not significant suggesting that an increase in pro B cells cannot account for the increase in thymic B cells seen in the NOD thymus.
 
-The investigation was carried out single blind so that the strains of mice were not known during analysis in order to avoid bias in the results.
 
 \begin{figure}
 	\begin{subfigure}{\textwidth}
 	\includegraphics[width=\textwidth]{Figures/MatureBincproB.png}
 	\caption{CD19+CD43+IgM- pro B cells in, from left to right, B6, NOD and NOD KO mice of 6-8 weeks of age}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+	\centering
+	\includegraphics[width=0.6\textwidth]{Figures/NODKOBM.png}
+	\caption{NOD bone marrow shows pro, pre and IgM\textsuperscript{+} B cells whereas NOD KO bone marrow only shows pro B cells}
+	\label{subfig:KOBM}
 	\end{subfigure}
 	\begin{subfigure}{\textwidth}
 	\centering
@@ -312,6 +285,57 @@ Following these improvements, if there still is truly no difference in pro B cel
 \end{itemize}
 
 Clearly, more extensive research into this area is required to increase our understanding of the effects of a mature B cell on developing B cells in the thymus.
+
+\subsection{The NOD thymus can support BcR rearrangement}
+
+Next it was investigated whether the thymic environment was able support BcR rearrangement.
+To do this, NOD-RAG-GFP reporter mice were utilised.
+These mice express GFP under the control of the RAG promoter, therefore, during receptor rearrangement when RAG is being transcribed, GFP is also produced.
+This results in a mouse that is capable of indirectly indicating B cell development through the production of GFP during RAG expression and receptor rearrangement.
+
+However, even though transcription of RAG and GFP are stopped at the same time, GFP degrades slowly over time with a half life of approximately 56 hours in vivo \citep{McCaughtry2007}.
+This means that the intensity of GFP signal seen on flow cytometry correlates with how recently RAG/GFP transcription was active.
+For example, as shown in \cref{subfig:RAGhighlownegtotthy} the RAG\textsuperscript{high} population represents the developing cells which are actively rearranging their receptor.
+The RAG\textsuperscript{low} population shows the cells that have recently rearranged their receptor but subsequently deactivated RAG/GFP transcription, therefore the GFP signal is decreased.
+
+To investigate whether the thymus may be able to support BcR rearrangement, cells of the B cell lineage were identified by expression of CD19 then these cells were interrogated for GFP expression.
+As shown in \cref{subfig:RAGhighlownegthyB}, there are CD19\textsuperscript{+}GFP\textsuperscript{high} cells within the thymus of NOD mice at 4, 7 and 11 weeks of age.
+This finding suggests that these B cells are actively rearranging their receptor in the thymus.
+If these cells had migrated to the thymus from the bone marrow, it would be expected that the GFP expression would be lower due to GFP decay during the migration process.
+Further to this, as shown in \cref{subfig:RAGhighlowneggraph}, it appears that the frequency of CD19\textsuperscript{+}GFP\textsuperscript{+} cells decreases as mice age.
+In particular, the frequency of CD19\textsuperscript{+}GFP\textsuperscript{low} cells decreases significantly (\todo{p value}) between 4 and 11 weeks of age.
+Conversely, the frequency of the CD19\textsuperscript{+}GFP\textsuperscript{-} increases significantly between 4 and 7 weeks of age.
+The significant decrease in CD19\textsuperscript{+}GFP\textsuperscript{low} cells in the NOD thymus could show that there is a decreased frequency of newly developed B cells in the thymus of older NOD mice.
+
+Data was obtained from 4/5 sex-matched mice of ages stated.
+Gates for GFP\textsuperscript{high}, GFP\textsuperscript{low} and GFP\textsuperscript{-} were set using the GFP expression in the total thymus, of which the majority would be developing T cells rearranging their TcR.
+
+%bone marrow
+
+
+\begin{figure}
+	\begin{subfigure}{\textwidth}
+	\includegraphics[width=\textwidth]{Figures/RAGhighlownegthyB.png}
+	\caption{Thymic B cells expressing RAG}
+	\label{subfig:RAGhighlownegthyB}
+	\includegraphics[width=\textwidth]{Figures/RAGhighlownegtotalthy.png}
+	\caption{RAG expression in total thymus}
+		\label{subfig:RAGhighlownegtotthy}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+	\includegraphics[width=\textwidth]{Figures/RAGhighlownegative.pdf}
+	\caption{Frequency of CD19\textsuperscript{+}GFP\textsuperscript{high}, CD19\textsuperscript{+}GFP\textsuperscript{low} and CD19\textsuperscript{+}GFP\textsuperscript{-}. Data analysed with a 1 way ANOVA and Tukey's test for comparison of multiple groups.}
+	\label{subfig:RAGhighlowneggraph}
+	\end{subfigure}
+\caption{CD19+ cells in the NOD thymus express RAG. 
+Top panel shows the RAG expression of CD19+ cells in the thymus of NOD-RAG-GFP reporter mice at 4, 7 and 11 weeks of age. Bottom panel shows the total thymic RAG expression used to set gates of RAG\textsuperscript{high}, RAG\textsuperscript{low} and RAG-. 
+Gates were then put onto CD19+ population. 
+CD19\textsuperscript{+}RAG\textsuperscript{high} cells are likely to be developing B cells as they express CD19 and RAG, suggesting active rearrangement. 
+Each age group plot is representative of 4/5 mice of given age.
+Gating pattern: lymphocytes, single cells, CD19\textsuperscript{+} (CD19 gate omitted when looking at total thymus RAG expression).}
+\end{figure}
+
+\todo{Correct axis labels}
 
 
 \subsection{Early B cell progenitors are present in the NOD thymus}
