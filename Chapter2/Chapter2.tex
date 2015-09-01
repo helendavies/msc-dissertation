@@ -113,9 +113,39 @@ These will be discussed in more detail in \cref{subsec:Tcellfunctions}.
 B cells, on the other hand, are capable of antigen presentation but their main function is antibody production.
 Antibodies are the secreted form of the B cell receptor and are designed to help with removal of the pathogen by phagocytosis or complement (a process consisting of a variety of different proteins aimed at the destruction of pathogens) and to help neutralise harmful toxins produced by microorganisms.}
 
-\subsection{Antigen presentation}
+\subsection{Receptor Rearrangement}
+\label{subsec:receptorrearrangement}
 
-\todo{MHC presentation pathways - MHC Class II and MHC Class I. Presentation only, T cell activation covered later}
+T and B cells both have receptors known as TcR and BcR respectively.
+Each B and T cell has a different receptor which results in a massive repertoire of B and T cell receptors, each capable of responding to a different antigen.
+Due to both types of receptor requiring a huge potential for diversity, the mechanisms which introduce this diversity are largely the same for both receptor types.
+
+
+There are two types of TcR, each consisting of two chains.
+The main one is an $\alpha\beta$ receptor which is most common, and the second is a $\gamma\delta$ receptor.
+In the BcR, there are also two chains, known as the heavy and light chain.
+The heavy chain is equivalent to either the $\beta$ or $\delta$ chains, while the light chain is equivalent to the $\alpha$ or $\gamma$ chains.
+
+The receptor chains consist of a variable and constant region.
+The variable region is the part which is capable of recognising antigen, whilst in BcRs, the constant region gives the immunoglobulin it's class.
+
+The variable region is made up of V (variable), D (diversity, heavy, $\beta$ and $\delta$ chains only) and J gene segments.
+Genomically encoded are multiple copies of different V, D and J genes and during rearrangement, one of each of these genes are selected at random and joined to produce different receptors.
+This process is mediated by enzymes known as RAG (recombination activating genes) recombinases.
+These enzymes recognise recombination signal sequences (RSS) found next to the coding regions of each V, D and J gene and bring the ends of the chosen genes near to each other to be joined \citep{Fugmann2014, Oettinger1999}.
+To join the segments, RAG proteins cleave at either end of the genes and leave hairpin loops of DNA.
+From here a nuclease nicks the loops leaving short sequences at the end of each gene to be joined.
+This allows the segments to join via non homologous end joining \citep{Schatz2011}.
+Further diversity is also added via the use of an enzyme called terminal deoxynucleotidyltransferase (TdT) which adds random base pairs between each segment.
+%The use of TdT allows the production of the ~10\textsuperscript{14} different immunoglobulins \citep{Motea2010}.
+
+TcRs are able to respond to their antigen peptides held in major histocompatibility complexes (MHC) on APCs, whereas BcRs are able to respond to whole antigens.
+
+%\subsection{Antigen presentation}
+
+%For T cells to be able to recognise their antigen, APCs must present the antigen to them in petide form, held in MHC on the APC's surface.
+
+%\todo{MHC presentation pathways - MHC Class II and MHC Class I. Presentation only, T cell activation covered later}
 
 
 \section{T cells}
@@ -149,10 +179,9 @@ While the expression of only one type of chemokine receptor is sufficient, it is
 This suggests that likely candidates for TSPs are CCR7+CCR9+ LMPPs and CLPs\citep{Zlotoff2011}.
 
 Following the thymic settling of precursors, T cells progress into the four step double negative phase (DN1-4), where they express neither CD4 or CD8.
-During their time in this phase, particularly in DN3, the TcR begins to rearrange by the same mechanisms as BcR rearrangement \citep{Starr2003}.
-The formation of a pre-TcR complex allows the T cells to continue to the double positive (DP) stage where thy express both CD4 and CD8 \citep{Zuniga1996}.
+During their time in this phase, particularly in DN3, the TcR begins to rearrange by the mechanisms outlined in \cref{subsec:receptorrearrangement} \citep{Starr2003}.
+Following rearrangement, T cells are able to continue to the double positive (DP) stage where thy express both CD4 and CD8 molecules \citep{Zuniga1996}.
 
-\todo{Work out where to put receptor rearrangment etc. what is preTcR etc}
 
 In the DP stage, in this stage, T cells undergo their first round of education, known as positive selection.
 This is the process whereby all developing T cells are exposed to thymic cortical epithelial cells (cTECs) expressing MHC class I and MHC Class II.
@@ -182,9 +211,9 @@ There are many types of Tregs which all act to suppress harmful immune responses
 
 %\todo{Rewrite. Make this brief and move main to bit in immune system.Talk more on T cell activation rather than the presentation pathways.}
 
-%Antigen presentation is the process by which the innate immune system can signal to the adaptive immune system that an immune response is required.
-%Professional APCs (macrophages, DCs and B cells (see \cref{subsec:Bcellrole}) scavenge pathogens when they invade and phagocytose them.
-%From here they breakdown the pathogen, then express it's antigen on MHC Class II.
+Antigen presentation is the process by which the innate immune system can signal to the adaptive immune system that an immune response is required.
+Professional APCs (macrophages, DCs and B cells (see \cref{subsec:Bcellrole}) scavenge pathogens when they invade and phagocytose them.
+From here they breakdown the pathogen, then express it's antigen either on MHC Class II (to activate CD4\textsuperscript{+} T cells), or MHC Class I (to activate CD8\textsuperscript{+} T cells).
 
 \new{For T cells to become activated, they must be presented with their cognate antigen in the peptide/MHC complex on an APC.
 T cell activation requires three signals as follows \citep{Corthay2006}:
@@ -195,15 +224,19 @@ T cell activation requires three signals as follows \citep{Corthay2006}:
 \end{enumerate}}
 
 \new{CD8\textsuperscript{+} T cells are activated differently to CD4\textsuperscript{+} T cells, in that they will only respond to MHC Class I.
-CD8\textsuperscript{+} T cells must also be activated by APCs presenting them with their cognate antigen, however, followin initial activation, CD8\textsuperscript{+} T cells can become cytotoxic T cells (CTLs) which are then able to kill off anything expressing their cognate antigen in an MHC Class I molecule.
+%CD8\textsuperscript{+} T cells must also be activated by APCs presenting them with their cognate antigen, however, following initial activation, CD8\textsuperscript{+} T cells can become cytotoxic T cells (CTLs) which are then able to kill off anything expressing their cognate antigen in an MHC Class I molecule.
+This process requires a process known as cross-presentation by the APC.
+Normally, exogneous antigens (i.e. those from outside a cell) are processed and expressed on MHC Class II, whereas endogenous antigens (i.e. antigens from inside the cell, either damaged components or intracellular pathogens) are processed and displayed on MHC Class I.
 MHC Class I is expressed on every nucleated cell and therefore provides a mechanism by which cells can signal that they are virally infected or cancerous.
+
+However, for CD8\textsuperscript{+} to become activated, they need to be presented with their antigen and costimulatory molecules, only present on APCs.
+This requires a process known as cross presentation by the APC, whereby an exogenous antigen can be processed and subsequently presented on MHC Class I to activate CD8\textsuperscript{+} T cells \citep{Rock2005}.
+
+Following activation, CD8\textsuperscript{+} T cells can become CTLs and kill off any cell expressing it's cognate antigen on MHC Class I..
 CTLs are therefore important cells for the clearance of viruses and can help with cancer prevention.
 CTLs kill off their target cells in a highly specific manner using perforins and grazymes.}
 
-%Interestingly, APCs are also able to cross-present so that exogenous antigens which would normally be expressed on MHC Class II are passed to the endogenous pathway following phagocytosis, thus allowing their presentation on MHC Class I and activation of CD8\textsuperscript{+} T cells \citep{Rock2005}.
 
-%APCs are of importance in T1D as they are the cells which can present islet antigens to autoreactive T cells causing their activation.
-%The activated T cells are then able to destroy their target cells, $\beta$ cells.
 
 
 
@@ -223,11 +256,18 @@ As well as this, it appears to regulate the expression of Notch1 itself \citep{D
 There are also other transcription factors involved in T cell development, such as RUNT-related transcription factor (Runx) and Bcl11b \citep{Naito2011, Liu2010}.
 Runx is important for progression from ETP to DN2 and DN2 to DN3, while Runx appears to be essential for absolute T lineage commitment in the late DN2 stage \citep{Liu2010, Naito2011}. 
 Prior to absolute T cell commitment, DN2 cells retain DN, NK and macrophage potential \citep{Naito2011}.
+
+\new{Notch is a very important transcription factor for T cell commitment.
+The progenitors seeding the thymus arrive from the thymus and it is seems that some of these progenitors may retain B cell potential \citep{Porritt2004}.
+Notch expression is capable of suppressing B cell lineage commitment by suppression of B cell development transcription factors, such as Pax 5 (See \cref{subsec:Bcellgenes}) so that T cell development is promoted.
+It has been found that inactivation of Notch1 in bone marrow progenitors results in a block in T cell development and the formation of ectopic B cells in the thymus, suggesting it's expression is crucial for T cell development.
+Further evidence is shown by constitutive expression of Notch1 in the bone marrow causing T cells to develop abnormally in the bone marrow \citep{Radtke2013}.
+These actions show that it is important for transcription factor balance to be maintained in order to support normal lymphocyte development in the correct place.}
 %Evidence for this is shown by the dedifferentiation of developing T cells and a subsequent NK cell phenotype, even in committed DN3 cells \citep{Liu2010}.
 
 %\todo{Look at Porrit Rothenburg and Sekai}
 
-\todo{A bit more on Notch1}
+
 
 
 \subsection{Tolerance}
@@ -334,25 +374,13 @@ From here they are carried by the central sinus then venous circulation to the s
 \subsubsection{B cell receptor development}
 \label{subsubsec:Bcellrecepdevelopment}
 
-The B cell receptor (BcR) is the B cell's way of identifying pathogens in a very specific manner.
-This means that each B cell must have a different BcR in order to have a B cell repertoire capable of recognising different antigens.
-In order to produce such a highly diverse repertoire, there are a few mechanisms in place during B cell development which allow the production of many different BcRs in the B cell population.
+As mentioned in \cref{}, the BcR is the B cell's way of identifying pathogens in a very specific manner and there are many mechanisms in place in order to introduce high levels of diversity into the BcR repertoire.
 
 The structure of a BcR consists of 2 heavy chains, which have a constant region and a variable region.
 Alongside these are two light chains, which also consist of a constant and variable region.
 Each light chain sits alongside the heavy chain with the two variable regions next to each other.
 Between them, the variable regions make up the antigen binding site.
 The constant regions give the antibody its class, for example, IgM, IgD, IgE, IgA, IgM \citep{Pieper2013}.
-
-For both heavy and light chains, the variable region is made up of a V (variable), D (Diversity, heavy chain only) and J (joining) gene segments. 
-Genomically encoded are multiple copies of different V, D and J genes and during rearrangement, one of each of these genes are selected at random and joined to produce different receptors.
-This process is mediated by enzymes known as RAG (recombination activating genes) recombinases.
-These enzymes recognise recombination signal sequences (RSS) found next to the coding regions of each V, D and J gene and bring the ends of the chosen genes near to each other to be joined \citep{Fugmann2014, Oettinger1999}.
-To join the segments, RAG proteins cleave at either end of the genes and leave hairpin loops of DNA.
-From here a nuclease nicks the loops leaving short sequences at the end of each gene to be joined.
-This allows the segments to join via non homologous end joining \citep{Schatz2011}.
-Further diversity is also added via the use of an enzyme called terminal deoxynucleotidyltransferase (TdT) which adds random base pairs between each segment.
-The use of TdT allows the production of the ~10\textsuperscript{14} different immunoglobulins \citep{Motea2010}.
 
 In order to progress from the pro B to the pre B cell stage, the rearrangement of the IgM heavy chain must begin.
 Once this has happened, it can be coupled to a surrogate light chain to form the pre-BcR which has the role of initiating light chain rearrangement so that a full IgM molecule can be produced \citep{Burrows2002}.
@@ -509,9 +537,20 @@ This gives the impression that, while autoantibodies may be important in the dis
 However, 
 It has been shown by different groups that maternal autoantibodies passed to offspring during pregnancy have either no effect on the offsp}
 
+\todo{Greeley - removal of mother autoantibodies prevents T1D in offspring. Koczwara2004nods - removal makes no difference}
+
+\todo{Rituximab preserves $\beta$ cell function in pts for a year. Pescovitz2009.
+Anti-CD20 mouse - Xiu2008. Anti-CD20 in mice at 5 weeks stops diabetes, at 15 wks, delays onset}
+
 \todo{Wong2004 Investigation of the role  of B cells in T1D. Silva2011 anti islet autoAbs triggre diabetes in the presence of an increased frequency of islet reactive CD4 T cells?}
 
 \subsection{Antigen presentation}
+
+\todo{Islet infiltrated B cells in NOD mouse have increased levels of costimulatory B7-1 and B7-2 molecules. This could contribute to the process of insulitis by activating T cells and causing their expansion.}
+
+\todo{Marino2012. B cells can cross present islet antigen to activate CD8 T cells in the PLN. B cell deficiency or MHC Class I deficiency on B cells results in decreased CD8 T cells. This suggests that B cells are acting as APCs to activate cytotoxic T cells.}
+
+
 
 Following the finding that autoantibodies are likely to not be the principle mechanism of action for B cells in T1D pathogenesis, \citet{Serreze1998} also looked into the antigen presenting capacity of B cells.
 In particular, their ability to present GAD and ellicit T cell responses was investigated.
