@@ -10,3 +10,4 @@ Cache/
 *.out
 *.synctex.gz
 *.toc
+*.log

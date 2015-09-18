@@ -390,6 +390,13 @@
         }
 }
 
+\captionsetup{labelfont={bf,sc}}
+\makeatletter
+\renewcommand{\p@subfigure}{}
+\makeatother
+\renewcommand{\thesubfigure}{\textbf{\textsf{\Alph{subfigure}}}}
+\captionsetup[subfloat]{textfont=sf,labelsep=colon,labelfont={Large},position=top, labelformat=simple, singlelinecheck=false}
+
 % Force title case for all references.
 \renewcommand{\cref}{\Cref}
 
