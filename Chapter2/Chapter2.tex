@@ -17,7 +17,7 @@ Diabetes results from either lack of, or resistance to, the hormone insulin.
 The pathogenesis of the disease depends on the type of diabetes in question.
 There are a few types of diabetes including gestational diabetes, seen in some pregnancies, type 1 diabetes, and type 2 diabetes.
 Type 1 diabetes (T1D) is an autoimmune condition where the body's own immune system destroys insulin producing cells, resulting in a lack of insulin.
-Type 2 diabetes (T2D), on the other hand, is when the body becomes resistant to insulin and insulin production is impaired.
+Type 2 diabetes (T2D), on the other hand, is when the body becomes resistant to the action of insulin and insulin production is impaired.
 Both type 1 and type 2 diabetes result in a decreased ability to regulate blood glucose levels.
 
 Insulin is produced in the pancreas by $\beta$ cells in the Islets of Langerhans.
@@ -91,7 +91,8 @@ Binding through receptors such as these transmits signals into the cells resulti
 The ability to recognise these PAMPs gives the innate immune system to ability to distinguish self from non-self.
 
 However, the immune system is not only there to protect from invading organisms. 
-Damaged host cells also require fixing through help from the immune system and it is thought that in order to do this, the innate immune system is also able to recognise damage-associated molecular patterns (DAMPs) which can also bind to TLRs and ellicit an immune response \citep{Matzinger1994, Shin2015}
+Damaged host cells also require removal by the immune system  to prevent inflammation and potential autoreactive responses. 
+In order to do this, it is thought that the innate immune system is also able to recognise damage-associated molecular patterns (DAMPs) which can also bind to TLRs and ellicit an immune response \citep{Matzinger1994, Shin2015}
 
 \todo{Add some references}
 
@@ -105,7 +106,7 @@ These cells express receptors which are specific to a given antigen.
 Each T and B cell has a different antigen specificity therefore the adaptive immune system can recognise a huge number of antigens via B and T cell receptors.
 
 However, B and T cells require activation before they can function.
-In order to activate these cells, they must first bencounter their cognate antigen (i.e, the antigen for which their receptor is specific).
+In order to activate these cells, they must first encounter their cognate antigen (i.e, the antigen for which their receptor is specific).
 B cells are capable of recognising whole protein, whereas T cells require their antigen to be degraded into peptide fragments and presented to them by antigen presenting cells.
 %Activation results in proliferation of the clone able to recognise the antigen and therefore, a highly specific army of effector cells capable of fighting the pathogen is formed.
 %The process of antigen presentation and T cell activation will be described more fully in \cref{subsec:Tcellactivation}.
@@ -161,7 +162,7 @@ TcRs are able to respond to their antigen peptides held in major histocompatibil
 \label{subsec:Tcelldevelopment}
 
 T cells develop in the thymus.
-However, since the thymus does not contain self-renewing thymocytes, the process of T cell development relies on the constant seeding of the thymus by progenitors from the bone marrow \citep{Zlotoff2011, Heinzel2007}.
+Since the thymus does not contain self-renewing thymocytes, the process of T cell development relies on the constant seeding of the thymus by progenitors from the bone marrow \citep{Zlotoff2011, Heinzel2007}.
 However, the cell that is responsible for this seeding and acts as a T cell progenitor is not known.
 There are many candidates and these have been identified by looking at the surface markers that are required for a cell to be able to settle in the thymus and develop into a T cell.
 
@@ -187,7 +188,7 @@ CLPs will be discussed further in \cref{subsec:Bcelldevelopment}.
 
 
 There are many candidate thymic settling progenitors (TSPs).
-It appears that TSPs must express Flt3, which rules out HSCs as thymic seeding progenitors, \citep{Zlotoff2011}, and also CCR9 or CCR7 or both \citep{Zlotoff2010}.
+It appears that TSPs must express Flt3, which rules out HSCs as thymic seeding progenitors, \citep{Zlotoff2011}, and also chemokine receptor (CCR) 9 or CCR7 or both \citep{Zlotoff2010}.
 CCR9 and CCR7 are chemokine receptors which are important for allowing thymic settling. 
 While the expression of only one type of chemokine receptor is sufficient, it is more efficient if both are expressed.
 This suggests that likely candidates for TSPs are CCR7+CCR9+ LMPPs and CLPs\citep{Zlotoff2011}.
@@ -219,7 +220,7 @@ The aim of T cell development in the thymus is to only allow the release of non 
 The education of T cells in the thymus is the first step of preventing autoimmunity by removing potentially autoreactive T cells from the T cell repertoire \citep{Walker2002}.
 %Another step in helping to prevent autoimmunity is the differentiation of CD4+ T cells into regulatory T cells (Tregs).
 
-\subsection{Genes and Transcription factors}
+\subsection{Genes and Transcription factors driving T cell development}
 \label{subsec:Tcellgenes}
 
 As with B cell development, T cell development relies on genes and transcription factors to drive development in the lineage.
@@ -264,7 +265,7 @@ Once activated, CTLs are capable of killing off their target cells in a highly s
 %\todo{Rewrite. Make this brief and move main to bit in immune system.Talk more on T cell activation rather than the presentation pathways.}
 
 Antigen presentation is the process by which the innate immune system can signal to the adaptive immune system that an immune response is required.
-Professional APCs (macrophages, DCs and B cells (see \cref{sec:Bcells}) scavenge pathogens when they invade and phagocytose them.
+Professional APCs (macrophages, DCs and B cells (see \cref{sec:Bcells}) scavenge pathogens when they invade and internalise them.
 From here they breakdown the pathogen, then express it's antigen either on MHC Class II (to activate CD4\textsuperscript{+} T cells), or MHC Class I (to activate CD8\textsuperscript{+} T cells).
 
 For T cells to become activated, they must be presented with their cognate antigen in the peptide/MHC complex on an APC.
@@ -286,7 +287,7 @@ This requires a process known as cross presentation by the APC, whereby an exoge
 
 Following activation, CD8\textsuperscript{+} T cells can become CTLs and kill off any cell expressing it's cognate antigen on MHC Class I.
 CTLs are therefore important cells for the clearance of viruses and can help with cancer prevention.
-CTLs kill off their target cells in a highly specific manner using perforins and grazymes.
+CTLs kill off their target cells in a highly specific manner using perforins and granzymes.
 
 
 
@@ -476,12 +477,12 @@ However, once the B cells have left the bone marrow, receptor editing is not an 
 
 \section{The Nonobese Diabetic Mouse}
 
-The nonobese (NOD) mouse is a well described animal model of T1D, first discovered by \citet{Makino1980} in 1980 where insulin producing $\beta$ cells are believed to be destroyed by autoreactive T cells, predominantly CD8\textsuperscript{+} CTL \citep{Lieberman2003}.
+The nonobese (NOD) mouse is a well described animal model of T1D, first discovered by \citet{Makino1980} in 1980, where insulin producing $\beta$ cells are believed to be destroyed by autoreactive T cells, predominantly CD8\textsuperscript{+} CTL \citep{Lieberman2003}.
 It is a model that is genetically predisposed to develop T1D by a well characterised pathogenesis over a defined time course as outlined below and in \cref{fig:diseasecourse}.
 
 \begin{figure}
-\includegraphics[width=\textwidth]{Figures/Diseasecourse.png}
-\caption{Figure showing the T1D process in the NOD mouse.}
+\includegraphics[width=\textwidth]{Figures/NODdisease.png}
+\caption{Schematic representation of the T1D process in NOD mice}
 \label{fig:diseasecourse}
 \end{figure}
 
@@ -543,7 +544,8 @@ Similar to the NOD mouse, this infiltrate contains CD8\textsuperscript{+} T cell
 
 Following non-destructive insulitis, immune cells gain their aggressive traits and beta cells begin to be destroyed.
 The destruction of $\beta$ cells in NOD and human pancreatic islets is believed to be mediated by cytotoxic T lymphocytes (CTLs) \citep{Thomas2000, Brodie2008, Hanafusa2008}.
-The total destruction of $\beta$ cells in T1D leads to absolute insulin deficiency \citep{Daneman2006}.
+Only very few insulin-producing $\beta$ cells survive \citep{Oram2014, Veld2014}.
+
 
 
 \section{B cell involvement in T1D}
@@ -563,7 +565,7 @@ Investigations into the role of B cells in T1D have revealed that the presence o
 Evidence for this came in 1996 when \citet{Serreze1996} produced a mouse protected from diabetes by genetically depleting B cells from the NOD mouse.
 These mice retained normal T cell populations and all known diabetes susceptibility genes, but lacked B cells suggesting that the diabetes protection resulted from the lack of B cells.
 The resulting mouse was known as the NOD.Ig$\mu$\textsuperscript{null} mouse which had a functionally inactived Ig-$\mu$ chain and therefore cannot produce B cells.
-Further evidence came in 1997 when \citet{Noorchashm1997} used anti Ig-$\mu$ antibody to deplete B cells from female NOD mice and compared the onset of insultis and blood glucose levels with control NOD mice.
+Further evidence came in 1997 when \citet{Noorchashm1997} used anti Ig-$\mu$ antibody to deplete B cells from female NOD mice and compared the onset of insultis and blood glucose levels with control NOD mice which received whole rabbit IgG and therefore retained their B cell populations.
 They found that insulitis and hyperglycaemia were not present in the Ig-$\mu$ treated mice, but were present in the controls.
 Interestingly, they also found that following removal of Ig-$\mu$ antibody, the B cell pool repopulated and insulitis returned, giving further evidence that insulitis and diabetes are linked to B cell presence.
 
@@ -676,6 +678,7 @@ However, it is thought they may have a role in contributing to T cell negative s
 \section{Project Aims}
 
 \cref{fig:summarydiagram} outlines the current understanding of B cell development in the bone marrow, T cell development in the thymus and potential intrathymic B cell development.
+
 This project aims to understand more fully the potential pathway of intrathymic B cell development.
 These are the main questions that this project aims to investigate:
 \begin{itemize}
@@ -687,8 +690,13 @@ These are the main questions that this project aims to investigate:
 
 \begin{figure}
 \includegraphics[width=\textwidth]{Figures/Introductorydiagram.png}
-\caption{B cells develop in bone marrow, T cells develop in thymus. Are some progenitors in the thymus capable of producing B cells in the thymus?
-In T1D, healthy islets become infiltrated with immune cells, including B and T cells, then $\beta$ cells are destroyed by CTLs.}
+\caption[Diagrammatical overview of project]{B cells develop in bone marrow, T cells develop in thymus. 
+In seeding of the thymus with TSPs destined for the T cell fate, it may be that some progenitors are retaining B cell potential.
+These cells may be differentiating into B cells in the thymus, resulting in a population of thymic B cells.
+T cells go through negative selection in the thymus as the first stage of tolerisation. 
+Those which survive this process are released in the periphery.
+In the case of T1D, healthy islets become infiltrated with immune cells including T and B cells (potentially including some of thymic origin) and subsequently, insulin-producing $\beta$ cells are destroyed by CTLs.
+It may be that thymic B cells are contributing to T cell negative selection in some way (black dashed arrow).}
 \label{fig:summarydiagram}
 \end{figure}
 
