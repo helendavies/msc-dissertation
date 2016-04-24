@@ -109,8 +109,7 @@
 {\tikzexternaldisable\begin{tikzpicture}
   \node[inner sep=0pt,minimum height=3cm] (title) at (0,0)
     {\parbox{\textwidth}{\centering\fontsize{32}{30}\rmfamily\scshape #1}};
-  \ifthenelse{\equal{\chapterlabel}{}}{}{\node[inner sep=0pt] (label) at ($(title.east)+(11pt+1.5cm,0)$)
-    {\fontsize{120}{120}\rmfamily\color{spotdark}\textbf{\chapterlabel}};} % chapter label in right margin
+  \ifthenelse{\equal{\chapterlabel}{}}{}{} % chapter label in right margin
 \end{tikzpicture}\hspace*{-3cm}}[\vspace{0ex}]
 \titlespacing*{\chapter}{0pt}{0.7cm}{0.9cm}
 
@@ -212,56 +211,6 @@
 % Date and time commands.
 \usepackage{datetime}
 
-% Fancy headers.
-\usepackage{fancyhdr}
-\ifdraft{
-  % In draft mode, override the 'plain' page style to show footer with subversion info.
-  \fancypagestyle{plain}{
-    \fancyhf{} % clear all header and footer fields
-    \fancyfoot[C]{\thepage}
-  }
-  \pagestyle{plain}
-  \renewcommand{\headrulewidth}{0pt}
-  \renewcommand{\footrulewidth}{0.5pt}
-}
-{
-  % Fix warnings about header not being high enough.
-  \addtolength{\headheight}{1.6pt}
-  \addtolength{\headsep}{-1.6pt}
-  \addtolength{\footskip}{1cm}
-
-  % No header/footer on empty pages created by \cleardoublepage.
-  \let\oldcleardoublepage\cleardoublepage
-  \renewcommand{\cleardoublepage}{\clearpage{\pagestyle{empty}\oldcleardoublepage}}
-  
-  % In final mode, show page numbers in outer footer (in plain and fancy styles),
-  % and chapter/section titles in headers (fancy only).
-  \fancyhf{} % clear all header and footer fields
-  \fancyheadoffset[LE,RO]{2cm}
-  \fancyfootoffset[LE,RO]{2cm}
-%  \fancyhead[LE]{\textcolor{highlight}{\sffamily\nouppercase{\leftmark}}}
-  \fancyhead[LE]{\textcolor{header}{\scshape\nouppercase{\leftmark}}}
-  \fancyhead[RO]{\textcolor{header}{\scshape\nouppercase{\rightmark}}}
-  \fancyfoot[LE,RO]{\textcolor{footer}{\thepage}}
-  \renewcommand{\headrulewidth}{0pt}
-  \renewcommand{\footrulewidth}{0pt}
-  \fancypagestyle{plain}{
-    \fancyhf{} % clear all header and footer fields
-    \fancyfootoffset[LE,RO]{2cm}
-    \fancyfoot[LE,RO]{\textcolor{footer}{\thepage}}
-    \renewcommand{\headrulewidth}{0pt}
-    \renewcommand{\footrulewidth}{0pt}
-  }
-
-  % Default page style.
-  \pagestyle{fancy}
-  
-  % Remove the word "Chapter" from the chapter mark.
-  \renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
-
-  % Reduce spacing between section number and name.
-  \renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
-}
 
 % In draft mode, include half-resolution figures.
 \ifdraft
